@@ -230,10 +230,6 @@ header {
     margin-top: 0;
 }
 
-.header__right {
-    right: 0;
-}
-
 .header__right img {
     padding-top: 5rem;
 }
