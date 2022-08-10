@@ -317,3 +317,70 @@ header {
 .owl-nav .owl-prev {
   font-size: 50px;
 }
+
+/* ------------------ CTA-BANNER -----------------------*/
+.bg__ctaBanner{
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctaBanner__deskripsi {
+  text-align: center;
+}
+
+.ctaBanner__deskripsi h1{
+  padding-top: 64px;
+}
+.deskripsi {
+  display: flex;
+  justify-content: center;
+}
+
+.ctaBanner__deskripsi p {
+  align-self: center;
+  width: 468px;
+  margin-top: 16px;
+  margin-bottom: 60px;
+}
+
+.ctaBanner__deskripsi a {
+  margin-bottom: 60px;
+}
+
+/* ------------------ FAQS -----------------------*/
+
+.faqs{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.faqs h2 {
+  margin-bottom: 16px;
+}
+
+
+.faqs__accordion{
+  display: flex;
+  flex-direction: column;
+}
+
+.faq___accordion{
+  border: #D4D4D4 solid 1px;
+  padding: 18px 24px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+/* ------------------ Footer -----------------------*/
+.footers{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+
+
