@@ -234,11 +234,6 @@ header {
     right: 0;
 }
 
-.header__right img {    
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
+.header__right img {
+    padding-top: 5rem;
 }
