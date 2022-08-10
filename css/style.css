@@ -28,6 +28,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: black;
+    background: var(--color-bg1);
 }
 
 h1,
@@ -38,11 +39,34 @@ p,
 a {
     color: black;
 }
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--color-green);
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    color: black;
+    background: transparent;
+    border-color: var(--color-green);
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
 /* ==================== END GLOBAL STYLE ==================== */
 
 
 /* ==================== NAV ==================== */
 nav {
+    position: fixed;
+    top: 0;
     width: 100vw;
     height: 5rem;
 }
@@ -57,14 +81,63 @@ nav {
 .nav__menu {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 4rem;
 }
 
 .nav__menu a {
     transition: var(--transition);
 }
-
-.nav__menu a:hover {
-    color: var(--color-lightblue);
-}
 /* ==================== END NAV ==================== */
+
+/* ==================== HEADER ==================== */
+header {
+    /* position: relative; */
+    padding-top: 5rem;
+    background: var(--color-bg2);
+}
+
+.header__container {
+    width: 90%;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.header__left {
+    width: 75%;
+}
+
+.header__container h2 {
+    word-wrap: normal;
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+
+.header__container p {
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    line-height: 1.5rem;
+}
+
+.header__right {
+    position: relative;
+}
+
+.header__right img {
+    position: relative;
+    z-index: 2;
+}
+
+.header__right-background {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 5rem 0 0 0;
+    background: var(--color-primary);
+}
+/* ==================== END HEADER ==================== */
