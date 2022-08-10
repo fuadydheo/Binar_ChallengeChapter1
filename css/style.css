@@ -127,6 +127,9 @@ header {
 
 .header__right img {
     position: relative;
+    left: 2rem;
+    width: 90%;
+    height: auto;
     z-index: 2;
 }
 
