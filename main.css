@@ -164,6 +164,9 @@ header {
 }
 
 .header-right img {
+  right: 0;
+  bottom: 0;;
+  margin-top: 10px;
   position: absolute;
   width: 704px;
   height: 407px;
@@ -295,4 +298,11 @@ header {
   background: var(--color-primary);
   width: 100px;
   height: 34px;
+}
+.social-icon{
+  background: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-white);
 }
