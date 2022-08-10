@@ -83,7 +83,7 @@
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   } */
   
-  .nav__container {
+  .nav_container {
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -111,13 +111,13 @@
     display: none;
   }
   
-  .nav__menu {
+  .nav_menu {
     display: flex;
     align-items: center;
     gap: 2rem;
   }
   
-  .nav__menu a {
+  .nav_menu a {
     color: var(--color-black);
     /* font-size: 0.9rem; */
     transition: var(--transition);
@@ -129,17 +129,17 @@
     line-height: 20px;
   }
   
-  .nav__menu a:hover {
+  .nav_menu a:hover {
     color: rgb(169, 169, 169);
   }
   
-  .nav__menu a.active {
+  .nav_menu a.active {
     background-color: var(--color-success);
     color: var(--color-white);
     border-radius: 5px;
   }
   
-  .nav__menu a.active:hover {
+  .nav_menu a.active:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
     border-radius: 5px;
@@ -147,7 +147,7 @@
   
   /* HEADER */
   
-  .header__container {
+  .header_container {
     position: relative;
     top: 0;
     overflow: hidden;
@@ -159,11 +159,11 @@
     background: #F1F3FF;
   }
   
-  .header__left {
+  .header_left {
     align-self: center;
     margin-left: 5rem;
   }
-  .header__left h2{
+  .header_left h2{
     position: absolute;
     width: 568px;
     height: 108px;
@@ -176,7 +176,7 @@
     line-height: 150%;
   }
   
-  .header__left p {
+  .header_left p {
     /* margin: 1rem 0 2.4rem; */
     position: absolute;
     width: 468px;
@@ -221,7 +221,7 @@
     align-self: flex-end;
   }
   
-  .header__right img {
+  .header_right img {
     width: 90%;
     margin-left: 2rem;
     margin-top: 10rem;
@@ -289,4 +289,51 @@
     color: var(--color-primary1);
     border-radius: 100%;
     padding: 0.5rem;
+  }
+
+  /* Why Us Section */
+  .whyuse-section{
+    padding-left: 6%;
+    padding-right: 6%;
+    color: var(--color-black);
+  }
+  .title{
+    position: absolute;
+    height: 36px;
+    top: 1000px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+  }
+  .subtitle{
+    position: absolute;
+    width: 468px;
+    height: 20px;
+    top: 1050px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+  }
+  .cards{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cards_detail{
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 23%;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 0.5px;
+    border-color: var(--color-black);
+  }
+  .cards_icon{
+    width: 32px;
+    margin-bottom: 1rem;
   }
