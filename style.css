@@ -245,3 +245,132 @@ nav button {
 .btn-primary {
   margin-top: 2rem;
 }
+
+/* ============ Testimonial ============= */
+.testimonialsection h2 {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.testimonialsection #p1 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.testimonial__container {
+  background: var(--color-bg1);
+  margin-top: 3rem;
+  position: relative;
+  width: 90vw;
+  max-width: 40rem;
+  min-height: 20rem;
+  border-radius: 0.6em;
+  transform: translate(-50%, -50%);
+  left: 26%;
+  top: 50%;
+  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.2);
+  display: flex;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 2rem 2rem;
+}
+
+.avatar img {
+  margin: 3rem auto 0.5rem auto;
+  display: block;
+  width: 10em;
+  border-radius: 50%;
+}
+
+.testimonial__info {
+  top: 20%;
+  position: relative;
+  max-width: 20rem;
+}
+
+.testimonial__info #p2 {
+  padding-top: 2rem;
+}
+
+.ratings {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+  gap: 0.2rem;
+}
+
+/* ============== Testimonial End =========== */
+
+/* ======== Getting started ========== */
+.gettingstarted-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-left: 136px;
+  margin-right: 8rem;
+  padding-left: 6%;
+  padding-right: 6%;
+  width: 1168px;
+  height: 326px;
+  top: 5rem;
+  background-color: var(--color-primary1);
+  border-radius: 13px;
+}
+.getting-heading {
+  margin-bottom: 50px;
+}
+
+.container {
+  color: var(--color-bg1);
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+}
+
+/* =========== FAQ =========== */
+.faq-section {
+    position: relative;
+    margin-top: 3rem;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-white);
+    gap: 5rem;
+  }
+  .faq_left {
+    margin: 1.2rem 0.5rem;
+    margin-left: 5rem;
+  }
+  .faq_right {
+    margin: 1.2rem 0.5rem;
+    margin-right: 5rem;
+  }
+  .accordion {
+    width: 100%;
+    border: 1px solid #d4d4d4;
+    padding: 1rem;
+    display: flex;
+    margin: 1rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .active,
+  .accordion:hover {
+    background: #ccc;
+  }
+  .panel {
+    background: #ccc;
+    display: none;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+  }
