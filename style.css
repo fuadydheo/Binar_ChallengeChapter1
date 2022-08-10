@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: 0;
+    list-style: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --color-primary1: #0d28a6;
+    --color-primary2: #5cb85f;
+    --color-success: #73ca5c;
+    --color-danger: #fa2c5a;
+    --color-warning: #f9cc00;
+    --color-bg: #cfd4ed;
+    --color-white: #ffffff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #3c3c3c;
+
+    --container-width-lg: 100%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+/* ======================== NAVBAR ======================== */
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+}
