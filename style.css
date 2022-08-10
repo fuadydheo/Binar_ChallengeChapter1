@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --darkblue01: #CFD4ED;
+    --darkblue02: #AEB7E1;
+    --darkblue03: #5E70E4;
+    --darkblue04: #0D286E;
+    --darkblue05: #091B6F;
+
+    --limegreen01: #DEF1DF;
+    --limegreen02: #C9E7CA;
+    --limegreen03: #92D094;
+    --limegreen04: #5CB85F;
+    --limegreen05: #3D7B3F;
+
+    /* Alert */
+    --alert-success: #73CA5C;
+    --alert-warning: #F9CC00;
+    --alert-danger: #FA2C5A;
+
+    /* Neutral */
+    --neutral01: #FFFFFF;
+    --neutral02: #D0D0D0;
+    --neutral03: #8A8A8A;
+    --neutral04: #3C3C3C;
+    --neutral05: #151515;
+
+    /* Shadows */
+    --shadow-high: 0 0 10px rgba(0, 0, 0, 0.15);
+    --shadow-low: 0 0 4px rgba(0, 0, 0, 0.15);
+
+    /* Container */
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    /* Transition */
+    --transition: all 400ms ease;
+
+    /* Boldness */
+    --light: 300;
+    --regular: 400;
+    --medium: 500; 
+    --semi-bold: 600;
+    --bold: 700;
+    --extra-bold: 800;
+    --very-bold: 900;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: var(--neutral05);
+    background: white;
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1,h2,h3,h4,h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--neutral05);
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border: var(--color-white);
+}
+
+.btn-primary {
+    background: var(--alert-success);
+    color: var(--neutral01);
+}
+
+/* Navbar */
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+.nav__logo {
+    background: var(--darkblue04);
+    color: var(--neutral01);
+    border: #091B6F;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    cursor: pointer;
+}
+
+.nav__logo h4 {
+    font-size: 1.2rem;
+}
+
+/* Change navbar styles on scroll using JS */
+.window-scroll {
+    background: #F1F3FF;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+    cursor: pointer;
+}
+
+.nav__menu {
+    color: var(--neutral05);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover {
+    color: var(--darkblue03);
+}
+
+/* Button Nav Register */
+.button__menu {
+    background: var(--alert-success);
+    color: var(--neutral01);
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 0.7rem;  
+    border-radius: 5px;
+    transition: var(--transition);  
+}
+
+.button__menu:hover {
+    background: var(--limegreen05);    
+}
+
+/* Header */
+header {
+    background: #F1F3FF;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    height: 80vh;    
+    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header__left p {
+    margin: 1rem 0 1.5rem;
+}
+
+.header__left h1 {
+    margin-top: 5rem;
+    font-size: 36px;
+}
+
+.header__left a {
+    margin-top: 0;
+}
