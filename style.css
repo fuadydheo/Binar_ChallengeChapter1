@@ -195,6 +195,7 @@
   
   /* ============= WHY USE ============= */
   .whyuse-section {
+    margin-top: 10rem;
     padding-left: 6%;
     padding-right: 6%;
     color: var(--color-black);
