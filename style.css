@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-white: #fff;
+    --color-bg: #CFD4ED;
+    --color-bg1:#0D28A6;
+    --color-bg2: #424890;
+
+    --container-widht-lg: 76%;
+    --container-widht-md: 90%;
+    --container-widht-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    background-color:var(--color-white);
+}
+
+.container{
+    width: var(--container-widht-lg);
+    margin: 0 auto;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 2px;
+    background-color: green;
+    transition: var(--transition);
+}
+
+.btn-primary{
+    background: green;
+    color: var(--color-white);
+}
+
+
+/* =========== NAVBAR =============== */
+nav{
+    background: var(--color-bg);
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+.nav-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-menu a{
+    color: black;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+/* =============== HEADER ============ */
+header{
+    position: relative;
+    background: var(--color-bg);
+    top: 5rem;
+    overflow: hidden;
+    height: 50vh;
+    margin-bottom: 5rem;
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header-left p{
+    margin: 1rem 0 2.4rem;
+}
+
+.header-right-image{
+    background: var(--color-bg1);
+    border-radius: 4rem;
+}
+
