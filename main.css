@@ -38,7 +38,10 @@ body {
 }
 
 section {
-  padding: 6rem 0;
+  margin: 100px 0;
+}
+footer {
+  margin: 100px 0;
 }
 
 h1,
@@ -66,6 +69,11 @@ h3 {
 }
 h4 {
   font-size: 1.3rem;
+}
+h5 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
 }
 a {
   color: var(--color-black);
@@ -298,11 +306,25 @@ header {
 .testimonial-section {
   text-align: center;
 }
-
+.testimonial-section p {
+  margin-bottom: 40px;
+}
+.review {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+  left: 0;
+}
 .testimonial {
+  background: var(--color-bg);
   display: grid;
   grid-template-columns: 6.5% 94.5%;
   gap: 46px;
+  align-content: center;
+  padding: 95px 32px 95px 46px;
+  position: relative;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 }
 
 .testimonial .nama {
@@ -310,6 +332,17 @@ header {
   font-size: 14px;
   line-height: 20px;
   font: bold;
+}
+.star {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 0px 36px 8px 46px;
+}
+
+.testimonial p {
+  margin: 0 36px 8px 46px;
+  margin-bottom: 8px;
 }
 
 /* .review h1{
@@ -351,6 +384,37 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
 }
+
+.faq{
+  /* padding: 2rem; */
+  margin: 16px 0 0 0;
+  padding: 18px 0 18px 24px;
+  display: flex;
+  align-items: center;
+  gap:1.4rem;
+  height: fit-content;
+  justify-content: space-between;
+  border: 1px solid var(--color-border);
+  cursor: pointer; 
+  border-radius: 4px;
+}
+
+.faq-icon{
+  align-self: flex-start;
+  justify-self: start;
+  font-size: 1.2rem;
+  padding-right: 25px;
+}
+
+.faq p{
+  display: none;
+}
+
+.faq.open p{
+  display: block;
+}
+
+
 
 /* .faq-left h1 {
   margin-bottom: 1rem;
