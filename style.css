@@ -49,3 +49,14 @@ margin: 20px 0 0 60px;
 .list_layanan img{
     margin-right: 13px;
 }
+
+/* why us */
+.why_us {
+    margin-top: 90px;
+}
+.why_us p{
+    margin-top: 20px;
+}
+.icon_why{
+    width: 50px !important;
+}
