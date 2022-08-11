@@ -154,8 +154,44 @@ nav button {
     border-radius: 5px;
 }
 
+/* ======================== NAVBAR ======================== */
+.header_container {
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh; /*ukuran tinggi elemen*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 3rem;
+    color: var(--color-black);
+}
 
+.col_left {
+    align-self: center;
+    margin-left: 5rem; 
+}
 
+.col_left p {
+    margin: 1rem 0 2.4rem ;
+}
+
+.col_right { /*posisi car*/
+    align-self: flex-end;
+}
+
+.col_right img {
+    width: 90%;
+    margin-left: 2rem;
+}
+
+.car_frame {
+    align-self: flex-end;
+    width: 100%;
+    height: 40vh;
+    background: #0d28a6;
+    border-top-left-radius: 80px;
+   margin-top: -13rem; /* bg maju keatas */
+}
 
 
 
