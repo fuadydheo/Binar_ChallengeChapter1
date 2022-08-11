@@ -106,6 +106,21 @@ p {
 
 /*======================= why us =====================*/
 
+.mycard {
+    width: 16rem;
+    border: solid 1px #d0d0d0;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+/*======================= why us =====================*/
+
+
 
 
 
