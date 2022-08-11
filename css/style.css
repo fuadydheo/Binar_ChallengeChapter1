@@ -85,6 +85,8 @@ nav {
     width: 100vw;
     height: 5rem;
     z-index: 10;
+    transition: var(--transition);
+    border-radius: 0 0 1rem 1rem;
 }
 
 .nav__container {
@@ -103,6 +105,11 @@ nav {
 
 .nav__menu a {
     transition: var(--transition);
+}
+
+.window-scroll {
+    background: var(--color-lightblue);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 }
 /* ==================== END NAV ==================== */
 
@@ -313,3 +320,41 @@ header {
     color: var(--color-bg2);
 }
 /* ==================== END ORDER NOW ==================== */
+
+/* ==================== FAQ ==================== */
+.faq__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.faq {
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-lightblue);
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.faq__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__header p {
+    margin: 0;
+}
+
+.faq__arrow {
+    font-size: 2rem;
+}
+
+.faq__answer p {
+    display: none;
+    margin: 1rem 0 0 0;
+}
+
+.open p {
+    display: block;
+}
+/* ==================== END FAQ ==================== */
