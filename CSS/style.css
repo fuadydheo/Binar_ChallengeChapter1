@@ -26,8 +26,8 @@ nav {
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.7);
     --color-black: #000;
-    --color-bg: #1f2641;
-    --color-bg1: #2e3267;
+    --color-bg: #5C3D2E;
+    --color-bg1: #2F2519;
     --color-bg2: #424890;
 
     --container-width-lg: 76%;
@@ -48,6 +48,7 @@ body{
 .container{
     width: var(--container-width-lg);
     margin: 0 auto;
+    /* height: 100vh; */
 }
 
 section{
@@ -147,6 +148,7 @@ header {
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
+    height: 100vh;
 
 }
 
@@ -161,4 +163,36 @@ header {
 .header_left p {
     margin: 1rem 0 2.4rem;
 
+}
+
+/* .background
+{
+    content: "";
+    position: relative;
+    background: var(--color-bg1);
+}  */
+
+/* .header_right-image::before
+{
+    content: "";
+    background-position: 3rem;
+    display: block;
+    background: black;
+    width: 3rem;
+} */
+
+
+
+
+/*======================LOCATION=======================*/
+
+.container_location
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* gap: 5rem; */
+    height: 100vh;
+    background: var(--color-bg1);
 }
