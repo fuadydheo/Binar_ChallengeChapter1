@@ -71,6 +71,10 @@ img {
     display: block;
     object-fit: cover;
 }
+
+.uil {
+    font-size: 1.3rem;
+}
 /* ==================== END GLOBAL STYLE ==================== */
 
 /* ==================== NAV ==================== */
@@ -103,9 +107,11 @@ nav {
 
 /* ==================== HEADER ==================== */
 header {
-    /* position: relative; */
+    display: flex;
+    align-items: stretch;
     padding-top: 5rem;
     background: var(--color-bg2);
+    height: 75vh;
 }
 
 .header__container {
@@ -122,6 +128,7 @@ header {
 
 .header__right {
     position: relative;
+    align-self: flex-end;
 }
 
 .header__right img {
@@ -187,7 +194,58 @@ header {
 
 .feature-check {
     background: var(--color-lightblue);
-    padding: 0.3rem;
+    color: var(--color-primary);
+    padding: 0.2rem;
     border-radius: 50%;
 }
 /* ==================== END FEATURES ==================== */
+
+/* ==================== WHY US ==================== */
+.whyus {
+    margin-top: 4rem;
+}
+
+.reasons__list {
+    display: flex;
+    gap: 2rem;
+}
+
+.reason__card {
+    border: 1px solid var(--color-lightblue);
+    padding: 2rem;
+    border-radius: 0.8rem;
+    transition: var(--transition);
+}
+
+.reason__card:hover {
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.reason__icon {
+    display: inline-block;
+    color: var(--color-bg2);
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.reason__card:nth-child(1) .reason__icon {
+    background-color: orange;
+}
+
+.reason__card:nth-child(2) .reason__icon {
+    background-color: red;
+}
+
+.reason__card:nth-child(3) .reason__icon {
+    background-color: var(--color-primary);
+}
+
+.reason__card:nth-child(4) .reason__icon {
+    background-color: var(--color-green);
+}
+
+.reason__card p {
+    margin-bottom: 0;
+}
+/* ==================== END WHY US ==================== */
