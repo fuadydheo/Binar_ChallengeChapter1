@@ -20,6 +20,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+
 </head>
 
 <body>
@@ -161,7 +165,7 @@
         Berbagai review positif dari para pelanggan kami
     </p>
     <div>
-        <article>
+        <article class="testi">
             <div class="testi_image">
                <img src="/image/ava01.jpg"> 
             </div>
@@ -176,7 +180,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="testi">
             <div class="testi_image">
                <img src="image/ava02.jpg"> 
             </div>
@@ -191,7 +195,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="testi">
             <div class="testi_image">
                <img src="image/ava03.jpg"> 
             </div>
@@ -206,7 +210,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="testi">
             <div class="testi_image">
                <img src="image/ava04.jpg"> 
             </div>
@@ -221,7 +225,7 @@
             </div>
         </article>
 
-        <article>
+        <article class="testi">
             <div class="testi_image">
                <img src="image/ava05.jpg"> 
             </div>
@@ -259,12 +263,15 @@
 
 <!--- FAQs --->
 <section class="faqs">
-    <h2>Frequently Asked Question</h2>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, delectus.
-    </p>
+    <div class="faqs_left">
+        <h2>Frequently Asked Question</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, delectus.
+        </p>
+    </div>
 
-    <div class="faqs_info">
+    <div class="faqs_right">
+        <div class="faqs_info">
         <artickle class="faq">
             <div class="tanya">
                 <h4>
@@ -281,7 +288,7 @@
             <div class="tanya">
                 <h4>
                     Berapa hari minimal sewa mobil lepas kunci?  
-                </h4>
+                </h4>       
                 <span class="faqs_icon"><i class="uil uil-arrow-circle-down"></i></span>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae praesentium voluptatibus laudantium alias nostrum nulla cum magnam magni maiores quam.
@@ -291,6 +298,7 @@
 
         <artickle class="faq">
             <div class="tanya">
+                
                 <h4>
                     Berapa hari sebelumnya sabaiknya booking sewa mobil?  
                 </h4>
@@ -303,6 +311,7 @@
 
         <artickle class="faq">
             <div class="tanya">
+                
                 <h4>
                     Apakah Ada biaya antar-jemput?  
                 </h4>
@@ -315,6 +324,7 @@
 
         <artickle class="faq">
             <div class="tanya">
+                
                 <h4>
                     Bagaimana jika terjadi kecelakaan  
                 </h4>
@@ -324,6 +334,7 @@
                 </p>
             </div>
         </artickle>
+    </div>
     </div>
 </section>
 <!--- END OF FAQs --->
@@ -378,5 +389,10 @@
 </footer>
 <!--- END OF FOOTER --->
 
+
+
+
+
+<script src="main.js"></script>
 </body>
 </html>

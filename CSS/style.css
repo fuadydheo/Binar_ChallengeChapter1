@@ -323,21 +323,67 @@ header {
 .testimonial
 {
     background: var(--color-bg1);
+
 }
 
 .testimonial h2
 {
     font-family: var(--font1);
     font-size: 2rem;
-    line-height: 2rem;
+    margin-bottom: 0.2rem;
+    /* line-height: 2rem; */
 }
 
 .testimonial p
 {
+    display: flex;
+    justify-content: center;
     font-family: var(--font2);
     font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
+.testi
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background: var(--color-danger-variant);
+    padding: 1rem;
+    margin-top: 3rem;
+    position: relative;
+    margin: 2rem 7rem 2rem 7rem;
+
+}
+
+.testi_info
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testi_image
+{
+    
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+}
+
+.testi p
+{
+    
+    margin: 0.4rem 0rem 0.4rem; 
+    line-height: 1.2rem;
+}
+
+.testi_icon
+{
+    display: flex;
+    justify-items: center;
+}
 
 
 
@@ -380,6 +426,83 @@ header {
 
 
 
+/*======================FAQs=======================*/
+.faqs
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 4rem;
+}
+
+.faqs_left
+{
+    font-family: var(--font1);
+    line-height: 1rem;
+}
+
+.faqs_left h2
+{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.faqs_info
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+
+.faq
+{
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-bg2);
+    cursor: pointer;
+}
+
+.tanya
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem ;
+}
+
+.faq h4
+{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    /* line-height: 2.2; */
+    margin-right: 5rem;
+}
+
+.faqs_icon
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    font-size: 20px;
+    margin: 0rem 2rem 2rem 0rem;
+}
+
+.faq p
+{
+    margin-top: 0.5rem;
+    display: none;
+}
+
+
+
 /*======================FOOTER=======================*/
 footer
 {
@@ -392,3 +515,4 @@ footer
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
