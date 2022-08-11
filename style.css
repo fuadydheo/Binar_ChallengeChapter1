@@ -180,3 +180,82 @@ ul li {
 }
 
 /* Akhir Why Us Section */
+
+/* testimonial carousel */
+
+.testimonial-header h1,
+.testimonial-header p {
+  text-align: center;
+}
+
+.testimonial-header h1 {
+  margin-top: 100px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.testimonial-header p {
+  margin-bottom: 40px;
+}
+
+.carousel-1 {
+  width: 619px;
+  height: 270px;
+  background-color: #f1f3ff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border: none;
+  margin: 0 auto;
+}
+
+.statement-testimonial {
+  width: 415px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.image-desc {
+  height: 100%;
+  align-items: center;
+}
+
+.image-testimonial {
+  margin: 95px 0 95px 46px;
+}
+
+.desc-testimonial {
+  margin-right: 32px;
+}
+
+.carousel-item {
+  align-content: center;
+  margin-bottom: 24px;
+}
+
+.d-block {
+  background-color: red;
+}
+
+.prev-button {
+  margin-right: 12px;
+}
+
+.next-button {
+  margin-left: 12px;
+}
+
+.prev-button,
+.next-button {
+  border: none;
+  background: none;
+  padding: 0;
+}
