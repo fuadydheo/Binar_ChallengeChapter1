@@ -19,7 +19,6 @@
   --color-white: #fff;
   --color-bg: #f1f3ff;
   --color-bg2: #cfd4ed;
-  --color-bghvr: #2A0944;
 
   --container-width-lg: 80%;
   --container-width-md: 90%;
@@ -37,23 +36,6 @@ img {
   width: 100%;
   display: block;
   object-fit: cover;
-}
-
-.btn {
-  display: inline-block;
-  background: var(--color-succes);
-  color: var(--color-white);
-  padding: 0.3rem 0.7rem;
-  border: 1px solid transparent;
-  font-weight: 600;
-  transition: var(--transition);
-  border-radius: 2px;
-}
-
-.btn:hover {
-  background: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-primary);
 }
 
 /*============ MAIN SECTION ============*/
@@ -84,16 +66,26 @@ img {
   gap: 2rem;
 }
 
-.nav_menu li a {
+.nav_menu li {
   font-size: 1rem;
   color: var(--color-black);
-  font-weight: 200;
+  font-weight: 400;
   transition: var(--transition);
   cursor: pointer;
 }
 
-.nav_menu li a:hover {
+.nav_menu li:hover {
   color: var(--color-bg2);
+}
+
+.nav_menu > .btn {
+  font-weight: bolder;
+}
+
+.nav_menu > .btn:hover {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 /**** HEADER ****/
@@ -121,7 +113,18 @@ img {
 }
 
 .header-left h1 {
+  font-weight: bolder;
   line-height: 3.2rem;
+}
+
+.header-left > .btn {
+  font-weight: bolder;
+}
+
+.header-left > .btn:hover {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .header-right {
@@ -147,29 +150,36 @@ img {
   gap: 8rem;
 }
 
-.our_service-right {
-  font-size: 1.1rem;
-}
-
 .our_service-left {
   width: 28rem;
 }
 
 .our_service-right h1 {
+  font-size: 2rem;
   line-height: 2.6rem;
-  font-weight: 600;
+  font-weight: bolder;
 }
 
 .our_service-right p {
-  margin: 1.3rem 0 1rem;
+  font-size: 1rem;
+  margin: 1.5rem 0 1rem;
 }
 
 .our_service-right ul li {
+  font-size: 1.1rem;
   line-height: 2.7rem;
 }
 
 .our_service-right ul li i {
   color: var(--color-primary);
+  background: var(--color-bg2);
+  border-radius: 100%;
+  padding: 0.08rem 0.095rem;
+  margin-right: 1rem;
+}
+
+.our_service-list {
+  padding-left: 0;
 }
 
 /*============ OUR SERVICE SECTION ============*/
@@ -181,7 +191,7 @@ img {
 
 .why_us-top {
   line-height: 5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .why_us-bottom {
@@ -189,6 +199,10 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   padding-bottom: 8rem;
+}
+
+.why_us-top h1 {
+  font-weight: 700;
 }
 
 .why_us {
@@ -200,9 +214,8 @@ img {
 
 .why_us-icon {
   background: var(--color-warning);
-  padding: 0.3rem;
+  padding: 0.3rem 0.4rem;
   color: var(--color-white);
-  border-radius: 50%;
 }
 
 .why_us:nth-child(2) .why_us-icon {
@@ -218,7 +231,8 @@ img {
 }
 
 .why_us h5 {
-  margin: 1rem 0 1.5rem;
+  font-weight: bolder;
+  margin: 1.4rem 0 1.5rem;
 }
 
 /*============ GETTING STARTED SECTION ============*/
@@ -238,8 +252,13 @@ img {
 }
 
 .getting_started-container p {
-  font-size: 0.6rem;
-  padding: 1rem 12rem 2rem;
+  font-size: 0.75rem;
+  font-weight: lighter;
+  margin: 1.5rem 12rem 3rem;
+}
+
+.getting_started-container > .btn {
+  font-weight: bolder;
 }
 
 .getting_started-container > .btn:hover {
