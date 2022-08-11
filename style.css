@@ -157,13 +157,17 @@
   /* ================HEADER================== */
   .header__container {
     position: relative;
-    top: 5rem;
+    top: 3rem;
     overflow: hidden;
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     color: var(--color-black);
+  }
+
+  .header__container p {
+    text-align: justify;
   }
   
   .col__left {
@@ -193,12 +197,9 @@
     margin-top: -13rem;
   }
   
-  /* ============= WHY USE ============= */
-
+  /* ============= SERVICE ============= */
   .service-container {
-    margin-top: 5rem;
-    position: relative;
-    overflow: hidden;
+    padding-top: 6rem;
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -217,7 +218,7 @@
   }
 
   .service__right {
-    padding-top: 3rem; 
+    padding-top: 2rem; 
   }
 
   .service__right p {
@@ -244,7 +245,7 @@
   }
   /* ============= WHY USE ============= */
   .whyuse-section {
-    margin-top: 2rem;
+    padding-top: 6rem;
     padding-left: 6%;
     padding-right: 6%;
     color: var(--color-black);
@@ -274,6 +275,57 @@
     margin-bottom: 1rem;
   }
   
+  /* ============= TESTIMONIAL ============= */
+  .testimonial-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 6%;
+    padding-right: 6%;
+    color: var(--color-black);
+    justify-content: center;
+  }
+
+  .testimonial-section .title {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .card {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; 
+    background: var(--color-bg1);
+    border-radius: 15px;
+    padding: 4rem 3rem;
+    display: flex;
+    align-items: center
+  }
+
+  .card img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    align-content: center;
+  }
+
+  .detail_testi {
+    margin-left: 2rem;
+  }
+  .detail_testi p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .ratings {
+    display: flex;
+  }
+
+  .ratings img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
   /* ======== Getting started ========== */
   .gettingstarted-section {
     display: inline-block;
@@ -282,7 +334,8 @@
     padding-right: 10rem;
     background-color: var(--color-primary1);
     border-radius: 15px;
-    margin: 6%;
+    margin-left: 6%;
+    margin-right: 6%;
     height: 50vh;
     text-align: center;
     color: var(--color-white);
@@ -297,53 +350,55 @@
   }
 
   /* ================FAQs================== */
-.faqs {
-    padding-left: 6%;
-    padding-right: 6%;
-    display: flex;
-    justify-content: space-between
-}
+  .faqs {
+      padding-top: 6rem;
+      padding-left: 6%;
+      padding-right: 6%;
+      display: flex;
+      justify-content: space-between;
+      color: var(--color-black);
+  }
 
-.faqs__container {
-    display: block;
-    /* grid-template-columns: 1fr 1fr;
-    gap: 1rem; */
-    /* margin-top: 2rem; */
-    width: 52%;;
-}
+  .faqs__container {
+      display: block;
+      /* grid-template-columns: 1fr 1fr;
+      gap: 1rem; */
+      /* margin-top: 2rem; */
+      width: 52%;;
+  }
 
-.faq {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
-    height: fit-content;
-    box-shadow: 1px 0px 5px 2px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 1px 0px 5px 2px rgba(0,0,0,0.25);
-    -moz-box-shadow: 1px 0px 5px 2px rgba(0,0,0,0.25);
-    cursor: pointer;
-    justify-content: space-between
-}
+  .faq {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      height: fit-content;
+      box-shadow: 1px 0px 5px 2px rgba(0,0,0,0.25);
+      -webkit-box-shadow: 1px 0px 5px 2px rgba(0,0,0,0.25);
+      -moz-box-shadow: 1px 0px 5px 2px rgba(0,0,0,0.25);
+      cursor: pointer;
+      justify-content: space-between
+  }
 
-.faq h4 {
-    font-size: 1rem;
-    line-height: 2.2;
-}
+  .faq h4 {
+      font-size: 1rem;
+      line-height: 2.2;
+  }
 
-.faq__icon {
-    align-self: flex-start;
-    font-size: 1.2rem;
-}
+  .faq__icon {
+      align-self: flex-start;
+      font-size: 1.2rem;
+  }
 
-.faq p {
-    margin-top: 0.8rem;
-    display: none;
-}
+  .faq p {
+      margin-top: 0.8rem;
+      display: none;
+  }
 
-.faq.open p{
-    display: block;
-}
+  .faq.open p{
+      display: block;
+  }
   
   /* =============== FOOTER ================== */
   footer {
@@ -360,6 +415,7 @@
       justify-content: space-between;
       padding-left: 6%;
       padding-right: 6%;
+      padding-bottom: 6%;
   }
 
   .footer__1 p {
@@ -400,9 +456,4 @@
     margin-bottom: 1rem;
   }
 
-  .footer__copyright {
-      text-align: center;
-      margin-top: 4rem;
-      padding: 1.2rem 0;
-      border-top: 1px solid var(--color-bg2)
-  }
+  
