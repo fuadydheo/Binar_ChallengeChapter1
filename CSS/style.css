@@ -351,7 +351,8 @@ header {
     padding: 1rem;
     margin-top: 3rem;
     position: relative;
-    margin: 2rem 7rem 2rem 7rem;
+    margin: 2rem 12rem 2rem 12rem;
+    position: absolute;
 
 }
 

@@ -159,13 +159,13 @@
 
 <!--- Testimonial --->
 
-<section class="testimonial">
+<section class="testimonial mySwiper">
     <h2>Testimonial</h2>
     <p>
         Berbagai review positif dari para pelanggan kami
     </p>
-    <div>
-        <article class="testi">
+    <div class="swiper-wrapper">
+        <article class="testi swiper-slide">
             <div class="testi_image">
                <img src="/image/ava01.jpg"> 
             </div>
@@ -180,7 +180,7 @@
             </div>
         </article>
 
-        <article class="testi">
+        <article class="testi swiper-slide">
             <div class="testi_image">
                <img src="image/ava02.jpg"> 
             </div>
@@ -195,7 +195,7 @@
             </div>
         </article>
 
-        <article class="testi">
+        <article class="testi swiper-slide">
             <div class="testi_image">
                <img src="image/ava03.jpg"> 
             </div>
@@ -210,7 +210,7 @@
             </div>
         </article>
 
-        <article class="testi">
+        <article class="testi swiper-slide">
             <div class="testi_image">
                <img src="image/ava04.jpg"> 
             </div>
@@ -225,7 +225,7 @@
             </div>
         </article>
 
-        <article class="testi">
+        <article class="testi swiper-slide">
             <div class="testi_image">
                <img src="image/ava05.jpg"> 
             </div>
@@ -239,7 +239,9 @@
                 <h4>Aylee 23, Bromo</h4>
             </div>
         </article>
+        <div class="swiper-pagination"></div>
     </div>
+    
 </section>
 <!--- END OF Testimonial --->
 
@@ -392,7 +394,26 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // When window width is >= 600px
+        breakpoints: {
+            600: {
+                slidesPerView:2
+            }
+        }
+      });
+</script>
+
 </body>
 </html>
