@@ -27,11 +27,11 @@
         <div class="container nav_container">
             <a href="#"><img src="./image/logo1.png"></a>
             <ul class="nav_menu">
-                <li><a href="ourservices.html">Our Services</a></li>
-                <li><a href="whyus.html">Why Us</a></li>
-                <li><a href="testimonial.html">Testimonial</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="#ourservices">Our Services</a></li>
+                <li><a href="#whyus">Why Us</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#" class="btn btn-primary">Register</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -55,6 +55,138 @@
             </div>
         </div>
     </header>
+    <!-- ==================================== END OF HEADER ==================================== -->
+
+
+    <section id="ourservices">
+        <div class="container ourservices_container">
+            <div class="header_left">
+                <div class="header_left-image">
+                    <img src="./image/gambar1.png">
+                </div>
+                <div class="header right">
+                    <h3>Best Car Rental for any kind of trip in (Lokasimu)!</h3>
+                    <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+                    <ul>
+                        <li><i class="uil uil-check-circle"></i> Sewa Mobil Dengan Supir di Bali 12 Jam</li>
+                        <li><i class="uil uil-check-circle"></i> Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+                        <li><i class="uil uil-check-circle"></i> Sewa Mobil Jangka Panjang Bulanan</li>
+                        <li><i class="uil uil-check-circle"></i> Gratis Antar - Jemput Mobil di Bandara</li>
+                        <li><i class="uil uil-check-circle"></i> Layanan Airport Transfer / Drop In Out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====================== END OF OUR SERVICES ====================== -->
+
+
+    <section id="whyus">
+        <h3>Why Us?</h3>
+        <p>Mengapa harus pilih Binar Car Rental?</p>
+        <div class="container whyus_container">
+            <article class="whyus">
+                <span class="whyus_icon"><i class="uil uil-thumbs-up"></i></span>
+                <h5>Mobil Lengkap</h5>
+                <p>Tersedia banyak pilihan mobil, kondisi masih baru</p>
+            </article>
+
+            <article class="whyus">
+                <span class="whyus_icon"><i class="uil uil-pricetag-alt"></i></span>
+                <h5>Harga Murah</h5>
+                <p></p>
+            </article>
+
+            <article class="whyus">
+                <span class="whyus_icon"><i class="uil uil-pricetag-alt"></i></span>
+                <h5>Harga Murah</h5>
+                <p></p>
+            </article>
+
+            <article class="whyus">
+                <span class="whyus_icon"><i class="uil uil-pricetag-alt"></i></span>
+                <h5>Harga Murah</h5>
+                <p></p>
+            </article>
+        </div>
+    </section>
+    <!-- ===================== END OF WHY US ===================== -->
+
+
+    <section id="testimonials" class="container testimonials_container">
+        <h3>Testimonial</h3>
+        <p>Berbagai review positif dari para pelanggan kami</p>
+        <div class="swiper-wrapper">
+            <article class=" testimonials swiper-slide">
+                <div class="testi">
+                    <img src="./image/testi1.png">
+                </div>
+                <div class="testimonials_info">
+                    <img src="./image/bintang.png">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                </div>
+            </article>
+
+            <article class=" testimonials swiper-slide">
+                <div class="testi">
+                    <img src="./image/testi1.png">
+                </div>
+                <div class="testimonials_info">
+                    <img src="./image/bintang.png">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                </div>
+            </article>
+
+            <article class=" testimonials swiper-slide">
+                <div class="testi">
+                    <img src="./image/testi1.png">
+                </div>
+                <div class="testimonials_info">
+                    <img src="./image/bintang.png">
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                900: {
+                    slidesPerView: 3
+                },
+                600: {
+                    slidesPerView: 2
+                },
+                0: {
+                    slidesPerView: 1
+                }
+            }
+        });
+    </script>
+
+    <!-- =========================== END OF TESTIMONIALS =========================== -->
+
+    <section id="call_to_action">
+        <div class="sewa">
+            <h2>Sewa Mobil di (Lokasimu) Sekarang</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="register.html" class="btn btn-primary">Mulai Sewa Mobil</a>
+        </div>
+    </section>
+
+
+    <section id="faq">
+
+    </section>
 
 </body>
 
