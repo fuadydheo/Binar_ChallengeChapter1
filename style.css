@@ -79,7 +79,7 @@ ul li {
   margin-top: 197px;
 }
 
-/* Our Section  */
+/* Awal Our Section  */
 
 .our-section {
   height: 428px;
@@ -128,3 +128,55 @@ ul li {
 .desc ul img {
   padding-right: 16px;
 }
+/* Akhir Out Section */
+
+/* Awal why us section */
+
+.why-us h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 100px 0 16px 136px;
+}
+
+.why-us p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-margin {
+  margin-left: 136px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  width: 268px;
+  height: 196px;
+  margin: 40px 0 0 0;
+}
+
+.card-1 {
+  margin-left: 136px;
+}
+
+.card-body h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-body h5,
+.card-body img {
+  margin-bottom: 16px;
+}
+
+.card-4 {
+  margin-right: 136px;
+}
+
+/* Akhir Why Us Section */
