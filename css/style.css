@@ -90,6 +90,23 @@ p {
 }
 
 /*======================= our service =====================*/
+.why-us-text {
+    max-width: 30rem;
+}
+
+.why-us-text p {
+    margin: 0;
+}
+
+.why-us-text img {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+}
+
+/*======================= why us =====================*/
+
+
 
 
 
