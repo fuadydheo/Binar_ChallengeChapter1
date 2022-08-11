@@ -62,7 +62,7 @@ section h2 {
 
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -85,8 +85,8 @@ h3 {
 
 p
 {
-    font-size: 1rem;
-}
+    font-size: 1.5rem;
+} */
 
 a {
     color: var(--color-white)
@@ -172,6 +172,8 @@ header {
 .header_left h1
 {
     font-family: var(--font1);
+    font-size: 3rem;
+    line-height: 2.8rem;
 }
 
 .header_left a
@@ -183,6 +185,7 @@ header {
     font-family: var(--font2);
     margin: 1.2rem 0 1.5rem;
     line-height: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /* .background
@@ -232,6 +235,8 @@ header {
 .location_right h2
 {
     font-family: var(--font1);
+    font-size: 2.1rem;
+    line-height: 2.3rem;
 }
 
 .location_right p
@@ -266,12 +271,14 @@ header {
 
 .why_us_main
 {
-    margin: 2rem 2rem 2rem 5rem;
+    margin: 2rem 2rem 3rem 5rem;
+    font-family: var(--font1);
 }
 
 .why_us_main h2
 {
-    font-family: var(--font1);
+    
+    font-size: 2rem;
     line-height: 3rem;
 }
 
@@ -285,6 +292,7 @@ header {
 .why_us_info
 {
     font-family: var(--font2);
+    line-height: 1.2rem;
     background: var(--color-bg2);
     padding: 2rem;
     border-radius: 0.5rem;
@@ -292,9 +300,81 @@ header {
     transition: var(--transition);
 }
 
+.why_us_info h3
+{
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0.8rem 0;
+}
+
 .why_us_icon
 {
     font-size: 20px;
+}
+
+.why_us_isi
+{
+    font-size: 1.2rem;
+
+}
+
+
+
+/*======================TESTIMONIAL=======================*/
+.testimonial
+{
+    background: var(--color-bg1);
+}
+
+.testimonial h2
+{
+    font-family: var(--font1);
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.testimonial p
+{
+    font-family: var(--font2);
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/*======================MULAI SEWA=======================*/
+.mulai_sewa
+{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+    
+    background-color: var(--color-bg2);
+    border-radius: 0.5rem;
+    margin: 3rem;
+    /* width: 100%; */
+    height: 100%;
+}
+
+.mulai_sewa_info
+{
+    
+    font-family: var(--font1);
+}
+
+.mulai_sewa h1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mulai_sewa p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
