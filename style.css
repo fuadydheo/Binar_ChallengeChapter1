@@ -264,6 +264,7 @@ nav button {
     width: 10px; /*ukuran icon*/
     margin-bottom: 0.75rem;
     margin-inline-end: 1rem;
+    margin-top: 0.5rem;
   }
 
   .btn-primary {
@@ -272,6 +273,7 @@ nav button {
 
   /* ======================== WHY USE ======================== */
   .whyuse-section {
+    margin-top: 15rem;
     padding-left: 6%;
     padding-right: 6%;
     color: var(--color-black);
@@ -300,3 +302,78 @@ nav button {
     width: 32px; /*ukuran icon*/
     margin-bottom: 1rem;
   }
+
+  /* ======================== TESTIMONIAL ======================== */
+  .testimonial_container {
+    margin-top: 5rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  .testimonial_container h2 {
+    text-align: center;
+  }
+
+  .testimonial_container p {
+    text-align: center;
+  }
+
+  .testimonial {
+    padding-top: 2rem;
+  }
+
+  .human {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .testimonial_body {
+    background: var(--color-bg);
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  .testimonial_body h5{
+    margin-left: 3.75rem;
+  }
+
+  /* ====================== Gsection ================= */
+.gettingStarted_section {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 136px;
+    margin-right: 8rem;
+    padding-left: 6%;
+    padding-right: 6%;
+    width: 1168px;
+    height: 326px;
+    top: 5rem;
+    background-color: var(--color-primary1);
+    border-radius: 13px;
+}
+
+.getting-heading {
+    margin-bottom: 50px;
+}
+
+.container {
+    color: var(--color-bg);
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+}
+
+.btn-primary-two {
+    background: var(--color-primary2);
+    color: var(--color-white);
+}
+
+  /* ======================== TESTIMONIAL ======================== */
