@@ -1,4 +1,4 @@
-/*======================= navbar =====================*/
+/*======================= root =====================*/
 :root {
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
@@ -8,6 +8,11 @@ body {
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.container-fluid{
+    width: 85vw;
+    margin: 0 auto;
 }
 
 h1 {
@@ -33,6 +38,8 @@ p {
     font-weight: 400;
     line-height: 20px;
 }
+
+/*======================= navbar =====================*/
 
 .btn-success {
     background-color: #5cb85f;
@@ -227,4 +234,109 @@ p {
     border-radius: 13px;
 }
 
+/*======================= faq =====================*/
 
+.accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+}
+
+/*======================= faq =====================*/
+
+.footer {
+    background-color: #f1f3ff;
+}
+
+.footer-child {
+    margin: 1rem 0;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+/*======================= Media screen =====================*/
+
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+        align-items: flex-start;
+    }
+
+    .navbar-collapse ul {
+        margin-left: 1rem;
+    }
+
+    .offcanvas {
+        max-width: 50%;
+    }
+
+    .mycard {
+        width: 100% !important;
+    }
+
+    #faq-section .faq-container {
+        align-items: center;
+    }
+
+    .footer-child ul {
+        padding: 0px !important;
+    }
+
+    .carousel-card {
+        flex-direction: column;
+    }
+
+    .carousel-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 !important;
+    }
+
+    .carousel-image {
+        margin: 1rem;
+    }
+
+    .carousel-container {
+        padding-bottom: 6.5rem;
+    }
+
+    .carousel-button {
+        position: absolute;
+        z-index: 10;
+        top: 425px;
+    }
+
+    .accordion {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .hero-desc {
+        padding: 5rem;
+        max-width: 50%;
+    }
+
+    .accordion {
+        max-width: 50%;
+        width: 50%;
+    }
+
+    .hero-ills {
+        max-width: 50%;
+    }
+}
