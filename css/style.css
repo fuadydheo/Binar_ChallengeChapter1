@@ -118,9 +118,105 @@ p {
     font-weight: 700;
 }
 
-/*======================= why us =====================*/
+/*======================= Testimonial =====================*/
 
+.carousel-image {
+    width: 80px;
+    height: 80px;
+}
 
+.username {
+    font-size: 14;
+    font-weight: 400;
+}
+
+.carouse-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f1f3ff;
+
+    padding: 3rem;
+    margin: 0 16px;
+
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.carousel-container {
+    padding-bottom: 5rem;
+}
+
+.rating-stars {
+    margin-bottom: 1rem;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 10;
+    top: 300px;
+}
+
+.carousel-button-content {
+    border: 1px solid #c4c4c4;
+    width: 32px;
+    height: 32px;
+    /* padding: 1rem; */
+    border-radius: 50%;
+
+    align-items: center;
+    justify-content: center;
+    /* background-color: #5cb85f; */
+}
+
+.carousel-button-content::after {
+    content: none;
+}
+
+.carousel-button-content:hover {
+    background-color: #5cb85f;
+    border: none;
+    transition: all 0.5s ease-out;
+}
+
+.carousel-button-content span.next,
+.carousel-button-content span.prev {
+    border: 2px solid #000;
+    width: 8px;
+    height: 8px;
+
+    border-top: none;
+    border-left: none;
+
+    transform: translateX(2px) rotate(135deg);
+}
+
+.carousel-button-content:hover span {
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transition: all 0.5s ease-out;
+}
+
+.swiper-button-prev {
+    left: auto;
+    right: 50% !important;
+    margin: 0 1rem;
+}
+
+.swiper-button-next {
+    left: 50% !important;
+    right: auto;
+    margin: 0 1rem;
+    transform: rotate(180deg);
+}
 
 
 
