@@ -70,3 +70,11 @@ ul li {
 .car-image {
   margin-top: 33px;
 }
+
+#shape {
+  width: 704px;
+  height: 243px;
+  background: #0d28a6;
+  border-radius: 60px 0px 0px 0px;
+  margin-top: 197px;
+}
