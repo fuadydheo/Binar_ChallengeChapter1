@@ -218,6 +218,13 @@ p {
     transform: rotate(180deg);
 }
 
+/*======================= banner =====================*/
 
+.cta-banner {
+    text-align: center;
+    color: #fff;
+    background-color: #0d28a6;
+    border-radius: 13px;
+}
 
 
