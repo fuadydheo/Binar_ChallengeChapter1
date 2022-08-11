@@ -263,3 +263,81 @@ header {
 }
 
 /* ============== END SERVICE SECTION ============= */
+
+/* ============== FOOTER ============= */
+footer {
+  background: var(--color-white);
+  padding-top: 5rem;
+  font-size: 0.9rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding-left: 6rem;
+  padding-bottom: 5rem;
+}
+
+.footer__1 p {
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__2 a {
+  padding-left: 4rem;
+  font-weight: 600;
+}
+
+.footer__3 p {
+  color: var(--color-black);
+}
+
+.footer__4 {
+  padding-left: 2rem;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.uit-facebook-f {
+  color: var(--color-white);
+  background: var(--color-primary2);
+  border-radius: 50%;
+}
+
+.uil-instagram {
+  color: var(--color-white);
+  background: var(--color-primary2);
+  border-radius: 50%;
+}
+
+.uil-twitter-alt {
+  color: var(--color-white);
+  background: var(--color-primary2);
+  border-radius: 50%;
+}
+
+.uil-envelope {
+  color: var(--color-white);
+  background: var(--color-primary2);
+  border-radius: 50%;
+}
+
+.fa-twitch {
+  color: var(--color-white);
+  background: var(--color-primary2);
+  border-radius: 50%;
+}
