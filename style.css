@@ -4,8 +4,8 @@
     border: 0;
     outline: 0;
     text-decoration: 0;
-    list-style: 0;
-    box-sizing: 0;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 :root {
@@ -26,7 +26,6 @@
     --transition: all 400ms ease;
 }
 
-/* ======================== NAVBAR ======================== */
 body {
     font-family: "Poppins", sans-serif;
     line-height: 1.7; /*Jarak antar baris*/
@@ -61,6 +60,11 @@ h3 {
 h4 {
     font-size: 1.3rem;
 }
+
+a {
+    color: var(--color-white);
+}
+
 img {
     width: 100%;
     display: block;
@@ -70,6 +74,7 @@ img {
 .btn {
     display: inline-block;
     background: var(--color-white); /* Warna button (mulai sewa mobil) */
+    color: var(--color-black);
     padding: 1rem 2rem; /* ukuran dari box-nya */
     border: 1px solid transparent;
     font-weight: 500;
@@ -85,3 +90,72 @@ img {
     background: var(--color-primary2);
     color: var(--color-white);
 }
+
+/* ======================== NAVBAR ======================== */
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11; /* fungsinya yaitu untuk mengatur posisi depan atau belakang suatu elemen */
+}
+
+.window-scroll {
+    background: var(--color-primary1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between; /* kanan */
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.logo {
+    background-color: var(--color-primary1); /*warna logo*/
+    width: 6rem;
+    height: 2rem;
+}
+
+nav button {
+    display: none;
+}
+
+.nav_menu { /* mengatur letak atau posisi */
+    display: flex; /* mengatur posisi suatu konten yang ukurannya belum diketahui (posisi menjadi sejajar/satu baris) */
+    align-items: center;
+    gap: 2rem; /*jarak antar konten (kata)*/
+}
+
+.nav_menu a { /* mengatur warna, ukuran huruf*/
+    color: var(--color-black);
+    font-size: 0.9rem;
+    transition: var(--transition);
+    padding: 7px 13px;
+}
+
+.nav_menu a:hover {
+    color: var(--color-white);
+}
+
+.nav_menu a.active { /*register*/
+    background-color: var(--color-success); 
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+.nav_menu a.active:hover {
+    background-color: var(--color-primary1);
+    color: var(--color-white);
+    border-radius: 5px;
+}
+
+
+
+
+
+
