@@ -1,7 +1,51 @@
 /* nav */
 nav {
-    margin-left: 136px;
+    margin-left: 60px;
 }
 nav ul{
     margin-left: 500px;
+}
+/* Awal */
+.produk {
+    margin-top: 20px;
+}
+.produk img {
+    width: 558px;
+}
+.produk h1 {
+    margin: 80px 0 0 60px;
+    width: 500px;
+    height: 100px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+}
+.produk p{
+width: 500px;
+height: 100px;
+margin: 20px 0 0 60px;
+}
+/* layanan */
+.layanan {
+    margin-top: 90px;
+}
+.layanan h2{
+    margin: 80px 0 0 0px;
+    width: 500px;
+    height: 100px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px; 
+}
+
+.list_layanan {
+    list-style: none;
+    padding: 0;
+}
+.list_layanan img{
+    margin-right: 13px;
 }
