@@ -117,10 +117,10 @@ nav {
 
 .logo {
   /* background-color: var(--color-primary1); */
-  width: 4rem;
+  width: 3rem;
   display: flex;
-  align-items: center;
-  
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 nav button {
@@ -131,6 +131,7 @@ nav button {
   display: flex;
   align-items: center;
   gap: 2rem;
+
 }
 
 .nav__menu a {
@@ -138,6 +139,7 @@ nav button {
   font-size: 0.9rem;
   transition: var(--transition);
   padding: 7px 13px;
+  text-decoration: none;
 }
 
 .nav__menu a:hover {
@@ -221,6 +223,19 @@ nav button {
 .service_right {
   margin: 0 5rem 2.4rem 0;
 }
+.list {
+  margin-top: 20px;
+}
+
+.list img {
+  width: 24px;
+}
+
+.text-list {
+  margin-left: 16px;
+  font-weight: 300;
+  font-size: 14px;
+}
 .service_right h1 {
   font-family: "Helvetica";
   font-style: normal;
@@ -248,61 +263,51 @@ nav button {
   margin-top: 2rem;
 }
 
-/* ============ Testimonial ============= */
-.testimonialsection h2 {
-  padding-top: 5rem;
-  text-align: center;
+/* testimonial-section */
+.container-fluid {
+  padding: 0px;
 }
 
-.testimonialsection #p1 {
-  text-align: center;
-  padding-top: 1rem;
+.item {
+  height: 270px;
+  background-color: #f1f3ff;
+  padding-right: 32px;
 }
 
-.testimonial__container {
-  background: var(--color-bg1);
-  margin-top: 3rem;
-  position: relative;
-  width: 90vw;
-  max-width: 40rem;
-  min-height: 20rem;
-  border-radius: 0.6em;
-  transform: translate(-50%, -50%);
-  left: 26%;
-  top: 50%;
-  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.2);
-  display: flex;
+.user-photo {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  padding-left: 46px;
+  padding-right: 46px;
 }
 
-.testimonial {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  margin: 2rem 2rem;
-}
-
-.avatar img {
-  margin: 3rem auto 0.5rem auto;
+img.photo {
+  width: 80px !important;
+  height: 80px;
   display: block;
-  width: 10em;
-  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.testimonial__info {
-  top: 20%;
-  position: relative;
-  max-width: 20rem;
+.testimonial-body {
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
-.testimonial__info #p2 {
-  padding-top: 2rem;
+.testimonial-text {
+  padding-right: 50px;
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.foto-rating {
+  width: 80px !important;
+  height: 16px;
 }
 
-.ratings {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  top: 10px;
-  gap: 0.2rem;
+#testimonial-section{
+  margin-top: 7rem;
 }
 
 /* ============== Testimonial End =========== */
@@ -336,43 +341,88 @@ nav button {
   text-align: center;
 }
 
-/* =========== FAQ =========== */
-.faq-section {
-  position: relative;
-  margin-top: 3rem;
-  height: 50vh;
+/* FAQ Section */
+.FAQ-tagline {
+  margin-top: 5rem;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.FAQ-text {
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.accordion-body p{
+  color: #000;
+}
+
+/* =============== FOOTER ================== */
+
+footer {
+  background: var(--color-white);
+  padding: 5rem;
+  margin-top: 4rem;
+}
+
+.footer__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: var(--color-white);
+  grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
+  text-align: left;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-size: 14px;
+  color: var(--color-black);
 }
-.faq_left {
-  margin: 1.2rem 0.5rem;
-  margin-left: 5rem;
+
+.footer__container > div h4 {
+  margin-bottom: 1.2rem;
 }
-.faq_right {
-  margin: 1.2rem 0.5rem;
-  margin-right: 5rem;
+
+.footer__1 {
+  margin: 0 0 2rem;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
 }
-.accordion {
-  width: 100%;
-  border: 1px solid #d4d4d4;
-  padding: 1rem;
+.footer__1 p {
+  margin: 0 0 1rem;
+}
+
+.footer2 {
+  margin: 0 0 2rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer2 ul li {
+  margin-bottom: 0.7rem;
+}
+
+.footer2 ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__social {
   display: flex;
-  margin: 1rem;
-  height: fit-content;
-  background: var(--color-primary);
-  cursor: pointer;
-  border-radius: 4px;
+  gap: 1rem;
+  font-size: 1rem;
+  margin-top: 0.75rem;
 }
-.active,
-.accordion:hover {
-  background: #ccc;
+
+.social__icon {
+  color: var(--color-white);
+  background: var(--color-primary1);
+  border-radius: 50%;
 }
-.panel {
-  background: #ccc;
-  display: none;
-  padding: 1rem;
-  margin: 1rem;
-  width: 100%;
+
+footer ul li a {
+  color: var(--color-black);
+}
+
+.logo {
+  margin-top: 0.75rem;
 }
