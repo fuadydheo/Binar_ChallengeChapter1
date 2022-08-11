@@ -55,6 +55,7 @@ p {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     background: var(--color-green);
+    color: var(--color-bg2);
     border-radius: 0.8rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -283,3 +284,32 @@ header {
     height: auto;
 }
 /* ==================== END TESTIMONIALS ==================== */
+
+/* ==================== ORDER NOW ==================== */
+.ordernow {
+    margin: 5rem 0;
+}
+
+.ordernow__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background: var(--color-primary);
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+.ordernow__container h1 {
+    font-size: 2rem;
+}
+
+.ordernow__container p {
+    width: 65%;
+}
+
+.ordernow__container p,
+.ordernow__container h1 {
+    color: var(--color-bg2);
+}
+/* ==================== END ORDER NOW ==================== */
