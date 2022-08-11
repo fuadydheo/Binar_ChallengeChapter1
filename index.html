@@ -6,42 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tes</title>
     <link rel="stylesheet" href="style.css">
+
     <!--Iconscout CDN-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-</head>
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
 <body>
     <nav>
       <div class="container">
-        <div class="nav_section">
+        <div class="nav-section">
           <div class="logo"></div>
-          <ul class="nav_menu">
+          <ul class="nav-menu">
             <li><a href="#">Our Services</a></li>
             <li><a href="#">Why Us</a></li>
             <li><a href="#">Testimonial</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#">FaQ</a></li>
             <button><a href="#" class="btn btn-success"> Register </a></button>
           </ul>
         </div>
       </div>
     </nav>
+
  <!---END OF NAVBAR--->  
  
  <header>
-    <div class="container header_container">
-      <div class="header_left">
-        <h1>Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)</h1>
-        <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam
-        </p>
-        <button><a href="#" class="btn btn-success">Mulai Sewa Mobil</a></button>
-      </div> 
-      <div class="header_right">
-            <img src="img_car.png">
-    </div> 
+    <div class="container">
+      <div class="main-section">
+        <div class="header-left">
+          <h1>
+            Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+          </h1>
+          <p>
+            Selamat datang di Binar Car Rental. Kami menyediakan
+            mobil kualitas terbaik dengan harga terjangkau. Selalu
+            siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+          </p>
+          <button><a href="#" class="btn btn-success">Mulai Sewa </a></button>
+        </div>
+        <div class="header-right">
+          <img src="img_car.png" alt="">
+        </div>
+      </div>
     </div>
- </header>
+  </header>
 
  <!---END OF HEADER--->
 
@@ -122,6 +138,207 @@
   </section>
 <!--======= WHY US =======-->
 
+<!-- =========================== Testimonials ====================== -->
+<section class="testimonials">
+    <div class="container testimonials__container mySwiper">
+        <h3>Testimonial</h3>
+        <p>Berbagai review positif dari para pelanggan kami</p>
+        <div class="swiper-wrapper">
+            <article class=" testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="img_photo.png">
+                </div>
+                <div class="testimonial__info">
+                    <span>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod”</p>
+                    <p><b>John Dee 32, Bromo</b></p>
+                    </span>
+                </div>
+            </article>
 
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="img_photo2.png">
+                </div>
+                <div class="testimonial__info">
+                    <span>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor
+                        sit
+                        amet,
+                        consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit,
+                        sed do eiusmod”</p>
+                    <p><b>John Dee 32, Bromo</b></p>
+                </span>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="img_photo.png">
+                </div>
+                <div class="testimonial__info">
+                    <span>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor
+                        sit
+                        amet,
+                        consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit,
+                        sed do eiusmod”</p>
+                    <p><b>John Dee 32, Bromo</b></p>
+                    </span>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination swiperIcon"></div>
+    </div>
+</section>
+
+
+<!-- =========================== FAQ ====================== -->
+<section class="faqs">
+    <div class="container faqs__container">
+        <div class="faqs__left">
+            <h3>Frequently Asked Question</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+        <div class="faqs__right">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Apa saja syarat yang dibutuhkan?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Berapa hari minimal sewa mobil lepas kunci?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Berapa hari sebelumnya sebaiknya booking sewa mobil?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Apakah ada biaya antar jemput?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Bagaimana jika terjadi kecelakaan?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+        </div>
+    </div>
+</section>
+
+<!-- =========================== Footer ====================== -->
+<footer>
+    <div class="container footer__container">
+        <div class="footer__1">
+            <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+            <p>binarcarrental@gmail.com</p>
+            <p>081-233-334-808</p>
+        </div>
+        <div class="footer__2">
+            <p>Our services</p>
+            <p>Why Us</p>
+            <p>Testimonial</p>
+            <p>FAQ</p>
+        </div>
+        <div class="footer__3">
+            <p>Connect with us</p>
+            <div class="footer__3-social">
+                <img src="icon_facebook.png">
+                <img src="icon_instagram.png">
+                <img src="icon_twitter.png">
+                <img src="icon_mail.png">
+                <img src="icon_twitch.png">
+            </div>
+        </div>
+        <div class="footer__4">
+            <p>Copyright Binar 2022</p>
+            <h3>BCR</h3>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./main.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // whne window width is >= 600px
+        breakpoints: {
+            600: {
+                slidesPerView: 2,
+            }
+        }
+    });
+</script>
 </body>
 </html>
