@@ -41,7 +41,7 @@ section {
   margin: 100px 0;
 }
 footer {
-  margin: 100px 0;
+  margin: 150px 0;
 }
 
 h1,
@@ -71,6 +71,7 @@ h4 {
   font-size: 1.3rem;
 }
 h5 {
+  margin-bottom: 16px;
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
@@ -80,11 +81,13 @@ a {
 }
 
 p {
+  margin-bottom: 16px;
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
 }
 img {
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -111,11 +114,12 @@ img {
 /* ======================= NavBar ===================== */
 nav {
   background: transparent;
+  top: 0;
   width: 100vw;
   height: 6rem;
   position: fixed;
   padding: 24px 0 24px 0;
-  z-index: 1;
+  z-index: 11;
 }
 .nav-section {
   height: 100%;
@@ -156,21 +160,20 @@ nav {
 header {
   background: var(--color-bg);
   position: relative;
-  width: 100vw;
-  height: 37.25rem;
+  height: 60vh;
   overflow: hidden;
-  padding-top: 177px;
+  padding-top: 200px;
 }
 
 .main-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 62% 38%;
+
   gap: 5rem;
   height: 100%;
-  margin: px 0 5rem 0;
+  /* margin: px 0 5rem 0;
   margin-top: 37px;
-  padding-top: 4rem;
+  padding-top: 4rem; */
 }
 
 .header-left h1 {
@@ -186,27 +189,15 @@ header {
   margin: 1rem 0 0 0;
 }
 
-.header-right img {
-  right: 0;
+/* .header-right img {
+  /* right: 0;
   bottom: 0;
   margin-top: 10px;
   position: absolute;
   width: 704px;
-  height: 407px;
-  /* left: 1440px;
+  height: 407px; */
+/* left: 1440px;
   top: 97px; */
-}
-
-.background {
-  background: var(--color-primary);
-  width: 704px;
-  height: 200px;
-  z-index: -1px;
-  border-radius: 60px 0px 0px 0px;
-  left: 736px;
-  top: 261px;
-  align-self: baseline;
-}
 
 /* ======================= Service ===================== */
 
@@ -356,12 +347,9 @@ header {
   color: var(--color-white);
   /* width: 1168px; */
   height: 326px;
-  left: 136px;
-  top: 2078px;
 }
 .gettingstarted-section h1 {
   padding-top: 64px;
-  line-height: 150%;
 }
 
 .gettingstarted-section p {
@@ -385,36 +373,34 @@ header {
   gap: 5rem;
 }
 
-.faq{
+.faq {
   /* padding: 2rem; */
   margin: 16px 0 0 0;
   padding: 18px 0 18px 24px;
   display: flex;
   align-items: center;
-  gap:1.4rem;
+  gap: 1.4rem;
   height: fit-content;
   justify-content: space-between;
   border: 1px solid var(--color-border);
-  cursor: pointer; 
+  cursor: pointer;
   border-radius: 4px;
 }
 
-.faq-icon{
+.faq-icon {
   align-self: flex-start;
   justify-self: start;
   font-size: 1.2rem;
   padding-right: 25px;
 }
 
-.faq p{
+.faq p {
   display: none;
 }
 
-.faq.open p{
+.faq.open p {
   display: block;
 }
-
-
 
 /* .faq-left h1 {
   margin-bottom: 1rem;
@@ -423,7 +409,7 @@ header {
 /* ======================= Footer ===================== */
 .footer-section {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 25% 10% 20% 45%;
   gap: 86px;
 }
 .address p {
@@ -432,9 +418,16 @@ header {
   font-weight: 300px;
   font-size: 14px;
 }
+
+.navigation a {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
 .list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 1rem;
   font-size: 1.2rem;
   margin-top: 2rem;
@@ -451,4 +444,118 @@ header {
   position: absolute;
   width: 50px;
   height: 50px;
+}
+
+/* ======================= Media Queries Tablets ===================== */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  /* ======================= Nav===================== */
+
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  nav button#close-menu-btn {
+    display: none;
+  }
+  .uil-bars {
+    color: var(--color-primary);
+  }
+  .uil-multiply {
+    color: var(--color-primary);
+  }
+  .nav-menu {
+    position: fixed;
+    top: 5rem;
+    right: 5%;
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    height: 5.8rem;
+    animation: animateNavItems 400ms linear forwards;
+    transform-origin: top right;
+  }
+  .nav-menu li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  .nav-menu li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+
+  .nav-menu li:nth-child(4) {
+    animation-delay: 600ms;
+  }
+  .nav-menu li:nth-child(5) {
+    animation-delay: 1000ms;
+  }
+
+  @keyframes animateNavItems {
+    0% {
+      transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
+    100% {
+      transform: rotateZ(0) rotateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .nav-menu li a {
+    background: var(--color-bg);
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .nav-menu li a:hover {
+    background: var(--color-border);
+    color: var(--color-black);
+  }
+  .nav-menu li button {
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+  }
+
+  /* ======================= Header ===================== */
+
+  header {
+    height: 52vh;
+    margin-bottom: 4rem;
+  }
+
+  .main-section {
+    gap: 0;
+  }
 }
