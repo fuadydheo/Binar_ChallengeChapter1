@@ -46,6 +46,22 @@ body {
     background: var(--bg-header);
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
 a {
     color: var(--color-black);
 }
@@ -104,13 +120,14 @@ nav {
     gap: 2rem;
 }
 
-.nav__menu a{
+.nav__menu li a{
     font-size: 0.9rem;
     font-weight: 400;
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
     transition: var(--transition);
 }
 
-.nav__menu a:hover {
+.nav__menu li a:hover {
     color: var(--bg-darkblue03);
 }
 
@@ -178,7 +195,7 @@ header img {
 }
 
 .services__right h3 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .service {
@@ -201,6 +218,7 @@ header img {
     background: var(--color-white);
     position: relative;
     /* background: red; */
+    width: 100vw;
     height: 70vh;
 }
 
@@ -225,11 +243,7 @@ header img {
     border-radius: 0.5rem;
 }
 
-.whyus__card img {
-    padding-bottom: 1rem;
-}
-
-.whyus__card h4 {
+.whyus__card>img,h4 {
     padding-bottom: 1rem;
 }
 
@@ -240,10 +254,10 @@ header img {
 
 /* ================== CTA Banner ================== */
 .banner {
-    position: relative;
     background: var(--color-white);
     height: 70vh;
-    padding: 5rem;
+    width: 100vw;
+    padding: 4rem 0;
     text-align: center;
 }
 
@@ -251,4 +265,95 @@ header img {
     background: var(--bg-darkblue04);
     border-radius: 13px;
     padding: 4rem 15rem;
+}
+
+.banner__container h3 {
+    padding-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.banner__container p {
+    padding-bottom: 3rem;
+    color: var(--color-white);
+}
+/* ================== faqs ================== */
+.faqs {
+    background: var(--color-white);
+    /* box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5); */
+    height: 100vh;
+    width: 100vw;
+    padding-top: 5rem;
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    padding: 1.5rem 1.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.4rem;
+    height: fit-content;
+    border: 1px solid #d4d4d4;
+    cursor: pointer;
+}
+
+.faq h4 {
+    font-size: 1rem;
+    /* line-height: 2.2; */
+    
+}
+
+.faq__icon {
+    
+}
+
+.faq p {
+    /* margin-top: 0.8rem; */
+    display: none;
+}
+
+/* ================== footer ================== */
+footer {
+    background: var(--color-white);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.footer__1 p {
+    margin: 0 0 2rem;
+    vertical-align: top;
+}
+
+.footer__2 p {
+    padding-left: 4rem;
+    margin: 0 0 2rem;
+}
+
+.footer__3 p {
+    margin: 0 0 2rem;
+}
+
+.footer__3-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__4 {
+    padding-left: 5rem;
+}
+
+.footer__4 p {
+    margin: 0 0 2rem;
 }
