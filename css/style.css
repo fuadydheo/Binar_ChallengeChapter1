@@ -40,6 +40,17 @@ a {
     color: black;
 }
 
+h2 {
+    word-wrap: normal;
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+
+p {
+    margin: 2rem 0;
+    line-height: 2rem;
+}
+
 .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -62,13 +73,13 @@ img {
 }
 /* ==================== END GLOBAL STYLE ==================== */
 
-
 /* ==================== NAV ==================== */
 nav {
     position: fixed;
     top: 0;
     width: 100vw;
     height: 5rem;
+    z-index: 10;
 }
 
 .nav__container {
@@ -109,18 +120,6 @@ header {
     width: 75%;
 }
 
-.header__container h2 {
-    word-wrap: normal;
-    font-size: 2rem;
-    line-height: 1.5em;
-}
-
-.header__container p {
-    font-size: 0.9rem;
-    margin: 1.5rem 0;
-    line-height: 1.5rem;
-}
-
 .header__right {
     position: relative;
 }
@@ -144,3 +143,51 @@ header {
     background: var(--color-primary);
 }
 /* ==================== END HEADER ==================== */
+
+/* ==================== FEATURES ==================== */
+.features {
+    margin-top: 5rem;
+}
+
+.features__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.features__left {
+    width: 85%;
+}
+
+.features__left img {
+    width: 80%;
+    height: auto;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+}
+
+.features__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin: 1rem 0;
+}
+
+.features__list p {
+    margin: 0;
+}
+
+.feature {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feature-check {
+    background: var(--color-lightblue);
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+/* ==================== END FEATURES ==================== */
