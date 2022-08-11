@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- SWIPERJS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="main-section">
@@ -48,35 +54,184 @@
         </div>
     </div>
     </div>
-    <div class="service-section">
-        <div class="container section-container">
-            <div class="section-left">
+    <!-- SERVICE SECTION -->
+    <section class="service-section">
+        <div class="container service-container">
+            <div class="service-left">
                 <img src="./images/img_service.svg" alt="">
             </div>
-            <div class="section-right">
-                <h3>Best Car Rental for any kind of trip in (Lokasimu)!</h3>
-                <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
-                <ul>
-                    <div class="service-icon">
-                        <i class="fa-solid fa-circle-check"></i></div>
-                        <li>Lorem ipsum dolor sit amet.</li>
+            <div class="service-right">
+                <div class="title-service">
+                    <h3>Best Car Rental for any kind of trip in (Lokasimu)!</h3>
+                </div>
+                <div class="content-service">
+                    <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+                </div>
+                <div class="list-service">
+                    
+                    <div class="list">
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i>   Sewa Mobil Dengan Supir di Bali 12 Jam</li>
+                        </ul>
+                    </div>
 
-                    <div class="service-icon"><i class="fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet.</div>
+                    <div class="list">
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i>  Sewa Mobil Lepas Kunci di Bali 24 Jam </li>
+                        </ul>
+                    </div>
 
-                    <div class="service-icon"><i class="fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet.</div>
+                    <div class="list">
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Sewa Mobil Jangka Panjang Bulanan</li>
+                        </ul>
+                    </div>
 
-                    <div class="service-icon"><i class="fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet.</div>
+                    <div class="list">
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Gratis Antar - Jemput Mobil di Bandara</li>
+                        </ul>
+                    </div>
 
-                    <div class="service-icon"><i class="fa-solid fa-circle-check"></i>Lorem ipsum dolor sit amet.</div>
-                 
-                </ul>
+                    <div class="list">
+                        <ul>
+                            <li><i class="fa-solid fa-circle-check"></i> Layanan Airport Transfer / Drop In Out</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </div>
+    </section>
 
 
     </div>
-    <div class="whyuse-section"></div>
+    <div class="whyuse-section">
+        <div class="container whyuse-container">
+            <div class="title-why">
+                <h2>Why Us ?</h2>
+            </div>
+            <div class="article-why">
+                <p>Mengapa Harus Binar Car Rental ?</p>
+            </div>
+            <div class="whys_cards">
+                <article class="why_card">
+                  <span class="why_icon">
+                    <img src="./images/icon_complete.svg" alt="">
+                  </span>
+                  <h3>Mobil Lengkap</h3>
+                  <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+                </article>
+    
+                <article class="why_card">
+                  <span class="why_icon">
+                    <img src="./images/icon_price.svg" alt="">
+                  </span>
+                  <h3>Harga Murah</h3>
+                  <p>Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
+                </article>
+    
+                <article class="why_card">
+                  <span class="why_icon">
+                    <img src="./images/icon_24hrs.svg" alt="">
+                  </span>
+                  <h3>Layanan 24 Jam</h3>
+                  <p>Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
+                </article>
+
+                <article class="why_card">
+                    <span class="why_icon">
+                      <img src="./images/icon_professional.svg" alt="">
+                    </span>
+                    <h3>Supir Profesional</h3>
+                    <p>Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+                  </article>
+                  
+              </div>
+        </div>
+    </div>
+        
+
+    </div>
     <div class="gettingstarted-section"></div>
+    <!-- TESTIMONI -->
+    <div class="testimonial-section">
+        <div class="title-testi">
+            <h3>Popular Testimonial</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, assumenda?</p>
+        </div>
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                
+              <div class="swiper-slide">
+                <div class="img-testi">
+                    <img src="./images/img_photo.png" alt="">
+                </div>
+                <div class="testi-content">
+                    <div class="star">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <div class="name-testi"><p>John Doe 32, Bromo</p></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="img-testi">
+                    <img src="./images/photo2.png" alt="">
+                </div>
+                <div class="testi-content">
+                    <div class="star">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <div class="name-testi"><p>John Doe 32, Bromo</p></div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-testi">
+                    <img src="./images/img_photo.png" alt="">
+                </div>
+                <div class="testi-content">
+                    <div class="star">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <div class="name-testi"><p>John Doe 32, Bromo</p></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="img-testi">
+                    <img src="./images/photo2.png" alt="">
+                </div>
+                <div class="testi-content">
+                    <div class="star">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                        <img src="./images/icon_star.svg" alt="">
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                    <div class="name-testi"><p>John Doe 32, Bromo</p></div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+
+
     <div class="faq-section">
         <div class="faq_left">
             <h3>Frequently Asked Question</h1>
@@ -115,8 +270,71 @@
         </div>
 
     </div>
-    <div class="footer-section"></div>
-
+    <footer>
+        <div class="container footer_container">
+          <div class="footer_1">
+            <a href="index.html" class="footer_logo"><h4>PSATIR</h4></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              facere consequatur nemo, quidem sapiente ipsam.
+            </p>
+          </div>
+  
+          <div class="footer_2">
+            <h4>Permalink</h4>
+            <ul class="permalink">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer_3">
+            <h4>Primacy</h4>
+            <ul class="privacy">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and condition</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer_4">
+            <h4>Contact Us</h4>
+            <div>
+              <p>09887653</p>
+              <p>iwajdoaoa@gmail.com</p>
+            </div>
+  
+            <ul class="footer_socials">
+              <li>
+                <a href="#"><i class="uil uil-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_copyright">
+          <small>Copyright &copy; PSATIR </small>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper('.mySwiper', {
+          slidesPerView: 2.5,
+          slidesPerColumn: 2,
+          spaceBetween: 25,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      </script>
     <script src="main.js"></script>
 </body>
 </html>
