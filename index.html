@@ -166,13 +166,13 @@
 
     <!-- TESTIMONIAL SECTION -->
 
-    <div class="testimonial-section">
+    <div class="testimonial-section mySwiper">
       <div class="testimonial-title">
         <h1>Testimonial</h1>
         <p>Berbagai review positif dari para pelanggan kami</p>
       </div>
-      <div class="testimonial-swipper">
-        <article class="testimonial">
+      <div class="testimonial-container swiper-wrapper">
+        <article class="testimonial swiper-slide">
           <div class="testimonial-avatar">
             <img src="./img/testi1person.svg" />
           </div>
@@ -184,13 +184,13 @@
               doloremque recusandae aspernatur laboriosam, dolores nam
               architecto. Fuga."
             </p>
-            <h5>John Dee 32, Bromo</h5>
+            <p><strong>John Dee 32, Bromo</strong></p>
           </div>
         </article>
 
-        <article class="testimonial">
+        <article class="testimonial swiper-slide">
           <div class="testimonial-avatar">
-            <img src="./img/testi1person.svg" />
+            <img src="./img/testi2person.svg" />
           </div>
           <div class="testimonial-body">
             <img src="./img/img-rate.svg" alt="rating" />
@@ -200,11 +200,11 @@
               doloremque recusandae aspernatur laboriosam, dolores nam
               architecto. Fuga."
             </p>
-            <h5>John Dee 32, Bromo</h5>
+            <p><strong>John Dee 32, Bromo</strong></p>
           </div>
         </article>
 
-        <article class="testimonial">
+        <article class="testimonial swiper-slide">
           <div class="testimonial-avatar">
             <img src="./img/testi1person.svg" />
           </div>
@@ -216,10 +216,43 @@
               doloremque recusandae aspernatur laboriosam, dolores nam
               architecto. Fuga."
             </p>
-            <h5>John Dee 32, Bromo</h5>
+            <p><strong>John Dee 32, Bromo</strong></p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="testimonial-avatar">
+            <img src="./img/testi1person.svg" />
+          </div>
+          <div class="testimonial-body">
+            <img src="./img/img-rate.svg" alt="rating" />
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, atque expedita libero dolore ut ullam a consectetur
+              doloremque recusandae aspernatur laboriosam, dolores nam
+              architecto. Fuga."
+            </p>
+            <p><strong>John Dee 32, Bromo</strong></p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="testimonial-avatar">
+            <img src="./img/testi1person.svg" />
+          </div>
+          <div class="testimonial-body">
+            <img src="./img/img-rate.svg" alt="rating" />
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate, atque expedita libero dolore ut ullam a consectetur
+              doloremque recusandae aspernatur laboriosam, dolores nam
+              architecto. Fuga."
+            </p>
+            <p><strong>John Dee 32, Bromo</strong></p>
           </div>
         </article>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <!-- END of TESTIMONIAL SECTION -->
@@ -255,11 +288,11 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
               <button
-                class="accordion-button rounded"
+                class="accordion-button collapsed rounded"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseOne"
               >
                 Apa saja syarat yang dibutuhkan?
@@ -267,7 +300,7 @@
             </h2>
             <div
               id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-headingOne"
             >
               <div class="accordion-body">
@@ -435,6 +468,17 @@
     ></script>
 
     <!-- SWIPPER JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

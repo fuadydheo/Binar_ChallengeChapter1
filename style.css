@@ -235,6 +235,54 @@ img {
   margin: 1.4rem 0 1.5rem;
 }
 
+/*============ TESTIMONIAL SECTION ============*/
+
+.testimonial-section {
+  position: relative;
+  justify-content: space-around;
+  padding-bottom: 5rem;
+  margin: 0 3rem;
+  overflow-x: hidden;
+}
+
+.testimonial-title {
+  text-align: center;
+}
+
+.testimonial-title h1 {
+  font-weight: bolder;
+}
+
+.testimonial-title p {
+  margin: 4rem 0 6rem;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background: var(--color-bg2);
+  padding: 3rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.testimonial-avatar {
+  width: 5rem;
+  margin-top: 1rem;
+}
+
+.testimonial-body {
+  font-size: 0.65rem;
+}
+
+.testimonial-body p {
+  margin: 0.4rem 0 0;
+}
+
+.testimonial-body img {
+  width: 5rem;
+}
+
 /*============ GETTING STARTED SECTION ============*/
 
 .getting_started-section {
