@@ -226,3 +226,40 @@ header {
   border-top-left-radius: 30%;
   margin-top: -15rem;
 }
+/* =============== END HEADER =========== */
+
+/* =============== SERVICE SECTION ============ */
+.services__section {
+  background: var(--color-white);
+}
+
+.service__container {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  padding-left: 5rem;
+  gap: 5rem;
+}
+
+.service__right h1 {
+  padding-top: 2rem;
+  line-height: 3rem;
+  color: var(--color-black);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service__right p {
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.service__list {
+  color: var(--color-black);
+}
+
+.service__list ul li {
+  list-style-image: url("./image/check-circle.svg");
+  list-style-position: inside;
+}
+
+/* ============== END SERVICE SECTION ============= */
