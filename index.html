@@ -12,14 +12,14 @@
     <!-- ICONSCOUT CDN -->
      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
  
-     <!-- GOOGLE FONTS (MONTSERRAT)-->
+    <!-- GOOGLE FONTS (MONTSERRAT)-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
      
-      <!-- SWIPER JS -->
+    <!-- SWIPER JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
+    <script src="./main.js"></script>
 
 </head>
 <body>
@@ -121,5 +121,109 @@
             </div>
         </div>
     </section>
+
+    <!--========================= END OUR SERVICES =============================== -->
+    
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <p>Berbagai review positif dari pelanggan kami</p>
+        <div class="container testimonial__container mySwiper">
+            <div class="swiper-wrapper">
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial_left">
+                        <img src="./image/al.jpg">
+                    </div>
+                    <div class="testimonial_right">
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star"></span>
+                        <span class="uil uil-star"></span>
+                        <span class="uil uil-star"></span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quae dolore, nisi rerum natus aperiam sapiente delectus maiores hic iure, dolorem perspiciatis quod optio aliquid ullam pariatur dolor! Maxime, hic!
+                        </p>
+                        <small><b>Al Ghazali</b></small>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial_left">
+                        <img src="./image/agnes.jpg">
+                    </div>
+                    <div class="testimonial_right">
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star"></span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quae dolore, nisi rerum natus aperiam sapiente delectus maiores hic iure, dolorem perspiciatis quod optio aliquid ullam pariatur dolor! Maxime, hic!
+                        </p>
+                        <small><b>Agnes Mo</b></small>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial_left">
+                        <img src="./image/pevita.jpg">
+                    </div>
+                    <div class="testimonial_right">
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quae dolore, nisi rerum natus aperiam sapiente delectus maiores hic iure, dolorem perspiciatis quod optio aliquid ullam pariatur dolor! Maxime, hic!
+                        </p>
+                        <small><b>Pevita Pearce</b></small>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="testimonial_left">
+                        <img src="./image/rizky.jpg">
+                    </div>
+                    <div class="testimonial_right">
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star checked"></span>
+                        <span class="uil uil-star"></span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quae dolore, nisi rerum natus aperiam sapiente delectus maiores hic iure, dolorem perspiciatis quod optio aliquid ullam pariatur dolor! Maxime, hic!
+                        </p>
+                        <small><b>Rizky Nazar</b></small>
+                    </div>
+                </article>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--========================= END OFF TESTIMONIAL=============================== -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 20,
+          hashNavigation: {
+            watchState: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
