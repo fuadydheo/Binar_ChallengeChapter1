@@ -1,7 +1,7 @@
 *{
     margin: 0;
-    border: 0;
     padding: 0;
+    border: 0;
     outline: 0;
     text-decoration: none;
     list-style: none;
@@ -10,7 +10,9 @@
 
 :root{
     --color-white: #fff;
-    --color-bg: #CFD4ED;
+    --color-green: #5CB85F;
+    --color-black:#0000;
+    --color-bg:#CFD4ED;;
     --color-bg1:#0D28A6;
     --color-bg2: #424890;
 
@@ -71,16 +73,17 @@ img{
 
 .btn{
     display: inline-block;
+    width: fit-content;
     font-size: 1rem;
-    padding: 5px 10px;
+    padding: 0.8rem 1.6rem;
     font-weight: 600;
     border-radius: 2px;
-    background-color: green;
-    transition: var(--transition);
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 .btn-primary{
-    background: green;
+    background: var(--color-green);
     color: var(--color-white);
 }
 
@@ -108,10 +111,8 @@ nav{
     gap: 2rem;
 }
 
-.nav-menu a{
-    color: black;
+nav a{
     font-size: 0.9rem;
-    transition: var(--transition);
 }
 
 /* =============== HEADER ============ */
@@ -120,24 +121,76 @@ header{
     background: var(--color-bg);
     top: 5rem;
     overflow: hidden;
-    height: 50vh;
-    margin-bottom: 5rem;
+    height: 60vh;
 }
 
 .header-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     align-items: center;
     gap: 5rem;
     height: 100%;
 }
 
-.header-left p{
-    margin: 1rem 0 2.4rem;
+.header-right{
+    position: relative;
+    top: 2rem;
+    left: 5rem;
+    height: 100%;
+}
+
+.header-right-bg{
+    width: 70rem;
+    height: 70rem;
+    background: var(--color-bg1);
+    border-radius: 7rem;
+    position: absolute;
+    top: 7rem;
+    left: -1rem;
 }
 
 .header-right-image{
-    background: var(--color-bg1);
-    border-radius: 4rem;
+    position: absolute;
+    z-index: 1;
+}
+
+/* ====================== OUR SERVICE =================== */
+
+.our-service{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.our-service-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40% 60%;
+    margin-top: 6rem;
+    gap: 5rem;
+    height: 100%;
+}
+
+.our-service-left-image{
+    position: relative;
+    top: 3rem;
+}
+
+.our-service-right p{
+    margin-top: 1rem;
+}
+
+.our-service-pelayanan{
+    margin-top: 1rem ;
+}
+
+.our-service-lambang{
+    float: left;
+    margin-right: 1rem;
+}
+
+.our-service-left{
+    position: relative;
+    height: 100%;
 }
 
