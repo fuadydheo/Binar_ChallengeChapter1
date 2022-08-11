@@ -83,13 +83,20 @@ img {
     padding: 0.5rem 0.75rem;
     border: 1px solid transparent;
     border-radius: 2px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
     transition: var(--transition);
 }
 
 .btn:hover {
     color: var(--color-black);
+    /* color: var(--color-white); */
     background: transparent;
     border-color: var(--bg-darkblue05);
+}
+
+.btn-light:hover {
+    background: var(--bg-header);
+    color: var(--color-black);
 }
 
 .container {
@@ -98,6 +105,11 @@ img {
 }
 
 /* ================== Navbar ================== */
+.window-scroll {
+    background: var(--color-white);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 nav {
     background: transparent;
     width: 100vw;
@@ -240,11 +252,12 @@ header img {
 .whyus__card {
     border: 1px solid var(--color-neutral02);
     padding: 1.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
     border-radius: 0.5rem;
 }
 
-.whyus__card>img h4 {
-    padding-bottom: 1rem;
+.whyus__card h4 {
+    padding: 1rem 0;
 }
 
 .whyus__card p {
@@ -255,13 +268,14 @@ header img {
 /* ================== Testimonials ================== */
 .testimonials {
     background: var(--color-white);
-    padding: 5rem;
+    padding: 5rem 0;
+    position: relative;
 }
 
 .testimonials__container {
     overflow-x: hidden;
-    position: relative;
-    margin-bottom: 5rem;
+    /* padding: 5rem 0; */
+    /* border: 2px solid black; */
 }
 
 .testimonials__container>h3 {
@@ -272,7 +286,7 @@ header img {
 .testimonials__container>p {
     text-align: center;
     margin-bottom: 2.5rem;
-}
+} 
 
 .testimonial {
     padding: 3rem;
@@ -283,24 +297,33 @@ header img {
     position: relative;
 }
 
+.testimonial__info>p {
+    padding: 1.5rem 0;
+}
+
 .avatar {
     display: flex;
     align-items: center;
 }
 
+
 /* ================== CTA Banner ================== */
 .banner {
     background: var(--color-white);
-    height: 70vh;
+    height: 80vh;
     width: 100vw;
-    padding: 4rem 0;
+    /* height: 100vh; */
+    padding: 5rem 0;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .banner__container {
     background: var(--bg-darkblue04);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
     border-radius: 13px;
-    padding: 4rem 15rem;
+    padding: 5rem 15rem;
 }
 
 .banner__container h3 {
@@ -315,7 +338,7 @@ header img {
 /* ================== faqs ================== */
 .faqs {
     background: var(--color-white);
-    padding-top: 5rem;
+    padding: 5rem 0;
 }
 
 .faqs__container {
@@ -324,10 +347,13 @@ header img {
     gap: 1rem;
 }
 
+.faqs__left h3 {
+    margin-bottom: 1rem;
+}
+
 .faq {
     padding: 1.5rem;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     gap: 1.4rem;
     height: fit-content;
@@ -337,8 +363,7 @@ header img {
 
 .faq h4 {
     font-size: 1rem;
-    /* line-height: 2.2; */
-    
+    font-weight: 400;
 }
 
 .faq__icon {
@@ -359,7 +384,7 @@ header img {
 /* ================== footer ================== */
 footer {
     background: var(--color-white);
-    /* background: red; */
+    /* background: salmon; */
     padding-top: 5rem;
     font-size: 0.9rem;
     line-height: 1.25rem;
@@ -367,8 +392,19 @@ footer {
 
 .footer__container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 40% 50%;
+    gap: 1.5rem;
+}
+
+.footer__group1 {
+    display: grid;
+    grid-template-columns: 60% 40%;
     gap: 3rem;
+}
+
+.footer__group2 {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__1 p {
@@ -376,24 +412,166 @@ footer {
     vertical-align: top;
 }
 
-.footer__2 p {
-    padding-left: 4rem;
-    margin: 0 0 2rem;
+footer ul li a {
+    padding-right: 2rem;
+}
+
+footer ul li {
+    margin-bottom: 2rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
 }
 
 .footer__3 p {
     margin: 0 0 2rem;
 }
 
-.footer__3-social {
+.footer__3-social ul {
     display: flex;
-    justify-content: space-between;
-}
-
-.footer__4 {
-    padding-left: 5rem;
+    gap: 1rem;
 }
 
 .footer__4 p {
     margin: 0 0 2rem;
+}
+
+/* ************************ Media quaries (tablets) ************************ */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    /* ************************ Header ****************** */
+    header {
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .header__container {
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+
+    /* ************************ Services ****************** */
+    .services {
+        height: auto;
+    }
+
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 5rem 0;
+    }
+
+    /* ************************ why us ****************** */
+    .whyus {
+        height: auto;
+    }
+
+    .whyus__allcard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ************************ Testimonial ****************** */
+
+    /* ************************ Banner ****************** */
+    .banner {
+        height: auto;
+    }
+
+    .banner__container {
+        padding: 3rem;
+    }
+
+    /* ************************ FAQ ****************** */
+    .faqs {
+        height: auto;
+    }
+
+    .faqs__container {
+        grid-template-columns: 1fr;
+    }
+    /* ************************ Footer ****************** */
+    footer {
+        height: auto;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ************************ Media quaries (phones) ************************ */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* ************************ Header ****************** */
+    header {
+        height: 100vh;
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+    }
+
+    .header__left {
+        margin-bottom: 2rem;
+    }
+
+    .header__right-image {
+        position: static;
+    }
+    
+    /* ************************ Services ****************** */
+    .services .img>img {
+        width: 100%;
+    }
+
+    /* ************************ why us ****************** */
+    .whyus__allcard {
+        grid-template-columns: 1fr;
+    }
+
+    /* ************************ Testimonials ****************** */
+    .testimonial {
+        grid-template-columns: 1fr;
+    }
+
+    .avatar {
+        padding-bottom: 2rem;
+        margin: 0 auto;
+    }
+
+    .testimonial__info>img {
+        margin: 0 auto;
+    }
+
+    /* ************************ Services ****************** */
+    .faqs__left {
+        text-align: center;
+    }
+
+    /* ************************ Footer ****************** */
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__group1 {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer__group2 {
+        display: block;
+        gap: 0;
+        padding: 0 0 5rem;
+    }
 }
