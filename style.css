@@ -238,9 +238,8 @@ img {
 /*============ GETTING STARTED SECTION ============*/
 
 .getting_started-section {
-  margin: 0 auto;
+  margin: 7rem auto;
   width: var(--container-width-lg);
-  padding-bottom: 5rem;
 }
 
 .getting_started-container {
@@ -252,8 +251,7 @@ img {
 }
 
 .getting_started-container p {
-  font-size: 0.75rem;
-  font-weight: lighter;
+  font-size: 0.7rem;
   margin: 1.5rem 12rem 3rem;
 }
 
@@ -266,3 +264,39 @@ img {
   background: transparent;
   border: 1px solid var(--color-white);
 }
+
+/*============ FAQ SECTION ============*/
+
+.faq-section {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 3rem;
+}
+
+.faq-left h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.faq-left p {
+  font-size: 0.8rem;
+}
+
+.faq-right {
+  padding-right: 3rem;
+}
+
+.accordion-item {
+  margin: 2rem 0;
+}
+
+.accordion-item:nth-child(1) {
+  margin: 0;
+}
+
+
+
+
