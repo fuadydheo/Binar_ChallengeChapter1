@@ -127,7 +127,7 @@
   .nav__menu {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
   .nav__menu a {
@@ -145,6 +145,7 @@
     background-color: var(--color-success);
     color: var(--color-white);
     border-radius: 5px;
+    margin-right: 1rem;
   }
   
   .nav__menu a.active:hover {
@@ -275,6 +276,7 @@
   
   /* ======== Getting started ========== */
   .gettingstarted-section {
+    display: inline-block;
     padding-top: 5rem;
     padding-left: 10rem;
     padding-right: 10rem;
@@ -351,15 +353,18 @@
   }
 
   .footer__container {
-      display: grid;
+      /* display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 5rem;
+      gap: 5rem;  */
+      display: flex; 
+      justify-content: space-between;
       padding-left: 6%;
       padding-right: 6%;
   }
 
   .footer__1 p {
-      margin: 0 0 1rem;
+      padding: 0 0 1rem;
+      
   }
 
   .footer__2 ul li {
@@ -389,6 +394,10 @@
 
   .footer__3 .footer__socials li {
     color: var(--color-white);
+  }
+
+  .footer__4 p {
+    margin-bottom: 1rem;
   }
 
   .footer__copyright {
