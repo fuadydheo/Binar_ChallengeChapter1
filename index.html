@@ -112,11 +112,10 @@
     </section>
     <!--End of WhyUs-->
 
-    <section class="testimonials" id="testimonials" >
-        <h3>Testimonial</h3>
-        <p style="text-align:center;">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-        <div class="container testimonial__container mySwiper">
-
+    <section class="testimonials" id="testimonials">
+        <div class="container testimonials__container mySwiper">
+            <h3>Testimonial</h3>
+            <p style="text-align:center;">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
             <div class="swiper-wrapper"> 
                 <article class="testimonial swiper-slide">
                     <div class="testi__left">
@@ -134,7 +133,7 @@
                         <small>Ayu, Student</small>
                     </div>
                 </article>
-
+    
                 <article class="testimonial swiper-slide">
                     <div class="testi__left">
                         <img src="./images/avatar2.png">
@@ -151,7 +150,7 @@
                         <small>Ayu, Student</small>
                     </div>
                 </article>
-
+    
                 <article class="testimonial swiper-slide">
                     <div class="testi__left">
                         <img src="./images/avatar3.jpg">
@@ -168,7 +167,7 @@
                         <small>Ayu, Student</small>
                     </div>
                 </article>
-
+    
                 <article class="testimonial swiper-slide">
                     <div class="testi__left">
                         <img src="./images/avatar4.jpg">
@@ -186,6 +185,7 @@
                     </div>
                 </article>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <!-- End Of Testimonials-->
@@ -319,7 +319,7 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 1,
-          spaceBetween: 30,
+          spaceBetween: 15,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
