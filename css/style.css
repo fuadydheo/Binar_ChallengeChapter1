@@ -249,3 +249,37 @@ header {
     margin-bottom: 0;
 }
 /* ==================== END WHY US ==================== */
+
+/* ==================== TESTIMONIALS ==================== */
+.testimonials {
+    margin-top: 4rem;
+}
+
+.testimonials__container > p, 
+.testimonials__container > h2 {
+    text-align: center;
+}
+.testomonial__card {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--color-lightblue);
+    border-radius: 0.8rem;
+}
+
+.testimoni__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating__stars {
+    color: orange;
+}
+
+.testimoni__left img {
+    width: 50%;
+    height: auto;
+}
+/* ==================== END TESTIMONIALS ==================== */
