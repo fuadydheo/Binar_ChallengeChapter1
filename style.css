@@ -16,6 +16,7 @@
     --color-red: #FA2C5A;
     --color-warning: #F9CC00;
     --color-neutral: #D0D0D0;
+    --color-icon: #CFD4ED;
 
     --color-bg: #F1F3FF;
     --color-bg2: #fff;
@@ -43,8 +44,9 @@ section{
     padding: 6rem 0;
 }
 
-section h2{
-    margin-bottom: 4rem;
+section h3{
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 h1, 
@@ -62,7 +64,7 @@ h2{
     font-size: 2rem;
 }
 h3{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 h4{
     font-size: 1.3rem;
@@ -213,6 +215,16 @@ header{
     margin: 1rem 0 1rem;
     gap: 1rem;
 }
+.ourservices__right li{
+    margin: 1rem 0 1rem;
+}
+.service__icon {
+    background: var(--color-icon);
+    width: 5rem;
+    height: 3rem;
+    margin: 1rem 0 1rem;
+    border-radius: 50%;
+}
 
 /*=========================WHYUS============================*/
 .whyus{
@@ -267,6 +279,42 @@ header{
     font-size: 0.85rem;
 }
 
+.testimonials{
+    background: var(--color-bg2);
+    position: relative;
+    height: 35rem;
+}
+
+.testimonials__container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+    padding: 5rem;
+}
+.testimonial{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background: var(--color-bg);
+    margin: 2rem;
+    height: 16rem;
+    border-radius: 1rem;
+}
+.testi__left{
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-self: center;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+.testi__right{
+    align-self: center;
+}
+.checked {
+    color: var(--color-warning);
+  }
+
 /*=========================ADVERTISE============================*/
 .advertise{
     background: var(--color-bg2);
@@ -319,7 +367,8 @@ header{
     margin-bottom: 1rem;
     
 }
-.faq__icon{
+.faq__icon i{
+    align-items: flex-end;
     align-self: flex-end;
     font-size: 1.2rem;
 }
@@ -341,7 +390,7 @@ header{
 /*=========================FOOTER============================*/
 footer{
     background: var(--color-bg1);
-    padding-top: 5rem;
+    padding: 5rem 0 3rem;
     font-size: 0.9rem;
 }
 .footer__container{
@@ -371,11 +420,4 @@ footer ul li a:hover{
     gap: 1rem;
     font-size: 1.2rem;
     margin-top: 2rem;
-}
-
-.footer__copyright{
-    text-align: center;
-    margin-top: 4rem;
-    padding: 1.2rem 0;
-    border-top: 1px solid var(--color-bg2);
 }
