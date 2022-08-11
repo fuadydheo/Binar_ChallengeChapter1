@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
 
     <title>Challenge-01</title>
 </head>
@@ -16,8 +21,8 @@
         <div class="container nav-container">
             <a href="index.html"><h4>ChimeronZ</h4></a>
             <ul class="nav-menu">
-                <li><a href="#Our Service">Our Service</a></li>
-                <li><a href="#Why Us">Why Us</a></li>
+                <li><a href="#our-service">Our Service</a></li>
+                <li><a href="#whyus">Why Us</a></li>
                 <li><a href="#Testimonial">Testimonial</a></li>
                 <li><a href="#FAQ">FAQ</a></li>
                 <li><a href="#" class="btn btn-primary"> Register</a></li>
@@ -140,5 +145,130 @@
         </div>
     </div>
 </section>
+<!-- END OF WHY US -->
+
+<section class="container testimonials-container swiper mySwiper">
+    <h2>Testimonial</h2>
+    <p class="tengah">Berbagai review positif dari pelanggan kami</p>
+    <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar.svg">
+            </div>
+            <div class="testimonial-body">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores magni corporis? Numqua
+                    <div class="testimonial-info">
+                        <p><strong>John Dee 32, Bromo</strong></p>
+                    </div>
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar.svg">
+            </div>
+            <div class="testimonial-body">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores magni corporis? Numqua
+                    <div class="testimonial-info">
+                        <p><strong>John Dee 32, Bromo</strong></p>
+                    </div>
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar.svg">
+            </div>
+            <div class="testimonial-body">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores magni corporis? Numqua
+                    <div class="testimonial-info">
+                        <p><strong>John Dee 32, Bromo</strong></p>
+                    </div>
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar.svg">
+            </div>
+            <div class="testimonial-body">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores magni corporis? Numqua
+                    <div class="testimonial-info">
+                        <p><strong>John Dee 32, Bromo</strong></p>
+                    </div>
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/avatar.svg">
+            </div>
+            <div class="testimonial-body">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores magni corporis? Numqua
+                    <div class="testimonial-info">
+                        <p><strong>John Dee 32, Bromo</strong></p>
+                    </div>
+                </p>
+            </div>
+        </article>
+        </div>
+        <div class="swiper-pagination"></div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
 </body>
 </html>

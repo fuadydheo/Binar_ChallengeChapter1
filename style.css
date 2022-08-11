@@ -244,3 +244,44 @@ header{
 .why-us p{
     font-size: 0.85rem;
 }
+
+/* =======================TESTIMONIALS ===================== */
+
+.testimonials-container{
+    overflow-x: hidden;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+.swiper{
+    width: 600px;
+}
+
+.testimonial{
+    display: grid;
+    grid-template-columns: 20% 80%;  
+    gap: 2rem;
+    background: var(--color-bg);
+    padding: 3rem;
+    margin-right: 30rem;
+    border-radius: 10px;
+}
+
+.tengah{
+    text-align: center;
+    margin-top: -3rem;
+    margin-bottom: 5rem;
+}
+
+.avatar{
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    margin: 1rem auto 1rem;
+}
+
+.stars{
+    color: yellow;
+}
+
