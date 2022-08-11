@@ -154,7 +154,7 @@ nav button {
     border-radius: 5px;
 }
 
-/* ======================== NAVBAR ======================== */
+/* ======================== HEADER ======================== */
 .header_container {
     position: relative;
     top: 5rem;
@@ -190,8 +190,101 @@ nav button {
     height: 40vh;
     background: #0d28a6;
     border-top-left-radius: 80px;
-   margin-top: -13rem; /* bg maju keatas */
+    margin-top: -13rem; /* bg maju keatas */
 }
 
+/* ======================== SERVICE SECTION ======================== */
+.service-section {
+    position: relative;
+    top: 10rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
 
+.service-container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    height: 100%;
+}
 
+.service_left_image {
+    /* width: 60%; 
+    height: 60%; */
+    margin: 0 0 2rem 16rem; /*atas  kiri bawah kanan */
+    width: 374px;
+    height: 366px;
+}
+
+/* .service_lef_image2 {
+
+   display: inline-block;
+   
+  
+} */
+
+.service_right {
+    margin: 0 5rem 2.4rem 0;
+}
+
+.service_right h1 {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.service_right p {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 1rem 5rem 1rem 0;
+}
+
+.service_right_list li {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0.7rem;
+  }
+  
+  .btn-primary {
+    margin-top: 2rem;
+  }
+
+  /* ======================== WHY USE ======================== */
+  .whyuse-section {
+    padding-left: 6%;
+    padding-right: 6%;
+    color: var(--color-black);
+  }
+
+  .frame {
+    display: flex; /*icon sejajar*/
+    justify-content: space-between;
+  }
+
+  .frame_detail {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 23%; /*ukuran*/
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 0.5px; /*border garis*/
+    border-color: var(--color-black);
+  }
+
+  .frame_detail p {
+    padding-top: 0.5rem;
+  }
+
+  .frame_icon {
+    width: 32px; /*ukuran icon*/
+    margin-bottom: 1rem;
+  }
