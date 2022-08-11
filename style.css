@@ -153,7 +153,7 @@ nav button {
   background-color: var(--color-lime2);
   padding: 0.7rem 1rem;
   color: var(--color-white);
-  border-radius: 10%;
+  border-radius: 5%;
   font-weight: 600;
   transition: all 400ms ease-in-out;
 }
@@ -162,7 +162,7 @@ nav button {
   background: var(--color-primary1);
   border-color: var(--color-white);
   color: var(--color-white);
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .logo {
@@ -173,14 +173,14 @@ nav button {
 
 /* ============ END NAVBAR ========== */
 
-/* ============ HEADER ============*/
+/* ============ HEADER ============ */
 
 header {
   position: relative;
   top: 5rem;
   overflow: hidden;
   height: 70vh;
-  margin-bottom: 5rem;
+  margin-bottom: 2.3rem;
 }
 
 .header__container {
@@ -226,6 +226,7 @@ header {
   border-top-left-radius: 30%;
   margin-top: -15rem;
 }
+
 /* =============== END HEADER =========== */
 
 /* =============== SERVICE SECTION ============ */
@@ -263,6 +264,74 @@ header {
 }
 
 /* ============== END SERVICE SECTION ============= */
+
+/* ============== WHY US SECTION ================ */
+.whyus__section {
+  background: var(--color-white);
+}
+
+.whyus__section h3 {
+  padding-left: 5rem;
+  color: var(--color-black);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.whyus__section p#whyus_desc {
+  padding-left: 5rem;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+}
+
+.whyus__container {
+  padding: 0 5rem 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.whyus {
+  border: 1px solid var(--shadow-box);
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: 0.8rem;
+  transition: var(--transition);
+}
+
+.whyus:hover {
+  box-shadow: 0 1rem 2rem var(--shadow-box);
+}
+
+.whyus__icon {
+  font-size: 2rem;
+  background: var(--color-alert);
+  color: var(--color-white);
+  border-radius: 50%;
+  padding: 5px 5px;
+}
+
+.whyus h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-black);
+  padding: 1rem 0 1rem 0;
+}
+
+.whyus p {
+  color: var(--color-black);
+}
+
+.whyus:nth-child(2) .whyus__icon {
+  background: var(--color-danger);
+}
+
+.whyus:nth-child(3) .whyus__icon {
+  background: var(--color-primary2);
+}
+
+.whyus:nth-child(4) .whyus__icon {
+  background: var(--color-lime2);
+}
 
 /* ============== FOOTER ============= */
 footer {
