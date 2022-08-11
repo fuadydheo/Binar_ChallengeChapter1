@@ -11,14 +11,17 @@
   <link rel="stylesheet" href="main.css" />
   <!--Iconscout CDN-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- Swiper JS
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
 </head>
 
 <body>
   <nav>
     <div class="container">
-      <div class="main-section">
-        <div class="reactangle"></div>
-        <ul class="main-menu">
+      <div class="nav-section">
+        <div class="logo"></div>
+        <ul class="nav-menu">
           <li><a href="#">Our Services</a></li>
           <li><a href="#">Why Us</a></li>
           <li><a href="#">Testimonial</a></li>
@@ -28,11 +31,12 @@
       </div>
     </div>
   </nav>
+
   <!--======= End Of Navbar =======-->
 
   <header>
     <div class="container">
-      <div class="service-section">
+      <div class="main-section">
         <div class="header-left">
           <h1>
             Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
@@ -45,18 +49,61 @@
           <button><a href="#" class="btn btn-success">Mulai Sewa Mobil</a></button>
         </div>
         <div class="header-right">
-          <img src="img/img_car.png" alt="">    
+          <img src="img/img_car.png" alt="">
         </div>
       </div>
     </div>
   </header>
+  <!--======= End Of Main Section =======-->
 
-  <!--======= End Of Header =======-->
+  <section>
+    <div class="container">
+      <div class="service-section">
+        <div class="service-left">
+          <img src="img/img_service.png" alt="">
+        </div>
+        <div class="service-right">
+          <h2>Best Car Rental for any kind of trip in (Lokasimu)!</h2>
+          <p>
+            Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan
+            harga lebih murah dibandingkan yang lain, kondisi mobil baru,
+            serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,
+            wedding, meeting, dll.
+          </p>
+          <div class="list-service">
+            <article class="serve">
+              <span class="icon"><i class="uil uil-file-check"></i></span>
+              <p>Sewa Mobil Dengan Supir di Bali 12 Jam</p>
+            </article>
+            <article class="serve">
+              <span class="icon"><i class="uil uil-file-check"></i></span>
+              <p>Sewa Mobil Lepas Kunci di Bali 24 Jam</p>
+            </article>
+            <article class="serve">
+              <span class="icon"><i class="uil uil-file-check"></i></span>
+              <p>Sewa Mobil Jangka Panjang Bulanan</p>
+            </article>
+            <article class="serve">
+              <span class="icon"><i class="uil uil-file-check"></i></span>
+              <p>Gratis Antar - Jemput Mobil di Bandara</p>
+            </article>
+            <article class="serve">
+              <span class="icon"><i class="uil uil-file-check"></i></span>
+              <p>Layanan Airport Transfer / Drop In Out</p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--======= End Of Service Section =======-->
 
   <section>
     <div class="container">
       <div class="whyuse-section">
-        <h1>Why US</h1>
+        <h2>Why US</h2>
         <p>Mengapa harus pilih Binar Car Rental?</p>
       </div>
       <div class="reason-section">
@@ -67,17 +114,17 @@
             <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
           </article>
           <article class="reason">
-            <span class="reason-icon"><i class="uil uil-bitcoin"></i></span>
+            <span class="reason-icon"><i class="uil uil-tag"></i></span>
             <h5>Harga Murah</h5>
             <p>Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
           </article>
           <article class="reason">
-            <span class="reason-icon"><i class="uil uil-bitcoin"></i></span>
+            <span class="reason-icon"><i class="uil uil-clock"></i></span>
             <h5>Layanan 24 Jam</h5>
             <p>Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
           </article>
           <article class="reason">
-            <span class="reason-icon"><i class="uil uil-bitcoin"></i></span>
+            <span class="reason-icon"><i class="uil uil-award-alt"></i></span>
             <h5>Sopir Profesional</h5>
             <p>Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
           </article>
@@ -87,13 +134,32 @@
 
   <!--======= End Of Why Us =======-->
 
-  <section>
-    <div class="container">
-      <div class="testimonialsection">
-        <div class="review">
-          <h1>Testimonial</h1>
-          <p>Berbagai review positif dari para pelanggan kami</p>
-        </div>
+  <section class="container">
+    <div class="testimonial-section">
+      <h2>Testimonial</h2>
+      <p>Berbagai review positif dari para pelanggan kami</p>
+    </div>
+    <div class="review">
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+          <img src="img/review1.png" alt="">
+          <span>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <i class="uil uil-star"></i>
+            <p>
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod”
+            </p>
+            <h1 class="nama">
+              John Dee 32, Bromo
+            </h1>
+          </span>
+        </article>
       </div>
     </div>
   </section>
@@ -102,7 +168,7 @@
   <section>
     <div class="container">
       <div class="gettingstarted-section">
-        <h1>Sewa Mobil di (Lokasimu) Sekarang</h1>
+        <h2>Sewa Mobil di (Lokasimu) Sekarang</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -119,15 +185,15 @@
     <div class="container">
       <div class="faq-section">
         <div class="faq-left">
-          <h1>
+          <h2>
             Frequently Asked Question
-          </h1>
+          </h2>
           <p>
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, harum.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, harum.
           </p>
         </div>
         <div class="faq-right">
-          
+
         </div>
       </div>
     </div>
@@ -165,16 +231,41 @@
               <li>
                 <span class="social-icon"><i class="uil uil-envelope"></i></span>
               </li>
+              <li>
+                <span class="social-icon"><i class="uil uil-envelope"></i></span>
+              </li>
             </ul>
           </div>
         </div>
         <div class="copyright">
           <p>Copyright Binar 2022</p>
-          <div class="reactangle"></div>
+          <div class="logo"></div>
         </div>
       </div>
     </div>
   </footer>
+
+
+
+  <script src="main.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="Assets/Js/main.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // when window widht is >= 600px
+      breakpoints: {
+        600: {
+          slidesPerView: 1
+        }
+      }
+    }); -->
+  </script>
 </body>
 
 </html>

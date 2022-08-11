@@ -21,6 +21,8 @@
   --container-width-lg: 76%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
 }
 
 body {
@@ -39,11 +41,6 @@ section {
   padding: 6rem 0;
 }
 
-section h2 {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
 h1,
 h2,
 h3,
@@ -53,12 +50,16 @@ h5 {
 }
 
 h1 {
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 36px;
   line-height: 150%;
 }
 h2 {
-  font-size: 2rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
 }
 h3 {
   font-size: 1.6rem;
@@ -76,7 +77,6 @@ p {
   line-height: 20px;
 }
 img {
-  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -95,51 +95,66 @@ img {
   background: var(--color-success);
   color: var(--color-white);
 }
+.logo {
+  background: var(--color-primary);
+  width: 100px;
+  height: 34px;
+}
 /* ======================= NavBar ===================== */
 nav {
-  background: var(--color-bg);
+  background: transparent;
   width: 100vw;
   height: 6rem;
   position: fixed;
   padding: 24px 0 24px 0;
-  z-index: 11;
+  z-index: 1;
 }
-.main-section {
+.nav-section {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 6px 0 6px 0;
   /* margin: 24px 0 22px 0; */
 }
 
-.main-menu {
+.nav-menu {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.main-menu button a {
+.nav-menu button a {
   color: var(--color-white);
   padding: 8px 12px 8px 12px;
 }
 
-.main-menu a {
+.nav-menu a {
+  transition: var(--transition);
   color: var(--color-black);
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
 
-/* ======================= Header ===================== */
+.nav-menu a:hover {
+  color: var(--color-primary);
+}
+.window-scroll {
+  background: var(--color-bg);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* ======================= Header (main section) ===================== */
 header {
   background: var(--color-bg);
   position: relative;
   width: 100vw;
-  height: 32.25rem;
+  height: 37.25rem;
   overflow: hidden;
-  height: 50vh;
+  padding-top: 177px;
 }
 
-.service-section {
+.main-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -165,7 +180,7 @@ header {
 
 .header-right img {
   right: 0;
-  bottom: 0;;
+  bottom: 0;
   margin-top: 10px;
   position: absolute;
   width: 704px;
@@ -183,6 +198,58 @@ header {
   left: 736px;
   top: 261px;
   align-self: baseline;
+}
+
+/* ======================= Service ===================== */
+
+.service-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+  height: 100%;
+  margin: px 0 5rem 0;
+  margin-top: 37px;
+  padding: 0 100px 0 100px;
+}
+.service-left {
+  width: 100%;
+  height: 100%;
+}
+.service-left img {
+  width: 459px;
+  height: 428px;
+}
+.service-right {
+  width: 100%;
+  height: 100%;
+}
+.service-right p {
+  margin: 24px 0 18px 0;
+}
+
+.list-service {
+  display: flex;
+  flex-direction: column;
+}
+
+.serve {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  gap: 10px;
+  align-items: center;
+}
+
+.icon {
+  background: var(--color-bg);
+  border-radius: 4rem;
+}
+.icon i {
+  padding: 2px 2px 2px 3px;
+}
+.serve p {
+  margin: 0;
 }
 
 /* ======================= Why Us ===================== */
@@ -214,6 +281,7 @@ header {
   padding: 0.5rem;
   border-radius: 2rem;
   margin-bottom: 1rem;
+  color: var(--color-white);
 }
 
 .reason:nth-child(2) .reason-icon {
@@ -227,11 +295,26 @@ header {
 }
 
 /* ======================= Testimonial ===================== */
-
-.testimonialsection {
+.testimonial-section {
   text-align: center;
 }
 
+.testimonial {
+  display: grid;
+  grid-template-columns: 6.5% 94.5%;
+  gap: 46px;
+}
+
+.testimonial .nama {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font: bold;
+}
+
+/* .review h1{
+  margin-bottom: 18px;
+} */
 /* ======================= Getting Started ===================== */
 .gettingstarted-section {
   background: var(--color-primary);
@@ -269,15 +352,15 @@ header {
   gap: 5rem;
 }
 
-.faq-left h1 {
+/* .faq-left h1 {
   margin-bottom: 1rem;
-}
+} */
 
 /* ======================= Footer ===================== */
 .footer-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
+  gap: 86px;
 }
 .address p {
   margin: 0 0 1rem;
@@ -287,22 +370,21 @@ header {
 }
 .list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   font-size: 1.2rem;
   margin-top: 2rem;
   margin-bottom: 0.7rem;
 }
-
-.reactangle {
-  background: var(--color-primary);
-  width: 100px;
-  height: 34px;
-}
-.social-icon{
+.social-icon {
   background: var(--color-primary);
   padding: 0.5rem;
   border-radius: 2rem;
   margin-bottom: 1rem;
   color: var(--color-white);
+}
+.social-icon img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
 }
