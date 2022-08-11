@@ -53,8 +53,7 @@ section{
 }
 
 section h2{
-   text-align: center;
-   margin-bottom: 4rem;
+   margin-bottom: 1rem;
 }
 
 h1,
@@ -126,6 +125,12 @@ nav{
   z-index: 11;
 }
 
+.logo{
+   background: var(--color-db4);
+   width: 200px;
+   height: 58px;
+}
+
 /* =================== Change Navbar Styles on scroll using JS ===================*/
 .window-scroll{
    background: var(--color-primary);
@@ -183,10 +188,10 @@ header{
 }
 
 
-/* =================== ===================*/
+/* =================== OUR SERVICES ===================*/
 .our_services{
     position: relative;
-    height: 100vh;
+    height: 70vh;
     margin-top: 1rem;
 }
 
@@ -221,3 +226,54 @@ header{
     border-radius: 15px;
     padding: 3px 5px;
 }
+
+/* =================== Why Us ===================*/
+.why_us{
+   position: relative;
+   height: 70vh;
+   margin-top: 1rem;
+}
+
+.why-use p {
+   width: 468px;
+   height: 20px;
+   left: 136px;
+   top: 1184px;
+   margin-bottom: 2rem;
+ }
+ 
+ .list-desc {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2rem;
+ }
+
+ .desc-icon {
+   line-height: 2rem;
+   padding: 24px;
+   border-radius: 8px;
+   border: 1px solid var(--color-abu);
+ }
+ .desc-icon h5 {
+   padding: 15px 0 15px 0;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+ }
+ .icon-items {
+   background: var(--color-a2);
+   padding: 0.5rem;
+   border-radius: 2rem;
+   margin-bottom: 1rem;
+   color: var(--color-white);
+ }
+ 
+ .desc-icon:nth-child(2) .icon-items {
+   background: var(--color-a3);
+ }
+ .desc-icon:nth-child(3) .icon-items {
+   background: var(--color-db4);
+ }
+ .desc-icon:nth-child(4) .icon-items {
+   background: var(--color-a1);
+ }
