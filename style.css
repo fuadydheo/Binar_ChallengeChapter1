@@ -19,6 +19,7 @@
   --color-white: #fff;
   --color-bg: #f1f3ff;
   --color-bg2: #cfd4ed;
+  --color-bghvr: #2A0944;
 
   --container-width-lg: 80%;
   --container-width-md: 90%;
@@ -217,5 +218,32 @@ img {
 }
 
 .why_us h5 {
-    margin: 1rem 0 1.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+/*============ GETTING STARTED SECTION ============*/
+
+.getting_started-section {
+  margin: 0 auto;
+  width: var(--container-width-lg);
+  padding-bottom: 5rem;
+}
+
+.getting_started-container {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 0.8rem;
+  padding: 3rem 12rem;
+  text-align: center;
+}
+
+.getting_started-container p {
+  font-size: 0.6rem;
+  padding: 1rem 12rem 2rem;
+}
+
+.getting_started-container > .btn:hover {
+  color: var(--color-white);
+  background: transparent;
+  border: 1px solid var(--color-white);
 }
