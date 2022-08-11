@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- Iconscout -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4856028e6f.js" crossorigin="anonymous"></script>
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- Navbar -->
@@ -50,7 +50,6 @@
         </div>
         <div class="header_right">
             <img src="img/mobil.svg" alt="Mercedes">
-            <div class="bg_mobil"></div>
         </div>
     </div>
     <!-- End -->
@@ -108,96 +107,222 @@
     <!-- End -->
 
     <!-- Testimonial -->
-    <div class="testimonial-section mySwiper">
-        <h3>Testimonial</h3>
+    <div class="swiper mySwiper">
+        <h3 class="testimonial_title">Testimonial</h3>
         <p class="desc">Berbagai review positif dari para pelanggan kami</p>
-        <div class="testimonial-container">
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="img/avatar1.svg">
-                </div>
-                <div class="testimonial_info">
-                    <div class="rating">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
+        <div class="testimonial-container swiper-wrapper">
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
                     </div>
-                    <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                    <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                  </div>
                 </div>
-            </article>
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="img/avatar1.svg">
-                </div>
-                <div class="testimonial_info">
-                    <div class="rating">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
+            </div>
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
                     </div>
-                    <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                    <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                  </div>
                 </div>
-            </article>
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="img/avatar1.svg">
-                </div>
-                <div class="testimonial_info">
-                    <div class="rating">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
+            </div>
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
                     </div>
-                    <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                    <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                  </div>
                 </div>
-            </article>
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="img/avatar1.svg">
-                </div>
-                <div class="testimonial_info">
-                    <div class="rating">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
+            </div>
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
                     </div>
-                    <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                    <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                  </div>
                 </div>
-            </article>
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="img/avatar1.svg">
-                </div>
-                <div class="testimonial_info">
-                    <div class="rating">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
-                        <img src="img/star.svg">
+            </div>
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
                     </div>
-                    <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                    <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                  </div>
                 </div>
-            </article>
+            </div>
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card mb-3 swiper-slide p-3" style="max-width: 650px; background: #F1F3FF;">
+                <div class="row g-2">
+                  <div class="col-md-3">
+                    <img src="img/avatar1.svg" class="img-fluid rounded-start avatar" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="rating">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                            <img src="img/star.svg">
+                        </div>
+                        <p class="content">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+                      <p class="author"><strong>Clara fauna 33, Bogor</strong></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
+        <div class="swiper-pagination"></div>
     </div>
     <!-- End -->
 
@@ -218,19 +343,19 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         </div>
         <div class="faqs-right">
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionExample" style="width: 700px;">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button front" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         Apa saja syarat yang dibutuhkan?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum sequi dignissimos laudantium, incidunt consectetur nisi temporibus. Inventore iure repellendus expedita voluptas corporis! Corporis perferendis veniam sapiente, id molestias nesciunt?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum sequi dignissimos laudantium, incidunt consectetur nisi temporibus. Inventore iure repellendus expedita voluptas corporis! Corporis perferendis veniam sapiente, id molestias nesciunt?
+                      </div>
                     </div>
                   </div>
-                </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -328,7 +453,7 @@
                 </ul>
             </div>
 
-            <div class="footer_copyright">
+            <div>
                 <small>Copyright &copy; Binar 2022</small>
                 <div class="logo" style="margin-top: 1rem;">
                     <a href="index.html"></a>
@@ -342,22 +467,22 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          //when window width is >= 600px
-          breakpoints:{
-            600: {
-                slidesPerView: 2,
-            }
-          }
-        });
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
+    <script src="main.js"></script>
 </body>
 </html>
