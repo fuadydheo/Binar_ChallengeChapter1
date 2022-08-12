@@ -359,102 +359,145 @@ nav button {
 }
 
 .getting-heading {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .container {
     color: var(--color-bg);
-    font-family: Helvetica;
+    font-family: "Helveticasa";
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
-.btn-primary-two {
+.btn-primary {
     background: var(--color-primary2);
     color: var(--color-white);
 }
 
   /* ======================== FAQs ======================== */
-  .faq-section {
+.faq-section {
     position: relative;
     margin-top: 3rem;
-    margin-left: 3.3rem;
     height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--color-white);
     gap: 5rem;
-    display: flex;
-  }
+}  
 
-  .faq_left {
+.faq_left {
     margin: 1.2rem 0.5rem;
     margin-left: 5rem;
-  }
-  
-  #accordion {
-    margin: 100px auto;
-    width: 600px;
-    margin-top: -1rem;
+}
 
-  }
+.faq_right {
+    margin: 1.2rem 0.5rem;
+    margin-right: 5rem;
+}
 
-  #accordion li {
-    list-style: none;
-    width: 70%;
-    margin-bottom: 4px;
-    background: var(--color-white);
-    padding: 2px;
-    border-radius: 5px;
-   
-  }
-
-  #accordion li label {
-    padding: 10px;
+.accordion {
+    width: 100%;
+    border: 1px solid #d4d4d4;
+    padding: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 11px;
-    font-weight: 500;
+    margin: 1rem;
+    height: fit-content;
+    background: var(--color-primary);
     cursor: pointer;
+    border-radius: 4px;
     border-width: 0.5px; /*border garis*/
     border-color: var(--color-black);
-  }
+}
 
-  #accordion li label span {
+.active,
+.accordion:hover {
+    background: #ccc;
+}
+
+.panel {
+    background: #ccc;
+    display: none;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+.accordion span {
+    margin-left: auto;
     transform: rotate(90deg);
-    font-size: 16px;
+    font-size: 14px;
     color: #333;
   }
 
-  #accordion p {
-    font-size: 12px;
+ 
+
+/* ======================== FOOTER ======================== */
+footer {
+    background: var(--color-white);
+    padding: 5rem;
+    margin-top: 5rem;
   }
-
-#accordion label + input[type="radio"] {
-    display: none;
-}
-
-#accordion .content{
-    padding: 0 10px;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;    
-}
-
-#accordion label + input[type="radio"]:checked + .content {
-    max-height: 400px;
-}
-
-.accordion_detail {
-    margin-top: 0.5rem;
-    padding: 1rem;
-    width: 10%; /*ukuran*/
-    border-style: solid;
-    border-radius: 8px;
-    border-width: 0.5px; /*border garis*/
-    border-color: var(--color-black);
-}
+  
+  .footer_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    text-align: left;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-size: 14px;
+    color: var(--color-black);
+  }
+  
+  .footer_container > div h4 {
+    margin-bottom: 1.2rem;
+  }
+  
+  .footer_1 {
+    margin: 0 0 2rem;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer_1 p {
+    margin: 0 0 1rem;
+  }
+  
+  .footer_2 {
+    margin: 0 0 2rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .footer_2 ul li {
+    margin-bottom: 0.7rem;
+  }
+  
+  .footer_2 ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer_social {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-top: 0.75rem;
+  }
+  
+  .social_icon {
+    color: var(--color-white);
+    background: var(--color-primary1);
+    border-radius: 50%;
+  }
+  
+  footer ul li a {
+    color: var(--color-black);
+  }
+  
+  .logo {
+    margin-top: 0.75rem;
+  }
+  
