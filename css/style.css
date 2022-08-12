@@ -479,3 +479,76 @@ header {
     }
     /* END FOOTER */
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin: 0;
+    }
+
+    .header__left {
+        width: 80%;
+        margin: auto;
+    }
+
+    .header__right img {
+        display: none;
+    }
+    
+    .header__right-background {
+        display: none;
+    }
+    /* END OF HEADER */
+
+    /* FEATURES */
+    .features__container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .features__right > h2,
+    .features__right > p {
+        text-align: center;
+    }
+    /* END FEATURES */
+
+    /* WHY US */
+    .reasons__list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* END WHY US */
+
+    /* TESTIMONIAL */
+    .testomonial__card {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+    /* END TESTIMONIAL */
+
+    /* ORDER NOW */
+    .ordernow__container > p {
+        width: 100%;
+    }
+    /* END ORDER NOW */
+
+    /* FOOTER */
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+    /* END FOOTER */
+}
