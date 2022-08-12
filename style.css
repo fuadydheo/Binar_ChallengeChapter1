@@ -155,7 +155,7 @@ img {
 }
 
 .header-left {
-  margin-left: 10rem;
+  margin-left: 9.5rem;
   font-size: 1.1rem;
   padding-bottom: 6.5rem;
 }
@@ -195,18 +195,18 @@ img {
 /*============ OUR SERVICE SECTION ============*/
 
 .our_service-section {
-  margin: 0 auto;
-  padding: 10rem 5rem;
+  margin: 0 10rem;
+  padding: 10rem 0;
 }
 
 .our_service-container {
   display: grid;
   grid-template-columns: 40% 60%;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .our_service-left {
-  width: 28rem;
+  width: 25rem;
 }
 
 .our_service-right h1 {
@@ -448,7 +448,6 @@ footer {
   color: var(--color-primary);
 }
 
-
 .footer_4 img {
   padding-top: 1rem;
   width: 6rem;
@@ -468,35 +467,39 @@ footer {
 
   /* Main Section -Header */
   .container_header {
-    height: 19.5rem;
+    padding: 0;
+    height: 18rem;
   }
 
   .header-left {
-    margin-left: 3.5rem;
+    padding-top: 4rem;
+    margin-left: 2.5rem;
   }
 
   .header-left h1 {
-    font-size: 1rem;
-    line-height: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 
   .header-left p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    margin: 1.5rem 0;
   }
 
   .header-right {
-    margin-top: -7rem;
+    margin-top: -6.5rem;
   }
 
   .header-right .background_img {
-    margin-top: -11rem;
-    height: 13rem;
+    margin-top: -11.1rem;
+    height: 12rem;
   }
 
   /* Our Service Section */
 
   .our_service-section {
-    padding: 5rem;
+    margin: 0;
+    padding: 6rem 5rem;
   }
 
   .our_service-left {
@@ -521,6 +524,11 @@ footer {
 
   .why_us-section {
     width: var(--container-width-md);
+    font-size: 1rem;
+  }
+
+  .why_us-top h1 {
+    font-size: 2.2rem;
   }
 
   .why_us-bottom {
@@ -571,37 +579,28 @@ footer {
   }
 
   .faq-left h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .faq-left p {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 
   /* Footer Section */
 
-  .footer_container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
-    gap: 3rem;
-    font-size: 1rem;
+  footer {
+    width: var(--container-width-md);
   }
 
-  .permalinks {
-    padding-left: 0;
+  .footer_container {
+    gap: 3rem;
+    font-size: 0.7rem;
+    margin: 0;
   }
 
   .footer_social {
-    justify-content: center;
-    font-size: 2rem;
-    gap: 2rem;
-  }
-
-  .footer_4 img {
-    margin: 0 auto;
-    width: 15rem;
+    font-size: 1rem;
+    gap: 0.5rem;
   }
 }
 
@@ -630,20 +629,23 @@ footer {
   .container_header {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 40rem;
   }
 
   .header-left {
-    margin: -2rem 0 0 1.5rem;
+    width: var(--container-width-sm);
+    margin: 0 auto;
     padding-bottom: 0;
   }
 
   .header-left h1 {
-    font-size: 3.5rem;
-    line-height: 5rem;
+    width: var(--container-width-sm);
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 
   .header-left p {
+    width: var(--container-width-sm);
     font-size: 1rem;
   }
 
@@ -652,7 +654,7 @@ footer {
   }
 
   .header-right .background_img {
-    height: 9rem;
+    height: 12rem;
     padding-left: 1rem;
   }
 
@@ -668,6 +670,7 @@ footer {
     flex-direction: column;
     width: var(--container-width-sm);
     margin: 0 auto;
+    padding-top: 4rem;
   }
 
   .our_service-left {
@@ -676,19 +679,20 @@ footer {
   }
 
   .our_service-right h1 {
+    padding-top: 3rem;
     font-size: 2.5rem;
-    line-height: 4rem;
+    line-height: 3rem;
   }
 
   .our_service-right p {
-    font-size: 1.4rem;
-    margin: 1.5rem 0;
-    line-height: 2rem;
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+    line-height: 1.3rem;
   }
 
   .our_service-right ul li {
-    font-size: 1.5rem;
-    line-height: 3.5rem;
+    font-size: 1rem;
+    line-height: 2.6rem;
   }
 
   /* Why Us Section */
@@ -705,25 +709,26 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-bottom: 4rem;
   }
 
   /* Testimonial Section */
-  
+
   .testimonial-title h1 {
-    font-size: 3rem;
+    font-size: 1.6rem;
   }
 
   .testimonial-title p {
-    font-size: 1.5rem;
-    margin: 3rem 0 2rem;
+    font-size: 0.6rem;
+    margin: 2rem 0;
   }
 
   .testimonial {
-    padding: 6rem 5rem;
+    padding: 4rem 2rem;
   }
 
   .testimonial-avatar {
-    width: 10rem;
+    width: 5rem;
   }
 
   .testimonial-body {
@@ -731,30 +736,31 @@ footer {
   }
 
   .testimonial-body img {
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 
   .testimonial-body p {
+    font-size: 0.7rem;
     text-align: left;
   }
 
   /* Getting Started Section */
 
   .getting_started-section {
-    margin:  2.5rem auto;
+    margin: 2.5rem auto;
     width: var(--container-width-sm);
   }
 
   .getting_started-container {
-    padding: 7rem 5rem;
+    padding: 5rem 3rem;
   }
 
   .getting_started-container h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .getting_started-container p {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 
   /* FAQ Section */
@@ -764,6 +770,7 @@ footer {
     flex-direction: column;
     width: var(--container-width-sm);
     gap: 1rem;
+    padding-top: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -772,11 +779,11 @@ footer {
   }
 
   .faq-left h1 {
-    font-size: 2.6rem;
+    font-size: 1.6rem;
   }
 
   .faq-left p {
-    font-size: 1rem;
+    font-size: 0.6rem;
     margin: 1rem 0;
   }
 
@@ -788,34 +795,29 @@ footer {
     margin: 1rem 0;
   }
 
-  /* Footer */
+  /* Footer Section */
 
   footer {
     width: var(--container-width-sm);
-    display: flex;
-    flex-direction: column;
   }
 
   .footer_container {
-    margin: 0;
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
     gap: 0;
-    text-align: left;
-    font-size: 1.4rem;
+  }
+
+  .permalinks {
+    margin-bottom: 0;
+    padding: 0;
   }
 
   .footer_social {
-    justify-content: flex-start;
-    margin: 1rem 0 2rem;
+    margin-top: 0;
   }
 
   .footer_4 img {
-    margin: 0;
-    padding-top: 1rem;
-    width: 8rem;
+    padding-top: 0;
   }
-
-
-
-
 }
