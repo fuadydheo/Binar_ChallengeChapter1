@@ -70,7 +70,6 @@ p {
 }
 
 img {
-    /* width: 100%; */
     display: block;
     object-fit: cover;
 }
@@ -182,11 +181,6 @@ header {
 header img {
     width: 100%;
 }
-
-/* .header__right-image img {
-    position: absolute;
-    width: 100%;
-} */
 /* ================== End of Header ================== */
 
 /* ================== Services ================== */
@@ -308,7 +302,6 @@ header img {
     background: var(--color-white);
     height: 80vh;
     width: 100vw;
-    /* height: 100vh; */
     padding: 5rem 0;
     text-align: center;
     display: flex;
