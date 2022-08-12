@@ -370,6 +370,44 @@ header {
 }
 /* ORDER-END */
 
+/* FAQS */
+.faq__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.faq {
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-lightblue);
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.faq__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__header p {
+    margin: 0;
+}
+
+.faq__arrow {
+    font-size: 2rem;
+}
+
+.faq__answer p {
+    display: none;
+    margin: 1rem 0 0 0;
+}
+
+.open p {
+    display: block;
+}
+
+/* FAQS-END */
 
 footer {
     background: var(--color-bg1);
