@@ -310,8 +310,8 @@ nav button {
     overflow: hidden;
     position: relative;
     margin-bottom: 5rem;
-    gap: flex;
   }
+
   .testimonial_container h2 {
     text-align: center;
   }
@@ -320,10 +320,16 @@ nav button {
     text-align: center;
   }
 
+   .boxgrid {
+    display: flex; /*icon sejajar*/
+    justify-content: space-between;
+    
+  } 
+
   .testimonial {
     padding-top: 1rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
+    /* margin-left: 30rem;
+    margin-right: 30rem; */
     text-align: center;
   }
 
@@ -333,20 +339,45 @@ nav button {
     border-radius: 20%;
     overflow: hidden;
     margin: auto;
+    float: left;
   }
 
   .testimonial_body {
     background: var(--color-bg);
     padding: 2rem;
     margin-top: 3rem;
+    width: 98%;
+  }
+  .testimonial_body p{
+    text-align: left;
+    margin-left: 6rem;
+    font-size: small;
   }
 
-  /* .testimonial_body p{
-    margin-left: 1rem;
-  } */
-
   .testimonial_body h5{
-    margin-left: 1rem;
+    text-align: left;
+    margin-left: 6rem;
+    margin-top: 0.5rem;
+  }
+
+  .testimonial__info {
+    top: 20%;
+    position: relative;
+    max-width: 20rem;
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+  
+  .testimonial__info #p2 {
+    padding-top: 2rem;
+  }
+  
+  .ratings {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    gap: 0.2rem;
   }
 
   /* ====================== Gsection ================= */
@@ -356,7 +387,7 @@ nav button {
     justify-content: center;
     align-items: center;
     margin-left: 136px;
-    margin-right: 8rem;
+    margin-right: 5rem;
     padding-left: 6%;
     padding-right: 6%;
     width: 1168px;
