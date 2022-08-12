@@ -5,6 +5,9 @@ nav {
 nav ul{
     margin-left: 500px;
 }
+.tbl-biru {
+    margin-left: 40px;
+}
 /* Awal */
 .produk {
     margin-top: 20px;
@@ -60,3 +63,27 @@ margin: 20px 0 0 60px;
 .icon_why{
     width: 50px !important;
 }
+
+/* testi */
+.testimonial {
+    margin-top: 90px;
+}
+.testimonial p{
+    padding-bottom: 20px;
+}
+.testimoni {
+    margin-left: 300px !important;
+}
+ .testimoni img{
+    margin-top: 50px;
+
+ }
+ .testi {
+    text-align: left;
+ }
+ .testi p{
+    padding: 0;
+ }
+ .testi img{
+    padding-top: 0;
+ }
