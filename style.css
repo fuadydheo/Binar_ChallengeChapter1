@@ -472,3 +472,112 @@ footer ul li a:hover{
     padding-top: 0.4rem;
 }
 
+/*  ===================== Media Queries (PHONE) ===================== */
+@media screen and (max-width: 600px){
+   .container{
+       width: var(--container-widht-sm);
+   }
+
+/*  ===================== NAVBAR ===================== */
+    .nav{
+        width: 100%;
+    }
+    .nav-menu ul li{
+        display: flex;
+        justify-content: space-between;
+    }
+
+/*  ===================== header ===================== */
+    
+
+    .header-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .header-left p{
+        margin-bottom: 1.3rem;
+    }
+
+/*  ===================== our service ===================== */
+.our-service{
+    height: 200vh;
+}
+.our-service-container{
+    grid-template-columns: 1fr;
+    margin-top: 0;
+}
+.our-service-left img{
+    width: 27rem;
+    height: 25rem;
+    margin: 1rem 2rem;
+}
+.our-service-right{
+    margin-top: -30rem;
+}
+
+/*  ===================== whyus ===================== */
+.whyus-container{
+    margin-top: -25rem;
+}
+.why-us-data{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.why-us{
+    margin-bottom: -1rem;
+}
+
+/*  ===================== TESTIMONIALS ===================== */
+    .testimonials-container{
+       margin-top: 15rem;
+    }
+
+/*  ===================== BANNER ===================== */
+.banner-container{
+    height: 70vh;
+}
+.banner-container h3{
+    padding-top: 3rem;
+}
+.banner-container a{
+    padding-bottom: 3rem;
+}
+/*  ===================== FAQ ===================== */
+.faqs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -8rem;
+}
+.faqs-left h4{
+    text-align: center;
+}
+.faqs-left p{
+    text-align: center;
+}
+/*  ===================== FOOTER ===================== */
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.footer__2 {
+    margin-top: -3rem;
+    margin-left: -3rem;
+}
+
+.footer__3 {
+    margin-top: -3rem;
+}
+
+.footer__4 {
+    margin-top: -3rem;
+}
+
+.footer-socials{
+    justify-content: center;
+}
+}
+
