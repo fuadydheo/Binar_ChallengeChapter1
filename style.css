@@ -210,6 +210,7 @@ nav button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 7rem;
 }
 .service-left img {
   position: relative;
@@ -219,16 +220,25 @@ nav button {
   align-self: center;
   line-height: 2rem;
   padding: 3rem;
+  margin-right: 7rem;
 }
 .list {
   line-height: 2;
+  font-weight: 300;
+  font-size: medium;
+}
+.list i {
+  padding-right: 1rem;
+  color: var(--color-primary1);
 }
 .content-service {
   text-align: justify;
-  line-height: 20px;
+  line-height: 2rem;
   margin-right: 7rem;
   font-size: medium;
   font-weight: 300;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 .title-service {
   font-weight: 700;
@@ -248,6 +258,7 @@ nav button {
 }
 .article-why p {
   bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .whys_cards {
