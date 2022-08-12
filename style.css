@@ -104,7 +104,7 @@ nav {
 .window-scroll {
     background: var(--color-primary1);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
+  }
 
 .nav_container {
     height: 100%;
@@ -124,6 +124,7 @@ nav {
 nav button {
     display: none;
 }
+
 
 .nav_menu { /* mengatur letak atau posisi */
     display: flex; /* mengatur posisi suatu konten yang ukurannya belum diketahui (posisi menjadi sejajar/satu baris) */
@@ -390,12 +391,12 @@ nav button {
 
 .faq_left {
     margin: 1.2rem 0.5rem;
-    margin-left: 5rem;
+    margin-left: 8rem;
 }
 
 .faq_right {
     margin: 1.2rem 0.5rem;
-    margin-right: 5rem;
+    margin-right: 8rem;
 }
 
 .accordion {
