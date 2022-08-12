@@ -116,11 +116,8 @@ nav {
 }
 
 .logo {
-  /* background-color: var(--color-primary1); */
   width: 3rem;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 nav button {
@@ -131,7 +128,6 @@ nav button {
   display: flex;
   align-items: center;
   gap: 2rem;
-
 }
 
 .nav__menu a {
@@ -251,17 +247,6 @@ nav button {
   line-height: 20px;
   margin: 1rem 5rem 3rem 0;
 }
-.service_right-list li {
-  font-family: "Helvetica";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.btn-primary {
-  margin-top: 2rem;
-}
 
 /* testimonial-section */
 .container-fluid {
@@ -306,7 +291,7 @@ img.photo {
   height: 16px;
 }
 
-#testimonial-section{
+#testimonial-section {
   margin-top: 7rem;
 }
 
@@ -354,7 +339,7 @@ img.photo {
   font-size: 14px;
 }
 
-.accordion-body p{
+.accordion-body p {
   color: #000;
 }
 
@@ -381,13 +366,13 @@ footer {
   margin-bottom: 1.2rem;
 }
 
-.footer__1 {
+.footer1 {
   margin: 0 0 2rem;
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
 }
-.footer__1 p {
+.footer1 p {
   margin: 0 0 1rem;
 }
 
@@ -404,6 +389,10 @@ footer {
 
 .footer2 ul li a:hover {
   text-decoration: underline;
+}
+
+.footer3 small {
+  margin-left: 4rem;
 }
 
 .footer__social {
@@ -425,4 +414,5 @@ footer ul li a {
 
 .logo {
   margin-top: 0.75rem;
+  margin-left: 3rem;
 }
