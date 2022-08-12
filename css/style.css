@@ -166,7 +166,6 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 5rem;
     height: 100%;
 }
 
@@ -174,33 +173,22 @@ header{
     margin: 1rem 0 2.4rem;
 }
 
-.header__right-bg{
-    position: absolute;
-    width: 62.5rem;
-    height: 16.5rem;
-    left: 46rem;
-    top: 16.3rem;
-    right: -300rem;
-    background: var(--color-bg3);
-    border-radius: 60px 0px 0px 0px;
+.header__right-image{
+    position: absolute;    
+    bottom: -1rem;
+    padding-left: 5rem;
 }
 
-.header__right-image{
-    position: absolute;
-    bottom: -1rem;
-    z-index: 1;
-}
 /*=========================OUR SERVICES============================*/
 .ourservices{
     background: var(--color-white);
     height: 32rem;
     overflow: hidden;
-    display: flex;
 }
 
 .ourservices__container{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 1fr;
     gap: 7rem;
 }
 .ourservices h2{
@@ -284,7 +272,7 @@ header{
 .testimonials{
     background: var(--color-bg2);
     position: relative;
-    height: 35rem;
+    height: 42rem;
 }
 
 .testimonials__container{
@@ -306,8 +294,8 @@ header{
     margin: 0 auto 1rem;
     display: flex;
     align-self: center;
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: relative;
 }
@@ -321,15 +309,14 @@ header{
 /*=========================ADVERTISE============================*/
 .advertise{
     background: var(--color-bg2);
-    height: 34rem;
-    position: relative;
 }
 .advertise__container{
     background: var(--color-bg3);
-    height: 22.5rem;
+    width: 1168px;  
+    height: 326px;
     text-align: center;
     color: var(--color-white);
-    padding: 5rem;
+    padding: 2rem;
     border-radius: 0.8rem;
     position: relative;
     margin-top: 5rem;
@@ -514,7 +501,11 @@ footer ul li a:hover{
     .header__container{
         gap: 0;
         padding-bottom: 3rem;
-
+    }
+    .header__right-image{
+        position: absolute;    
+        bottom: 1rem;
+        padding-left: 5rem;
     }
 
     /* ============== Our Services =========== */
@@ -568,39 +559,34 @@ footer ul li a:hover{
     }
     /*=========header==========*/
     header{
-        height: 52vh;
-        margin-bottom: 4rem;
+        height: 80vh;
+        margin-top: 0rem;
     }
     .header__container{
-        display: flex;
-        flex-direction: column;
-        margin-top: 0;
-        height: auto;
+        grid-template-columns: 1fr;
+        margin-top: -7rem;
     }
 
-    .header__left p{
-        margin-bottom: 1.3rem; 
-    }
     /*============Our Service============*/
     .ourservices{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        height: 100%;
+        padding: 0 50px 0 50px;
 
-    }
-    .ourservices__left, .ourservices__right{
-        flex: 100%;
     }
 
     /*=========WhyUs==========*/
     .whyus__container{
-        flex-direction: column;
+        flex-direction: grid;
         grid-template-columns: 1fr;
     }
 
     /*=========testimonials==========*/
     .testimonial__body{
         align-items: center;
-        padding: 1.2rem;
+        padding: 0rem;
     }
     /*=========footer==========*/
     .footer__container{
