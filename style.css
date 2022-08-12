@@ -248,6 +248,38 @@ nav button {
   margin: 1rem 5rem 3rem 0;
 }
 
+/* ============= WHY USE ============= */
+.whyuse-section {
+  padding-top: 5rem;
+  padding-left: 6%;
+  padding-right: 6%;
+  color: var(--color-black);
+}
+
+.frame {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frame__detail {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 23%;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 0.5px;
+  border-color: var(--color-black);
+}
+
+.frame__detail p {
+  padding-top: 0.5rem;
+}
+
+.frame__icon {
+  width: 32px;
+  margin-bottom: 1rem;
+}
+
 /* testimonial-section */
 .container-fluid {
   padding: 0px;
