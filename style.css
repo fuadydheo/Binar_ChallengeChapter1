@@ -376,4 +376,85 @@ nav button {
     color: var(--color-white);
 }
 
-  /* ======================== TESTIMONIAL ======================== */
+  /* ======================== FAQs ======================== */
+  .faq-section {
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 3.3rem;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-white);
+    gap: 5rem;
+    display: flex;
+  }
+
+  .faq_left {
+    margin: 1.2rem 0.5rem;
+    margin-left: 5rem;
+  }
+  
+  #accordion {
+    margin: 100px auto;
+    width: 600px;
+    margin-top: -1rem;
+
+  }
+
+  #accordion li {
+    list-style: none;
+    width: 70%;
+    margin-bottom: 4px;
+    background: var(--color-white);
+    padding: 2px;
+    border-radius: 5px;
+   
+  }
+
+  #accordion li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    border-width: 0.5px; /*border garis*/
+    border-color: var(--color-black);
+  }
+
+  #accordion li label span {
+    transform: rotate(90deg);
+    font-size: 16px;
+    color: #333;
+  }
+
+  #accordion p {
+    font-size: 12px;
+  }
+
+#accordion label + input[type="radio"] {
+    display: none;
+}
+
+#accordion .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;    
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+    max-height: 400px;
+}
+
+.accordion_detail {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    width: 10%; /*ukuran*/
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 0.5px; /*border garis*/
+    border-color: var(--color-black);
+}
