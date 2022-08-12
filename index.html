@@ -37,7 +37,7 @@
       <!-- NAVBAR -->
       <div class="container_navbar">
         <div class="nav_logo">
-          <img src="./img/logo-binar.png" />
+          <img src="./img/Rectangle 74.svg" />
         </div>
         <!-- Toogle Menu Button -->
         <span class="menu-btn" onclick="openNav()">&#9776;</span>
@@ -425,7 +425,7 @@
     <!-- FOOTER -->
 
     <footer>
-      <div class="container footer_container">
+      <div class="footer_container">
         <div class="footer_1">
           <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
           <p>binarcarrental@gmail.com</p>
@@ -464,7 +464,7 @@
 
         <div class="footer_4">
           <p>Copyright &copy;Binar 2022</p>
-          <img src="./img/logo-binar.png" />
+          <img src="./img/Rectangle 74.svg" />
         </div>
       </div>
     </footer>
@@ -486,11 +486,20 @@
 
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        //when window width is >= 600px
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+          },
+          600: {
+            slidesPerView: 2,
+          },
         },
       });
     </script>
