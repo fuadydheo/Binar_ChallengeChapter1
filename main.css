@@ -174,14 +174,18 @@ header {
 
 .main-section {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 62% 38%;
 
   gap: 5rem;
   height: 100%;
 }
 
 .header-left h1 {
-  margin-bottom: 1rem;
+  width: 568px;
+}
+
+.header-left p {
+  width: 468px;
 }
 
 .header-left button a {
@@ -221,6 +225,10 @@ header {
 }
 .service-right p {
   margin: 24px 0 18px 0;
+  width: 468px;
+}
+.service-right h2 {
+  width: 468px;
 }
 
 .list-service {
@@ -239,9 +247,11 @@ header {
 .icon {
   background: var(--color-bg);
   border-radius: 4rem;
+  width: 30px;
+  height: 30px;
 }
 .icon i {
-  padding: 2px 2px 2px 3px;
+  margin: 5px;
 }
 .serve p {
   margin: 0;
@@ -667,7 +677,7 @@ header {
    /* ======================= Header ===================== */
 
   header{
-    height: 68vh;
+    height: 67vh;
     margin-top: 0rem;
   }
 
