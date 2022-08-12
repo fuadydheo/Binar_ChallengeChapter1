@@ -259,3 +259,75 @@ ul li {
   background: none;
   padding: 0;
 }
+
+/* getting started */
+
+.getting-started {
+  margin-top: 100px;
+}
+
+.cta-banner {
+  background: #0d28a6;
+  width: 1168px;
+  height: 326px;
+  margin: 0 auto;
+  border-radius: 13px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.cta-banner h1 {
+  padding-top: 64px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.cta-banner p {
+  width: 468px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 16px 0 52px;
+}
+
+/* faq */
+
+.faq-section {
+  margin-top: 100px;
+}
+
+.faq-desc {
+  margin-left: 136px;
+}
+
+.faq-desc h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.faq-desc p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.accordion {
+  width: 668px;
+  margin-right: 136px;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+  border: none;
+}
+
+.accordion-button {
+  font-size: 14px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
+
+.accordion-body {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+}
