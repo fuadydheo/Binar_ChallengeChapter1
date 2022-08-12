@@ -145,10 +145,11 @@ nav {
     border: #091B6F;
     padding: 0.3rem 1rem 0.3rem 1rem;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .nav__logo h4 {
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
 }
 
 /* Change navbar styles on scroll using JS */
@@ -210,8 +211,7 @@ header {
     overflow: hidden;
     height: 80vh;    
     padding-bottom: 3rem;
-    margin-bottom: 5rem;
-    justify-content: space-between;
+    margin-bottom: 5rem;    
 }
 
 .header__container {
@@ -222,12 +222,15 @@ header {
     height: 100%;
 }
 
+.header__left {
+    margin-top: 10rem;
+}
+
 .header__left p {
     margin: 1rem 0 1.5rem;
 }
 
-.header__left h1 {
-    margin-top: 5rem;
+.header__left h1 {    
     font-size: 36px;
 }
 
@@ -235,8 +238,21 @@ header {
     margin-top: 0;
 }
 
-.header__right img {
-    padding-top: 5rem;
+.header__right-bg{
+    position: absolute;
+    width: 62.5rem;
+    height: 16.5rem;
+    left: 46rem;
+    top: 16.3rem;
+    right: -300rem;
+    background: var(--darkblue04);
+    border-radius: 60px 0px 0px 0px;
+}
+
+.header__right-img {    
+    position: absolute;
+    bottom: -1rem;
+    z-index: 1;
 }
 
 /* Service Section */
