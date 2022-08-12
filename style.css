@@ -231,6 +231,10 @@ header{
     height: 60vh;
 }
 
+.whyus-container{
+    padding-top: 5rem;
+}
+
 .whyus h3{
     line-height: 1;
     margin-bottom: 2rem;
@@ -280,7 +284,7 @@ header{
 .testimonials-container{
     overflow-x: hidden;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 12rem;
     margin-bottom: 7rem;
 }
 
