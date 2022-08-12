@@ -123,3 +123,63 @@ nav{
 .icon_why_us{
     width: 32px;
 }
+
+/* Testimoni */
+.testimoni{
+    margin-top: 7%;
+}
+.testimoni h3{
+    font-family: 'Helvetica';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+}
+.testimoni .text_testimoni{
+    font-family: 'Helvetica';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+    
+}
+.testimonials{
+    text-align:left;
+}
+.img_testimoni{
+    margin-top: 50px;
+}
+.button_testimoni{
+    text-align: center;
+}
+.button_testimoni a{
+    padding: 10px;
+}
+.crd_title_2{
+    font-family: 'Helvetica';
+    font-style: normal;
+}
+.crd_title_2 h5{
+    padding-top: 64px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.crd_title_2 p{
+    padding-top: 16px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto !important;
+    color: #FFFFFF;
+}
+.btn_order{
+    margin-bottom: 64px;
+    background-color: #5CB85F !important;
+}
+
