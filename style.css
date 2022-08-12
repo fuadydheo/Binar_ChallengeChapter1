@@ -30,15 +30,15 @@
   --color-head: #F1F3FF;
 
 
-  --container-width-lg: 76%;
+  --container-width-lg: 80%;
   --container-width-md: 90%;
-  --container-width-sm: 94%;
+  --container-width-sm: 98%;
 
   --transition: all 40ms ease;
 }
 
 body{
-   font-family: 'Montserrat', sans-serif;
+   font-family: Helvetica, sans-serif;
    line-height: 1.7;
    color: var(--color-black);
 }
@@ -92,7 +92,7 @@ img{
 
 .btn{
    display: inline-block;
-   background: transparent;
+   background: var(--color-head);
    color: var(--color-black);
    padding: 1rem 2rem;
    border: 1px solid transparent;
@@ -101,13 +101,13 @@ img{
 }
 
 .btn:hover{
-   background: transparent;
+   background: var(--color-head);
    color: var(--color-black);
-   border-color: #f75842;
+   border-color: var(--color-abu);
 }
 
 .btn-primary{
-   background: var(--color-lg4);
+   background: var(--color-a1);
    color: var(--color-white);
 }
 
@@ -118,27 +118,28 @@ img{
 
 /* =================== NAVBAR ===================*/
 nav{
-  background: transparent;
-  width: 100vw;
-  height: 5rem; 
-  top: 0;
-  z-index: 11;
+   display: grid;
+   background: var(--color-head);
+   width: 100vw;
+   height: 5rem; 
+   position: fixed;
+   top: 0;
+   z-index: 11;
 }
 
 .logo{
    background: var(--color-db4);
-   width: 200px;
+   width: 150px;
    height: 58px;
 }
 
 /* =================== Change Navbar Styles on scroll using JS ===================*/
 .window-scroll{
-   background: var(--color-primary);
+   background: var(--color-head);
    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .nav_container{
-   height: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -149,6 +150,7 @@ nav button{
 }
 
 .nav_menu{
+   justify-content: space-around;
    display: flex;
    align-items: center;
    gap: 4rem;
@@ -160,16 +162,16 @@ nav button{
 }
 
 .nav_menu a:hover{
-   color: var(--color-db5);
+   color: var(--color-abu);
 } 
 
 /* =================== HEADER ===================*/
 header{
    position: relative;
-   width: 1440px;
-   height: 500px;
-   left: 0px;
-   top: 0px;
+   top: 5rem;
+   overflow: hidden;
+   height: 80vh;
+   margin-bottom: 5rem;
    background: var(--color-head);
 }
 
@@ -177,20 +179,21 @@ header{
    display: grid;
    grid-template-columns: 1fr 1fr;
    align-items: center;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
    gap: 5rem;
-   height: 100%;
+   height: 50vh;
 }
 
 .header_left p{
-   margin-top: 1rem;
-   margin-bottom: 1.5rem;
-   /* margin: 2rem 0 2rem 0; */
+   margin: 1rem 0 2.4rem;
 }
-
 
 /* =================== OUR SERVICES ===================*/
 .our_services{
     position: relative;
+    overflow: hidden;
+    display: flex;
     height: 70vh;
     margin-top: 1rem;
 }
@@ -203,6 +206,7 @@ header{
 .our_services_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 5rem;
 }
 
 .our_services_right{
@@ -229,7 +233,6 @@ header{
 
 /* =================== Why Us ===================*/
 .why_us{
-   position: relative;
    height: 70vh;
    margin-top: 1rem;
 }
@@ -278,7 +281,7 @@ header{
    background: var(--color-a1);
  }
 
-/* =================== Testimonials ===================*/
+ /* =================== TESTIMONIALS ===================*/
 .testimonials h2{
    margin-top: 5rem;
    text-align: center;
@@ -292,11 +295,13 @@ header{
    position: relative;
 }
 
-.testimonial__container{
+.testimonial_container{
    position: relative;
    margin-bottom: 5rem;
    padding: 5rem;
+   overflow-x: hidden;
 }
+
 .testimonial{
    display: grid;
    grid-template-columns: 40% 60%;
@@ -305,6 +310,7 @@ header{
    border-radius: 1rem;
    align-content: flex-start;
 }
+
 .testimonial_left{
       width: 8rem;
       height: 3rem;
@@ -321,6 +327,7 @@ header{
 .checked {
    color: var(--color-a2);
  }
+
  .small {
    font-weight: bolder;
  }
@@ -370,6 +377,7 @@ header{
 .getting h2{
    margin-bottom: 1rem;
 }
+
 .getting p{
    margin: 2rem;
 }
@@ -421,4 +429,284 @@ header{
 .faq h5{
    font-size: 1rem;
    line-height: 2.2;
+}
+
+/*========================= FOOTER ============================*/
+footer{
+   background: var(--color-head);
+   padding: 5rem;
+   font-size: 1rem; 
+}
+
+.footer_container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 5rem;
+}
+
+.footer_1 p{
+   margin: 0 0 2rem;
+}
+
+.footer ul li{
+   margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover{
+   text-decoration: underline;
+}
+
+.footer_socials{
+   display: flex;
+   gap: 1rem;
+   font-size: 1.2rem;
+   margin-top: 1rem;
+}
+
+.footer_socials i{
+   border-radius: 45%;
+   background: var(--color-db4);
+}
+
+/*========================= MEDIA QUERIES (Tablets) ============================*/
+@media only screen and (max-width: 1024px) {
+   .container{
+         width: var(--container-width-md);
+      }
+
+      h1{
+         font-size: 2.2rem;
+      }
+      h2{
+         font-size: 1.7rem;
+      }
+      h3{
+         font-size: 1.4rem;
+      }
+      h4{
+         font-size: 1.2rem;
+      }
+
+      /* =================== NAVBAR ===================*/
+      nav button{
+         display: inline-block;
+         background: transparent;
+         font-size: 1.8rem;
+         color: var(--color-black);
+         cursor: pointer;
+      }
+
+      nav button#close-menu-btn{
+         display: none;
+      }
+
+      .nav_menu{
+         position: fixed;
+         top: 5rem;
+         right: 5%;
+         height: fit-content;
+         width: 18rem;
+         flex-direction: column;
+         gap: 0;
+         display: none;
+      }
+
+      .nav_menu li{
+         width: 100%;
+         height: 5.8rem;
+         animation: animateNavItems 400ms linear forwards;
+         transform-origin: top right;
+      }
+
+      .nav_menu li:nth-child(2) {
+         animation-delay: 200ms;
+      }
+
+      .nav_menu li:nth-child(3) {
+         animation-delay: 400ms;
+      }
+
+      .nav_menu li:nth-child(4) {
+         animation-delay: 600ms;
+      }
+
+      @keyframes animateNavItems {
+         0%{
+            transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+         }
+         100%{
+            transform: rotateZ(0) rotateX(0) scale(1);
+            opacity: 1;
+         }
+      }
+
+      .nav_menu li a{
+         background: var(--color-abu);
+         box-shadow: -3rem 6rem 10rem rgba(95, 92, 92, 0.6);
+         width: 100%;
+         color: var(--color-white);
+         height: 100%;
+         display: grid;
+         place-items: center;
+      }
+
+      .nav_menu li a:hover{
+         background: var(--color-abu);
+         color: var(--color-black);
+      }
+
+      /* =================== HEADER ===================*/
+      header{
+         height: 100vh;
+         margin-bottom: 4rem;
+      }
+
+      .header_container{
+         gap: 2;
+         padding-bottom: 3rem;
+
+      }
+
+      /* =================== OUR SERVICES ===================*/
+      .our_services{
+         height: auto;
+      }
+
+      .our_services__container{
+         grid-template-columns: 1fr 1fr;
+         gap: 1rem;
+      }
+
+      .our_services__left-image{
+            width: 20rem;
+            height: 16.5rem;
+            left: 6rem;
+            top: 0;
+      }
+
+      /* =================== WHY US ===================*/
+      .why_us{
+         margin-top: 0;
+         height: auto;
+      }
+      .list-desc{
+         grid-template-columns: 1fr 1fr;
+      }
+      
+      /* =================== FAQS ===================*/
+      .faqs_container{
+         grid-template-columns: 1fr;
+      }
+      .faq{
+         margin: 1rem;
+         padding: 1rem;
+      }
+
+      /* =================== FOOTER ===================*/
+      .footer_container{
+         grid-template-columns: 1fr 1fr;
+      }
+   }
+
+   /* =================== MEDIA QUERIS (PHONES) ===================*/
+   @media only screen and (max-width: 600px ) {
+   body {
+      max-width: max-content;
+   }
+      
+   .container{
+      width: var(--container-width-sm);
+   }
+
+   h1{
+      font-size: 1.8rem;
+   }
+
+   h2{
+      font-size: 1.5rem;
+   }
+
+   h3{       
+      font-size: 1.1rem;
+   }
+   
+   h4{
+      font-size: 0.8rem;
+   }
+
+   /* =================== HEADER ===================*/
+   header{
+      height: 100vh;
+      margin-bottom: 4rem;
+   }
+
+   .header_container{
+      margin-top: 0;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .header_left p{
+      font-size: 10px;
+       margin-bottom: 1.3rem; 
+   }
+
+   /* =================== OUR SERVICES ===================*/
+   .our_services_container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   /* =================== WHY US ===================*/
+   .why_us_container{
+       flex-direction: column;
+       grid-template-columns: 1fr;
+   }
+
+   .list-desc{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   /* =================== TESTIMONIALS ===================*/
+   .testimonial {
+       align-items: center;
+       padding: 1.2rem;
+   }
+
+   /* =================== GETTING ===================*/
+   .getting_container{
+      position: relative;
+      background: var(--color-db4);  
+      color: var(--color-white);
+      text-align: center;
+      height: 90vh;
+      border-radius: 1rem;
+   }
+   
+   .getting h2{
+      margin-bottom: 1rem;
+   }
+
+   .getting p{
+      margin: 2rem;
+   }
+
+   /* =================== FAQS===================*/
+   .faqs_container{
+      margin-top: 5rem;
+   }
+
+   /* =================== FOOTER ===================*/
+   .footer_container{
+      margin-top: -10rem;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      justify-content: flex-start;
+   }
+
+   .footer_socials{
+       justify-content: flex-start;
+   }
 }
