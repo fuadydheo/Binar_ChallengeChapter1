@@ -230,10 +230,6 @@ header {
     margin: 1rem 0 1.5rem;
 }
 
-.header__left h1 {    
-    font-size: 36px;
-}
-
 .header__left a {
     margin-top: 0;
 }
@@ -257,17 +253,21 @@ header {
 
 /* Service Section */
 .service {    
+    background: var(--neutral01);
     height: 32rem;
-}
-
-.service h3 {
-    line-height: 1;
-    margin-bottom: 3rem;
+    overflow: hidden;
+    display: flex;
 }
 
 .service__container {
     display: grid;
     grid-template-columns: 40% 60%; 
+    gap: 7rem;
+}
+
+.service h2 {
+    line-height: 1;
+    margin-bottom: 1rem;
 }
 
 .service__left img {
@@ -279,8 +279,9 @@ header {
     margin-left: 3rem;
 }
 
-.service__right-info p {
-    margin-bottom: 0.7rem;
+.service__right p {
+    margin: 1rem 0 1rem;
+    gap: 1rem;
 }
 
 .service__list i {
