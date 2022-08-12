@@ -67,3 +67,30 @@ nav{
 
 
 /* layanan */
+.layanan{
+    margin-top: 100px;
+}
+.info_layanan h3{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+.info_layanan p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+.list_layanan{
+    list-style-type: none ;
+    padding: 0;
+}
+.icom_circle-check{
+    margin-right: 20px;
+}
+.fa-solid{
+ color: #CFD4ED;
+}
