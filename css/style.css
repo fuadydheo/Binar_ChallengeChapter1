@@ -447,6 +447,7 @@ header {
 
     /* HEADER */
     header {
+        height: auto;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -528,6 +529,7 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 5rem;
     }
 
     .header__container {
@@ -542,11 +544,10 @@ header {
     }
 
     .header__right img {
-        display: none;
     }
     
     .header__right-background {
-        display: none;
+        border-radius: 2rem;
     }
     /* END OF HEADER */
 
