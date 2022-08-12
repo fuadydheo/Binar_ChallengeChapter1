@@ -310,8 +310,8 @@ nav button {
     overflow: hidden;
     position: relative;
     margin-bottom: 5rem;
+    gap: flex;
   }
-
   .testimonial_container h2 {
     text-align: center;
   }
@@ -321,13 +321,16 @@ nav button {
   }
 
   .testimonial {
-    padding-top: 2rem;
+    padding-top: 1rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    text-align: center;
   }
 
   .human {
     width: 4rem;
     height: 4rem;
-    border-radius: 50%;
+    border-radius: 20%;
     overflow: hidden;
     margin: auto;
   }
@@ -338,8 +341,12 @@ nav button {
     margin-top: 3rem;
   }
 
+  /* .testimonial_body p{
+    margin-left: 1rem;
+  } */
+
   .testimonial_body h5{
-    margin-left: 3.75rem;
+    margin-left: 1rem;
   }
 
   /* ====================== Gsection ================= */
@@ -501,4 +508,30 @@ footer {
   .logo {
     margin-top: 0.75rem;
   }
-  
+
+
+  /* =================================== MEDIA QUERIES  */
+  @media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-widht-md);
+    }
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    h3{
+        font-size: 1.4rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+    
+
+  }
