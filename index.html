@@ -1,14 +1,402 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h2>hello world</h2>
-</body>
-</html>
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+        <!-- ICONSCOUT CDN -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+        <!-- Owl Stylesheets -->
+        <link
+            rel="stylesheet"
+            href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+        <link
+            rel="stylesheet"
+            href="OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+        <!-- javascript -->
+        <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+        <script src="OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.js"></script>
+        <script src="js/carousel.js"></script>
+
+        <title>Binar Car Rental</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <img src="img/header/logo.png" alt="logo car rental" class="logo">
+                    </div>
+
+                    <div class="col-auto d-lg-none">
+                        <img src="img/hamburger.png" alt="" style="width: 30px; height: 30px;">
+                    </div>
+
+                    <div class="col-auto d-none d-lg-block">
+                        <ul class="nav-menu list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a href="#">Our Service</a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="#">Why Us</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Testimonial</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="register" type="button">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ========================== END NAVBAR ========================= -->
+
+
+
+        <main id="main">
+            <section id="hero" class="bg-ghost">                
+                <div class="row m-0 p-0 pt-5">
+                    <div id="hero-description" class=" col-sm-12 col-lg pt-5 p-custom">
+                        <h1 class="display-4 fw-bold lh-1 ">
+                            Sewa & Rental Mobil Terbaik di kawasan Cilacap-Purwokerto 
+                        </h1>
+                        <p class="lead py">
+                            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik
+                            dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil
+                            selama 24 jam.
+                        </p>
+                        <div class="d-grid d-md-flex">
+                            <button class="btn btn-success btn-lg fw-bold" type="button">
+                                Mulai Sewa Mobil
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-sm-12 col-lg m-0 p-0 d-flex justify-content-end align-items-end"
+                        style="margin-left: -136px;">
+                        <img src="img/header/car.png" alt="" class="hero-img img-fluid"/>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================== END HEADER ========================= -->
+
+            
+
+            <section class="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="service-img col-sm-12 col-lg-6">
+                            <img src="img/img_service.png" alt="" class="img-fluid">
+                        </div>
+
+                        <div id="service-description" class=" col-sm-12 col-lg-6">
+                            <h2 class="fw-bold">
+                                Best Car Rental for any kind of trip in Purwokerto!
+                            </h2>
+
+                            <p>
+                                Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah
+                                dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik
+                                untuk perjalanan wisata, bisnis, wedding, meeting, dll.
+                            </p>
+
+                            <form action="chekbox">                                
+                                <label for="vehicle1"><img src="./img/circle.png"> Sewa Mobil di Cilacap 12 jam</label><br>
+                                
+                                <label for="vehicle1"><img src="./img/circle.png"> Sewa Mobil Lepas Kunci di Cilacap 24 jam</label><br>
+                                
+                                <label for="vehicle1"><img src="./img/circle.png"> Sewa Mobil Jangka Panjang Bulanan</label><br>
+                               
+                                <label for="vehicle1"><img src="./img/circle.png"> Gratis Antar - Jemput di Bandara.</label><br>
+                              
+                                <label for="vehicle1"><img src="./img/circle.png"> Layanan Airport Transfer / Drop In Out</label><br>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================== END SERVICES ========================= -->
+
+            
+
+            <section id="why">
+                <div class="container">
+                    <div class="row">
+                        <div id="why-description" class="col-sm-12 col-lg ">
+                            <h1>Why Us</h1>
+                            <p>
+                                Mengapa harus pilih Binar Car Rental ?
+                            </p>
+                        </div>
+
+                        <div id="why-konten" class="col-sm-12 col-md-12 col-lg-12">
+                            <div id="why-menu">
+
+                                <img src="img/icon/icon_complete.png" alt="">
+                                <h2>Mobil Lengkap</h2>
+                                <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat.</p>
+
+                            </div>
+
+                            <div id="why-menu">
+
+                                <img src="img/icon/icon_price.png" alt="">
+                                <h2>Harga Murah</h2>
+                                <p>Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain.</p>
+
+                            </div>
+
+                            <div id="why-menu">
+
+                                <img src="img/icon/icon_24hrs.png" alt="">
+                                <h2>Layanan 24 Jam</h2>
+                                <p>Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di
+                                    akhir minggu.</p>
+
+                            </div>
+
+                            <div id="why-menu">
+
+                                <img src="img/icon/icon_professional.png" alt="">
+                                <h2>Sopir Profesional</h2>
+                                <p>Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ========================== END WHYUS ========================= -->
+
+        
+
+           
+
+            <section>
+                <div class="testi-description col-sm-12 col-lg-12">
+                    <h1>Testimonial</h1>                    
+                    <p>Berbagai Review Positif dari Para Pelanggan Kami</p>
+                </div>
+            </section>
+
+                <section>
+                    <div class="loop owl-carousel owl-theme">
+                        <div class="card item">
+                            <div class="card-img">
+                                <img src="img/testi/testi-1.png" class="card-img-1" style="width: 80px; height: 80px;"/>
+                            </div>
+                        <div class="card-description ml-5">
+                            <img src="img/testi/Rate.png" class="card-img-2"style="width: 80px; height: 16px;"/>
+                            <p>
+                                Lorem ipsum dolor sit amet, ea fierent oportere duo, eum everti platonem te.
+                                Usu id viris maluisset, has an eros dicit. Dicta iuvaret mediocritatem his eu.
+                                Cum ei velit voluptua constituam, ei quando imperdiet has. Quo ex justo tation
+                                utinam. Ei sit scripserit eloquentiam.</p>
+                            <h1>John Dee 32, Bromo</h1>
+                        </div>
+                    </div>
+
+                    <div class="card item">
+                        <div class="card-img">
+                            <img src="img/testi/testi-1.png" class="card-img-1" style="width: 80px; height: 80px;"/>
+                        </div>
+                        <div class="card-description ml-5">
+                            <img src="img/testi/Rate.png" class="card-img-2" style="width: 80px; height: 16px;"/>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, ea fierent oportere duo, eum everti platonem te.
+                                Usu id viris maluisset, has an eros dicit. Dicta iuvaret mediocritatem his eu.
+                                Cum ei velit voluptua constituam, ei quando imperdiet has. Quo ex justo tation
+                                utinam. Ei sit scripserit eloquentiam.
+                            </p>
+                            <h1>John Dee 32, Bromo</h1>
+                        </div>
+                    </div>
+
+                    <div class="card item">
+                        <div class="card-img">
+                            <img src="img/testi/testi-2.png" class="card-img-1" style="width: 80px; height: 80px;"/>
+                        </div>
+
+                        <div class="card-description ml-5">
+                            <img src="img/testi/Rate.png" class="card-img-2" style="width: 80px; height: 16px;"/>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, ea fierent oportere duo, eum everti platonem te.
+                                Usu id viris maluisset, has an eros dicit. Dicta iuvaret mediocritatem his eu.
+                                Cum ei velit voluptua constituam, ei quando imperdiet has. Quo ex justo tation
+                                utinam. Ei sit scripserit eloquentiam
+                            </p>
+                            <h1>John Dee 32, Bromo</h1>
+                        </div>
+                    </div>
+                </section>
+                <!-- ========================== END TESTIMONIAL ========================= -->
+
+
+
+
+                
+
+
+                <section id="banner">
+                    <div class="container">
+                        <div class="row">
+                            <div
+                                class="jumbotron mt-5 d-flex justify-content-center align-items-center flex-column">
+                                <h1 class="display-4">Sewa Mobil di Cilacap Sekarang</h1>
+                                <p class="lead">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button type="button" class="btn btn-success ">Mulai Sewa Mobil</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ========================== END BANNER ========================= -->
+
+
+
+
+                <section id="faq">
+                    <div class="container">
+                        <div class="row justify-content-between align-content-end">
+                            <div class="faq-description col-sm-12 col-lg-6 ">
+                                <h1>Frequently Asked Question</h1>
+                                <br>
+                                <p>Monggoh Dikepoin Ajah Gausah Sungkan</p>
+                            </div>
+
+                            <div class="faq-form col-sm-12 col-lg-6 ">
+
+                                <select class="form-control">
+                                    <option>Apa saja syarat yang dibutuhkan?</option>
+                                    <option>Fotocopy KTP</option>
+                                    <option>Fotocopy kartu keluarga</option>
+                                    <option>Kartu Vaksin</option>
+                                </select>
+
+                                <select class="form-control">
+                                    <option>Berapa hari minimal sewa mobil lepas kunci?</option>
+                                    <option>12 jam Tanggung</option>
+                                    <option>Mending 1 hari lebih Lama</option>
+                                    <option>1 Bulan Bisa Banget</option>
+                                </select>
+
+                                <select class="form-control">
+                                    <option>Berapa Hari Sebelumnya Sebaiknya Booking Sewa Mobil?</option>
+                                    <option>3 Hari Dari Sekarang</option>
+                                    <option>1 Minggu Lebih Baik</option>
+                                    <option>1 Jam Harapan Tipis</option>
+                                </select>
+
+                                <select class="form-control">
+                                    <option>Apakah Ada biaya antar-jemput?</option>
+                                    <option>Ada dong ongkos supir</option>
+                                    <option>Buat Makan supir</option>
+                                    <option>Rejeki gabakal kemana</option>
+                                </select>
+
+                                <select class="form-control">
+                                    <option>Bagaimana jika terjadi kecelakaan</option>
+                                    <option>santai ada jasa raharja</option>
+                                    <option>Kami berharap Tidak Terjadi yah besti</option>
+                                    <option>Hati-Hati jangan ngebut Keluarga Menunggumu besti</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ========================== END FAQ ========================= -->
+
+            
+
+
+
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-description col-sm-12 col-md-6 col-lg-4">
+                            <p>
+                                Jalan Raya Purwokerto No. 165 Maos Kota Cilacap 56700
+                            </p>
+
+                            <p>binarcarrental@gmail.com</p>
+
+                            <p>0868-7068-8862</p>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-2">
+                            <a href="#">Our Service</a><br>
+                            <a href="#">Why Us</a><br>
+                            <a href="#">Testimonial</a><br>
+                            <a href="#">FAQ</a><br>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <p>Connect with us</p>
+
+                            <div>
+                                <img src="img/icon/icon_facebook.png" alt="">
+
+                                <img src="img/icon/icon_instagram.png" alt="">
+
+                                <img src="img/icon/icon_twitter.png" alt="">
+
+                                <img src="img/icon/icon_mail.png" alt="">
+
+                                <img src="img/icon/icon_twitch.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <p>Copyright Binar Car 2022</p>
+                            <img src="img/header/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </footer>          
+        </body>
+    </html>
+    <!-- ========================== END FOOTER ========================= -->
+
+
+    <!-- ========= OWL CAROUSEL ======== -->
+    <script>
+        $('.loop').owlCarousel({
+            center: true,
+            loop: true,
+            margin: 30,
+            autoplay: false,
+            nav: true,
+            dots: false,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+
+                600: {
+                    items: 2
+                }
+            }
+        });
+    </script>
