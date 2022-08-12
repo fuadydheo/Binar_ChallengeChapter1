@@ -5,13 +5,20 @@ window.addEventListener('scroll', () => {
     ('window-scroll', window.scrollY > 0)
 })
 
-{
-    "dependencies": {
-      "parcel-bundler": "^1.6.1",
-      "swiper": "latest"
-    },
-    "name": "Swiper - Pagination progress",
-    "tags": [
-      "swiper"
-    ]
-  }
+//show hide faq answer
+
+const faqs = document.querySelectorAll('.faq');
+
+faqs.forEach(faq => {
+    faq.addEventListener('click',()=>{
+        faq.classList.toggle('open');
+
+        // change icon
+        const icon = faq.querySelector('.faq_icon i');
+        if(icon.className === 'uil uil-angle-down') {
+          icon.className = "uil uil-angle-up";
+        }else{
+          icon.className = "uil uil-angle-down";       
+        }
+    })
+})
