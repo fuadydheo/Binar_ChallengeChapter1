@@ -461,8 +461,16 @@ footer {
     width: var(--container-width-md);
   }
 
+  .container_navbar .menu-btn {
+    display: flex;
+  }
+
   .nav_menu {
-    gap: 1.5rem;
+    display: none;
+  }
+
+  .side_nav {
+    display: block;
   }
 
   /* Main Section -Header */
@@ -487,12 +495,12 @@ footer {
   }
 
   .header-right {
-    margin-top: -6.5rem;
+    margin-top: -4rem;
   }
 
   .header-right .background_img {
     margin-top: -11.1rem;
-    height: 12rem;
+    height: 10rem;
   }
 
   /* Our Service Section */
