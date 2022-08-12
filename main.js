@@ -11,10 +11,14 @@ $(".owl-carousel").owlCarousel({
       items: 1,
     },
     600: {
-      items: 3,
+      autoWidth: false,
+      items: 1,
     },
-    1000: {
+    1024: {
       items: 2,
+    },
+    1440: {
+      items: 3,
     },
   },
 });

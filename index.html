@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Mobil</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CDN Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <!-- owl-carrousel -->
@@ -112,28 +114,28 @@
                 <p>Mengapa harus pilih Binar Car Rental?</p>
             </div>
             <div class="body__why-uses">
-                <article class="why-use">
+                <article class="why-use" data-aos="fade-up" data-aos-duration="3000">
                     <span class="why-use__icon"> <i class="uil uil-thumbs-up"></i></span>
                     <h3>Mobil Lengkap</h3>
                     <p>
                         Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat
                     </p>
                 </article>
-                <article class="why-use">
+                <article class="why-use" data-aos="fade-down" data-aos-duration="3000">
                     <span class="why-use__icon"> <i class="uil uil-tag-alt"></i></span>
                     <h3>Harga Murah</h3>
                     <p>
                         Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain
                     </p>
                 </article>
-                <article class="why-use">
+                <article class="why-use" data-aos="fade-up" data-aos-duration="3000">
                     <span class="why-use__icon"> <i class="uil uil-clock"></i></span>
                     <h3>Layanan 24 Jam</h3>
                     <p>
                         Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu
                     </p>
                 </article>
-                <article class="why-use">
+                <article class="why-use" data-aos="fade-down" data-aos-duration="3000">
                     <span class="why-use__icon"> <i class="uil uil-award-alt"></i></span>
                     <h3>Sopir Profesional</h3>
                     <p>
@@ -214,8 +216,8 @@
     <section class="section-ctaBanner">
         <div class="container bg__ctaBanner">
             <div class="ctaBanner__deskripsi">
-                <h1>Sewa Mobil di (Lokasimu) Sekarang</h1>
                 <div class="deskripsi">
+                    <h1>Sewa Mobil di (Lokasimu) Sekarang</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
@@ -357,6 +359,11 @@
         max: 25,
         speed: 400
     });
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>
 <script src="./main.js"></script>
 

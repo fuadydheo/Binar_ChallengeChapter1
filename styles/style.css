@@ -15,7 +15,6 @@
   --color-danger: #fa2c5a;
 
   --color-white: #fff;
-  --color-green: #5cb85f;
   --color-black: #000;
 
   --color-bg: #ffffff;
@@ -98,12 +97,12 @@ img {
 
 .btn:hover {
   background: transparent;
-  color: var(--color-black);
-  border-color: var(--color-black);
+  color: var(--color-success);
+  border-color: var(--color-success);
 }
 
 .btn-primary {
-  background: var(--color-green);
+  background: var(--color-success);
   color: var(--color-white);
 }
 
@@ -139,10 +138,6 @@ nav button {
 }
 .nav__menu a {
   transition: var(--transition);
-}
-
-.nav__menu a:hover {
-  color: var(--color-bg2);
 }
 
 /* ------------------ Header -----------------------*/
@@ -369,7 +364,9 @@ header {
 .ctaBanner__deskripsi h1 {
   padding-top: 64px;
 }
+
 .deskripsi {
+  flex-direction: column;
   display: flex;
   justify-content: center;
 }
@@ -578,7 +575,34 @@ footer {
   }
 
   .services__container {
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
+  }
+
+  .service__left-image .image__1 {
+    position: absolute;
+    width: 30%;
+    top: 0px;
+    left: -40px;
+    transition: var(--transition);
+  }
+
+  .service__left-image .image__2 {
+    position: absolute;
+    width: 15%;
+    bottom: 20px;
+    left: -30px;
+    transition: var(--transition);
+  }
+
+  .service__left-image .image__3 {
+    position: absolute;
+    width: 8%;
+    top: 50px;
+    right: 10px;
+    transition: var(--transition);
+  }
+  .service__left-image .service__image {
+    width: 300px;
   }
 
   /* why-use-section */
@@ -621,6 +645,10 @@ footer {
   .service__left {
     margin-bottom: 20px;
   }
+  .service__left-image .service__image {
+    width: 250px;
+  }
+
   /* ------------------ section-whyuse -----------------------*/
   .body__why-uses {
     display: grid;
@@ -632,6 +660,31 @@ footer {
   .whyuse-section {
     margin-top: 400px;
   }
+
+  .slider-card {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__body {
+    text-align: center;
+  }
+
+  .deskripsi {
+    width: 212px;
+  }
+  .ctaBanner__deskripsi p {
+    align-self: center;
+    width: 212px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+  }
+  .ctaBanner__deskripsi h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
   /* ------------------ faqs -----------------------*/
   .faqs {
     grid-template-columns: repeat(1, 1fr);
