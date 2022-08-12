@@ -22,17 +22,17 @@
     <nav>
         <div class="containers nav_section">
             <div class="logo">
-                    <a href="index.html"></a>
+              <a href="index.html"></a>
             </div>
             <ul class="nav_menu">
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Why Us</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#Ourservices">Our Services</a></li>
+                <li><a href="#WhyUs">Why Us</a></li>
+                <li><a href="#Testimonial">Testimonial</a></li>
+                <li><a href="#FAQS">FAQ</a></li>
                 <li><a class="active" href="#">Register</a></li>
             </ul>
             <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
-            <button id="close-menu-btn"><i class="fa-solid fa-xmark-large"></i></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark fa-lg"></i></button>
         </div>
     </nav>
     <!-- End -->
@@ -57,7 +57,7 @@
     <!-- End -->
 
     <!-- Service -->
-    <div class="containers service-section">
+    <div class="containers service-section" id="Ourservices">
         <div class="service_left">
             <div class="service_left">
                 <img src="img/service_left.svg" alt="">
@@ -80,7 +80,7 @@
     <!-- End -->
 
     <!-- Why Us Section -->
-    <div class="containers whyuse-section">
+    <div class="containers whyuse-section" id="WhyUs">
         <h3 class="title">Why Us?</h3>
         <p class="subtitle">Mengapa harus pilih Binar Car Rental?</p>
         <div class="cards">
@@ -109,7 +109,7 @@
     <!-- End -->
 
     <!-- Testimonial -->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper" id="Testimonial">
         <h3 class="testimonial_title">Testimonial</h3>
         <p class="desc">Berbagai review positif dari para pelanggan kami</p>
         <div class="testimonial-container swiper-wrapper">
@@ -339,7 +339,7 @@
     <!-- End -->
 
     <!-- FAQS -->
-    <div class="faqs-section">
+    <div class="faqs-section" id="FAQS">
         <div class="faqs_left">
             <h1>Frequently Asked Question</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -451,7 +451,7 @@
 
                     <div class="social__icon">
                         <li><a href="#"></a><img src="img/icon_twitch.svg" alt=""></li>
-                    </div>   
+                    </div> 
                 </ul>
             </div>
 
@@ -488,13 +488,9 @@
           400: {
             slidesPerView: 1,
             slidesPerGroup: 1,
-            pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            }
           }
-        }   
-      });
+        }
+      });   
     </script>
     <script src="main.js"></script>
 </body>
