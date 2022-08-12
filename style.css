@@ -628,6 +628,10 @@
     display: block
   }
 
+  .service__list ol li {
+    padding-right: 0;
+  }
+
   /* ============= WHY US ============= */
 
   .frame {
@@ -637,6 +641,10 @@
   .frame__detail {
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .frame__detail h4 {
+    padding: 0;
   }
 
   /* ============= TESTIMONIAL ============= */
