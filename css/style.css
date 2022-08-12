@@ -196,7 +196,7 @@ header {
     bottom: 0;
     margin-top: 10px;
     position: absolute;
-    width: 704px;
+    width: 704px;0
     height: 407px;
     /* left: 1440px;
     top: 97px; */
@@ -362,6 +362,7 @@ h2 {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
 .alert-red {
     background-color: #fa2c5a;
 }
