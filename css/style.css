@@ -220,14 +220,7 @@ header {
     height: auto;
     background-color: var(--color-primary);
     border-radius: 50%;
-    
-}
-
-.ellipse-green {
-    width: 20%;
-    height: auto;
-    background-color: var(--color-succes);
-    border-radius: 50%;
+    align-content: flex-end;   
 }
 
 .features__right h2 {
@@ -312,6 +305,71 @@ header {
     margin-bottom: 0;
 }
 /* ==================== END-WHY-US ==================== */
+
+/* TESTIMONIAL */
+.testimonials {
+    margin-top: 4rem;
+}
+
+.testimonials__container > p, 
+.testimonials__container > h2 {
+    text-align: center;
+}
+.testomonial__card {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--color-lightblue);
+    border-radius: 0.8rem;
+}
+
+.testimoni__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating__stars {
+    color: var(--color-warning);
+}
+
+.testimoni__left img {
+    width: 50%;
+    height: auto;
+}
+
+/* TESTIMONIAL-END */
+
+/* ORDER */
+.ordernow {
+    margin: 5rem 0;
+}
+
+.ordernow__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background: var(--color-primary);
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+.ordernow__container h1 {
+    font-size: 2rem;
+}
+
+.ordernow__container p {
+    width: 65%;
+}
+
+.ordernow__container p,
+.ordernow__container h1 {
+    color: var(--color-bg2);
+}
+/* ORDER-END */
+
 
 footer {
     background: var(--color-bg1);
