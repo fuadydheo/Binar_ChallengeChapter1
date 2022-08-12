@@ -396,3 +396,12 @@ header {
 .testimonial i {
     color: var(--alert-warning);
 }
+
+.testimonial__info p {
+    text-align: left;
+    margin-bottom: 0.7rem;
+}
+
+.testimonial__info small {    
+    font-weight: var(--semi-bold);
+}
