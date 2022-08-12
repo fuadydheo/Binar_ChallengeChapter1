@@ -198,31 +198,63 @@ header {
 .service__left-image {
   position: relative;
   width: max-content;
+  transform-style: preserve-3d;
 }
 .service__left-image .image__1 {
   position: absolute;
   top: 0px;
   left: -100px;
+  transition: var(--transition);
+}
+.service__left-image:hover .image__1 {
+  transform: translate3d(0, 0, 70px);
+  transition: var(--transition);
 }
 
 .service__left-image .image__2 {
   position: absolute;
   bottom: 40px;
   left: -30px;
+  transition: var(--transition);
+}
+
+.service__left-image:hover .image__2 {
+  transform: translate3d(0, 0, 90px);
+  transition: var(--transition);
 }
 
 .service__left-image .image__3 {
   position: absolute;
   top: 50px;
   right: 30px;
+  transition: var(--transition);
+}
+.service__left-image:hover .image__3 {
+  transform: translate3d(0, 0, 130px);
+  transition: var(--transition);
 }
 
+.service__left-image:hover .service__image {
+  transform: translate3d(0, 0, 40px);
+  transition: var(--transition);
+}
+
+.service__image {
+  transition: var(--transition);
+}
+
+.service__describe {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.image__icon {
+  margin-right: 16px;
+  max-width: max-content;
+}
 .services__right h2 {
   margin-bottom: 24px;
-}
-
-.services__right p {
-  margin-bottom: 16px;
 }
 
 /* ------------------ Why-us -----------------------*/
@@ -319,7 +351,7 @@ header {
 }
 
 /* ------------------ CTA-BANNER -----------------------*/
-.bg__ctaBanner{
+.bg__ctaBanner {
   background: var(--color-primary);
   color: var(--color-white);
   border-radius: 16px;
@@ -332,7 +364,7 @@ header {
   text-align: center;
 }
 
-.ctaBanner__deskripsi h1{
+.ctaBanner__deskripsi h1 {
   padding-top: 64px;
 }
 .deskripsi {
@@ -353,7 +385,7 @@ header {
 
 /* ------------------ FAQS -----------------------*/
 
-.faqs{
+.faqs {
   display: grid;
   grid-template-columns: 40% 60%;
 }
@@ -362,25 +394,85 @@ header {
   margin-bottom: 16px;
 }
 
-
-.faqs__accordion{
+.faqs__accordion {
   display: flex;
   flex-direction: column;
+  max-width: 668px;
 }
 
-.faq___accordion{
-  border: #D4D4D4 solid 1px;
+.faq___accordion {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.faq__question {
+  border: #d4d4d4 solid 1px;
   padding: 18px 24px;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.faq__answer {
+  padding: 0px 24px;
+  background: var(--color-bg1);
+  max-height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  overflow-y: hidden;
+}
+
+.faq___accordion.active .faq__answer {
+  max-height: 100px;
+  padding: 10px;
+}
+
+.faq___accordion.active .faq__icon {
+  transform: rotate(90deg);
+  transition: var(--transition);
+}
+
+.faq___accordion .faq__icon {
+  transition: var(--transition);
+  font-size: 20px;
 }
 /* ------------------ Footer -----------------------*/
-.footers{
+footer {
+  margin-bottom: 100px;
+}
+.footers {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
+.footer__1 {
+  max-width: 268px;
+}
 
+.footer__1 li {
+  margin-bottom: 16px;
+}
 
+.footer__2 li {
+  margin-bottom: 16px;
+}
+
+.footer__social-media p {
+  margin-bottom: 16px;
+}
+
+.footer__social-media .socialmedia__icon {
+  background: var(--color-primary);
+  padding: 8px 7px;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.footer__3 p {
+  margin-bottom: 16px;
+}

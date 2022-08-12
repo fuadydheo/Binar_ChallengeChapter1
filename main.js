@@ -5,7 +5,7 @@ $(".owl-carousel").owlCarousel({
   nav: true,
   dots: false,
   stagePadding: 20,
-  navText: ["<i class='uil uil-angle-left'></i>", "<i class='uil uil-angle-right'></i>"],
+  navText: ["<i class='uil uil-angle-left-b'></i>", "<i class='uil uil-angle-right-b'></i>"],
   responsive: {
     0: {
       items: 1,
@@ -17,4 +17,12 @@ $(".owl-carousel").owlCarousel({
       items: 2,
     },
   },
+});
+
+const accordions = document.querySelectorAll(".faq___accordion");
+
+accordions.forEach((accordion) => {
+  accordion.addEventListener("click", () => {
+    accordion.classList.toggle("active");
+  });
 });
