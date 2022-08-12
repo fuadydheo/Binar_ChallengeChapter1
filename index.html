@@ -39,6 +39,8 @@
         <div class="nav_logo">
           <img src="./img/logo-binar.png" />
         </div>
+        <!-- Toogle Menu Button -->
+        <span class="menu-btn" onclick="openNav()">&#9776;</span>
         <ul class="nav_menu">
           <li>Our Services</li>
           <li>Why Us</li>
@@ -46,6 +48,15 @@
           <li>FAQ</li>
           <a href="index.html" class="btn btn-success">Register</a>
         </ul>
+      </div>
+      <!-- Responsive Side navBar -->
+      <div class="side_nav" id="side_nav">
+        <a href="#" class="close-btn" onclick="closeNav()">&#10060;</a>
+        <a href="#">Our Services</a>
+        <a href="#">Why Us</a>
+        <a href="#">Testimonial</a>
+        <a href="#">FAQ</a>
+        <a href="#" class="btn btn-success">Register</a>
       </div>
       <!-- END NAVBAR -->
 
@@ -459,6 +470,9 @@
     </footer>
 
     <!-- END of FOOTER -->
+
+    <!-- JAVASCRIPT -->
+    <script src="./main.js"></script>
 
     <!-- BOOTSTRAP -->
     <script
