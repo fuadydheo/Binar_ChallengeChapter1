@@ -30,6 +30,7 @@
 
 body {
   line-height: 1.7;
+  font-size: 100%;
 }
 
 .main-section {
@@ -116,10 +117,9 @@ nav {
   padding-right: 6%;
 }
 
-.logo {
-  background-color: var(--color-primary1);
-  width: 6rem;
-  height: 2rem;
+.logo a {
+  color: var(--color-black);
+  font-weight: 600;
 }
 
 nav button {
@@ -173,7 +173,7 @@ nav button {
 
 .col__left {
   align-self: center;
-  margin-left: 5rem;
+  margin-left: 10rem;
 }
 
 .col__left p {
@@ -198,45 +198,88 @@ nav button {
   margin-top: -13rem;
 }
 
-/* =======FAQ======= */
-.faq-section {
-  position: relative;
-  margin-top: 3rem;
-  height: 70vh;
+/* =============SERVICE-SECTION */
+.service-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--color-white);
-  gap: 5rem;
+  align-items: center;
+  height: 70vh;
+  margin-top: 5rem;
 }
-.faq_left {
-  margin: 1.2rem 0.5rem;
-  margin-left: 5rem;
-}
-.faq_right {
-  margin-right: 5rem;
-}
-.accordion {
-  width: 100%;
-  border: 1px solid #d4d4d4;
-  padding: 1rem;
+.service-left {
   display: flex;
-  margin: 1rem;
-  height: fit-content;
-  background: var(--color-primary);
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: 400;
+  justify-content: center;
+  align-items: center;
 }
-.active,
-.accordion:hover {
-  background: #ccc;
+.service-left img {
+  position: relative;
+  width: fit-content;
 }
-.panel {
-  background: #ccc;
-  display: none;
+.service-right {
+  align-self: center;
+  line-height: 2rem;
+  padding: 3rem;
+}
+.list {
+  line-height: 2;
+}
+.content-service {
+  text-align: justify;
+  line-height: 20px;
+  margin-right: 7rem;
+  font-size: medium;
+  font-weight: 300;
+}
+.title-service {
+  font-weight: 700;
+  line-height: 2;
+  margin-right: 7rem;
+}
+
+/* ==========whyuse======== */
+.whyuse-section {
+  position: relative;
+  top: 5rem;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+.title-why h2 {
+  line-height: 3rem;
+}
+.article-why p {
+  bottom: 2rem;
+}
+
+.whys_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.why_card {
+  background: var(--color-bg1);
   padding: 1rem;
-  margin: 1rem;
+  border-radius: 2rem;
+  transition: var(--transition);
   width: 100%;
+}
+.why_card h3 {
+  font-size: medium;
+  line-height: 3rem;
+}
+.why_card p {
+  font-size: small;
+}
+.why_card:hover {
+  background: var(--color-bg2);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.why_icon {
+  padding: 0.6rem;
+  border-radius: 1rem;
+  display: inline-block;
+  line-height: 2rem;
+  font-size: 2rem;
 }
 
 /* TESTIMONIAL */
@@ -283,121 +326,88 @@ nav button {
   font-weight: 500;
   margin-top: 0.7rem;
 }
-
-/* =============SERVICE-SECTION */
-.service-container {
+/* =======RENT====== */
+.rent {
+  height: 20vw;
+  margin: 2rem 10rem 2rem 10rem;
+  background: var(--color-primary1);
+  border-radius: 13px;
+}
+.article-rent {
+  text-align: center;
+  color: var(--color-white);
+}
+.article-rent h2 {
+  padding-top: 3rem;
+}
+.article-rent p {
+  padding: 2rem;
+}
+/* =======FAQ======= */
+.faq-section {
+  position: relative;
+  margin-top: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  height: 30vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  height: 70vh;
-  margin-top: 5rem;
-}
-.service-left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.service-left img {
-  position: relative;
-  width: fit-content;
-}
-.service-right {
-  align-self: center;
-  line-height: 2rem;
-  padding: 3rem;
-}
-.list {
-  line-height: 2;
-}
-.content-service {
-  text-align: justify;
-  line-height: 20px;
-  margin-right: 7rem;
-  font-size: medium;
-  font-weight: 300;
-}
-.title-service {
-  font-weight: 700;
-  line-height: 2;
-  margin-right: 7rem;
+  background-color: var(--color-white);
+  gap: 5rem;
 }
 
-/* ==========whyuse======== */
-.whyuse-section {
-  position: relative;
-  top: 5rem;
-  margin-right: 5rem;
-  margin-left: 5rem;
-}
-.article-why p {
-  bottom: 2rem;
-}
-
-.whys_cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-}
-.why_card {
-  background: var(--color-bg1);
-  padding: 1rem;
-  border-radius: 2rem;
-  transition: var(--transition);
+.accordion {
   width: 100%;
+  border: 1px solid #d4d4d4;
+  padding: 1rem;
+  display: flex;
+  margin: 1rem;
+  height: fit-content;
+  background: var(--color-primary);
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 400;
 }
-.why_card h3 {
-  font-size: medium;
-  line-height: 3rem;
+.active,
+.accordion:hover {
+  background: #ccc;
 }
-.why_card p {
-  font-size: small;
-}
-.why_card:hover {
-  background: var(--color-bg2);
-  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
-}
-
-.why_icon {
-  padding: 0.6rem;
-  border-radius: 1rem;
-  display: inline-block;
-  line-height: 2rem;
-  font-size: 2rem;
+.panel {
+  background: #ccc;
+  display: none;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
 }
 
 /* ==========FOOTER======== */
 
 footer {
   background: var(--color-bg1);
-  padding-top: 5rem;
-  font-size: 0.9rem;
+  padding: 2rem;
+  font-size: 1rem;
 }
 .footer_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
+  margin-left: 10rem;
 }
-.footer_container > div h4 {
-  margin-bottom: 1.2rem;
+.footer_container a {
+  color: var(--color-veryblack);
 }
-.footer_1 p {
-  margin: 1rem 0 0 2rem;
-}
-footer ul li {
-  margin-bottom: 0.7rem;
-}
+
 footer ul li:hover {
   text-decoration: underline;
 }
 .footer_socials {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   font-size: 1.2rem;
-  margin-top: 2rem;
 }
-.footer_copyright {
-  text-align: center;
-  margin-top: 4rem;
-  padding: 1.2rem 0;
-  border-top: 1px solid var(--color-bg2);
+.footer_socials i {
+  color: var(--color-primary1);
+}
+.footer_socials h4 {
+  font-size: small;
 }
