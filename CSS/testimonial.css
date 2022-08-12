@@ -158,7 +158,75 @@ nav {
     gap: 4rem;
 }
 
+/*======================TESTIMONIAL=======================*/
+.testimonial
+{
+    background: var(--color-bg1);
+    overflow: hidden;
 
+}
+
+.testimonial h2
+{
+    font-family: var(--font1);
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+    /* line-height: 2rem; */
+}
+
+.testimonial p
+{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font2);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.testi
+{
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background: var(--color-danger-variant);
+    padding: 1rem;
+    margin-top: 3rem;
+    position: relative;
+    margin: 1.5rem ;
+    border-radius: 1rem;
+    
+
+}
+
+.testi_info
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testi_image
+{
+    
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+}
+
+.testi p
+{
+    
+    margin: 0.4rem 0rem 0.4rem; 
+    line-height: 1.2rem;
+}
+
+.testi_icon
+{
+    display: flex;
+    justify-items: center;
+}
 
 
 /*======================FOOTER=======================*/
