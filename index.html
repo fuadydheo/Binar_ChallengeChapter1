@@ -25,6 +25,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- =========== NavBar =========== -->
@@ -141,6 +147,122 @@
         </article>
       </div>
     </section>
+    <!-- ========== END WHYUS SECTION =========== -->
+
+    <!-- =========== TESTIMONIAL SECTION =========== -->
+    <section class="testi-section">
+      <h2>Testimonial</h2>
+      <div class="testi__container"></div>
+      <div class="wrapper">
+        <div class="testimonial-container" id="testimonial-container"></div>
+        <button id="prev">&lt;</button>
+        <button id="next">&gt;</button>
+      </div>
+    </section>
+
+    <!-- <section class="container testimonial__container mySwiper">
+      <h2>Testimonial</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+          <div class="testi__container">
+            <div class="testi__left">
+              <img src="" />
+            </div>
+            <div class="testi__right">
+              <div class="rating"><img src="" /></div>
+              <p></p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="testi__container">
+            <div class="testi__left">
+              <img src="" />
+            </div>
+            <div class="testi__right">
+              <div class="rating"><img src="" /></div>
+              <p></p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section> -->
+
+    <!-- ======== END TESTIMONIAL SECTION ======== -->
+
+    <!-- ========== GETING STARTED ============== -->
+    <section class="getting-section">
+      <div class="getting__container"></div>
+      <div class="get__wrapper">
+        <div class="get-container" id="get-container">
+          <h3>Sewa Mobil di (Lokasimu) Sekarang</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+            esse nobis molestiae.
+          </p>
+          <a href="#" class="btn get__started">Mulai Sewa Mobil</a>
+        </div>
+      </div>
+    </section>
+    <!-- ============== END GETING STARTED ============== -->
+
+    <!-- ==================== FAQS ================== -->
+    <section class="faqs">
+      <div class="container faqs__container">
+        <div class="faqs__left">
+          <h3>Frequently Asked Question</h3>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="faqs__right">
+          <article class="faq">
+            <div class="question__answer">
+              <h4>Apa saja syarat yang dibutuhkan?</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt, soluta!
+              </p>
+            </div>
+            <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+          </article>
+
+          <article class="faq">
+            <div class="question__answer">
+              <h4>Apa saja syarat yang dibutuhkan?</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt, soluta!
+              </p>
+            </div>
+            <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+          </article>
+
+          <article class="faq">
+            <div class="question__answer">
+              <h4>Apa saja syarat yang dibutuhkan?</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt, soluta!
+              </p>
+            </div>
+            <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+          </article>
+
+          <article class="faq">
+            <div class="question__answer">
+              <h4>Apa saja syarat yang dibutuhkan?</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt, soluta!
+              </p>
+            </div>
+            <div class="faq__icon"><i class="uil uil-angle-down"></i></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <!-- ========== FOOTER ============ -->
     <footer class="footer">
@@ -187,6 +309,19 @@
       </div>
     </footer>
 
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
