@@ -229,7 +229,77 @@ header {
     margin-top: 5rem;
 }
 .our__services-image {
-    size: 20%;
+    width: 374px;
+    height: 366px;
     left: 99px;
     top: 0px;
 }
+
+/* ========= end our services ========== */
+
+footer {
+    background: var(--color-bg1);
+    margin-top: 5rem;
+  }
+  
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    text-align: left;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-size: 14px;
+    color: var(--color-black);
+    padding-top: 5rem;
+  }
+  
+  .footer__container > div h4 {
+    margin-bottom: 1.2rem;
+  }
+  
+  .footer__1 {
+    margin: 0 0 2rem;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;  
+  }
+  .footer__1 p {
+    margin: 0 0 1rem;
+  }
+  
+  
+  .footer2 {
+    margin: 0 0 1rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  
+  .footer__social {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .footer__social i {
+    color: var(--color-white);
+    background: var(--color-primary);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 0.2rem;
+  }
+  
+  footer ul li a {
+    color: var(--color-black);
+  }
+
+  .footer-logo {
+    background: var(--color-primary);
+    width: 6rem;
+    height: 2rem;
+    margin-top: 1rem;
+  }
