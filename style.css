@@ -20,6 +20,9 @@
   --color-bg: #f1f3ff;
   --color-bg2: #cfd4ed;
 
+  --shadow-high: 0 0 10px rgba(0, 0, 0, 0.15);
+  --shadow-low: 0 0 4px rgba(0, 0, 0, 0.15);
+
   --container-width-lg: 80%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
@@ -265,7 +268,14 @@ img {
   padding: 1.3rem;
   border: 1px solid var(--color-bg2);
   border-radius: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
 }
+
+.why_us:hover {
+  box-shadow: var(--shadow-high);
+}
+
 
 .why_us-icon {
   background: var(--color-warning);
@@ -319,6 +329,11 @@ img {
   padding: 3rem;
   border-radius: 1rem;
   cursor: pointer;
+  transition: var(--transition);
+}
+
+.testimonial:hover {
+  box-shadow: var(--shadow-low);
 }
 
 .testimonial-avatar {
@@ -461,16 +476,8 @@ footer {
     width: var(--container-width-md);
   }
 
-  .container_navbar .menu-btn {
-    display: flex;
-  }
-
   .nav_menu {
-    display: none;
-  }
-
-  .side_nav {
-    display: block;
+    gap: 1.5rem;
   }
 
   /* Main Section -Header */
@@ -495,12 +502,12 @@ footer {
   }
 
   .header-right {
-    margin-top: -4rem;
+    margin-top: -6.5rem;
   }
 
   .header-right .background_img {
     margin-top: -11.1rem;
-    height: 10rem;
+    height: 12rem;
   }
 
   /* Our Service Section */
