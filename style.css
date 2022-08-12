@@ -70,7 +70,8 @@ img {
   gap: 2rem;
 }
 
-.nav_menu li {
+.nav_menu li a {
+  text-decoration: none;
   font-size: 1rem;
   color: var(--color-black);
   font-weight: 400;
@@ -78,7 +79,7 @@ img {
   cursor: pointer;
 }
 
-.nav_menu li:hover {
+.nav_menu li a:hover {
   color: var(--color-bg2);
 }
 
