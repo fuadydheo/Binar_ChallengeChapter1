@@ -21,3 +21,436 @@
     --container-width-sm: 94%;
     --transition: all 400ms ease;
 }
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background-color: var(--color-white);
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--color-black) !important;
+    text-decoration: none !important;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent !important;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-white) !important;
+    border-color: var(--color-black);
+}
+
+.btn-primary {
+    background: var(--color-success) !important;
+    color: var(--color-white) !important;
+}
+
+
+/* =================================== NAVBAR =================================== */
+
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    background-color: var(--color-bg1);
+}
+
+.window-scroll {
+    background: var(--color-bg1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav_menu a {
+    font-size: 0.9rem;
+    transition: all 400ms ease;
+}
+
+.nav_menu a:hover {
+    color: var(--color-black);
+}
+
+
+/* ================================ HEADER ================================ */
+
+header {
+    /* position: relative; */
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+    background-color: var(--color-bg1);
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    color: var(--color-black);
+}
+
+.header_left p {
+    margin: 1rem 0.24rem;
+    color: var(--color-black);
+}
+
+.header_right-bg {
+    position: absolute;
+    width: 62rem;
+    height: 20rem;
+    left: 45rem;
+    top: 16rem;
+    right: -300rem;
+    background: var(--color-primary);
+    border-radius: 60px 0px 0px 0px;
+}
+
+.header_right-image {
+    position: absolute;
+    bottom: -1rem;
+    z-index: 1;
+}
+
+
+/* =============================== OUR SERVICES =============================== */
+
+.ourservices {
+    background: var(--color-white);
+}
+
+.ourservices_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    color: var(--color-black);
+}
+
+.ourservices_left {
+    width: 459px;
+    height: 428px;
+    left: 206px;
+    top: 400;
+    position: absolute;
+}
+
+.ourservices_right {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    height: 20rem;
+    width: 30rem;
+    left: 45rem;
+    top: 400;
+}
+
+.ourservices_left-image {
+    width: 23rem;
+    height: 22rem;
+    left: 6rem;
+    top: 0
+}
+
+.ourservices_right h3 {
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.ourservices_right p {
+    margin: 1rem 0 1rem;
+    gap: 1rem;
+}
+
+.ourservices_right li {
+    margin: 1rem 0 1rem;
+}
+
+.ourservices_icon {
+    background: var(--color-bg1);
+    color: var(--color-primary);
+    width: 5rem;
+    height: 3rem;
+    margin: 1rem 0 1rem;
+    border-radius: 50%;
+}
+
+
+/* ============================= WHY US ============================= */
+
+#whyus {
+    background: black;
+    height: 28rem;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: var(--color-bg1);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+.whyus h3 {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.whyus p {
+    margin: 1rem 0;
+    color: var(--color-black);
+}
+
+.whyus_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    color: var(--color-black);
+    top: 0;
+}
+
+.whyus_icon {
+    background: var(--color-warning);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.whyus:nth-child(2) .whyus_icon {
+    background: var(--color-danger);
+}
+
+.whyus:nth-child(3) .whyus_icon {
+    background: var(--color-primary);
+}
+
+.whyus:nth-child(4) .whyus_icon {
+    background: var(--color-success);
+}
+
+.whyus h5 {
+    font-size: 1rem;
+    margin: 1.2rem 0 1rem;
+}
+
+
+/* ============================== TESTIMONIALS ============================== */
+
+.testimonial {
+    background: var(--color-white);
+    position: relative;
+    height: 35rem;
+    color: var(--color-black);
+}
+
+.testimonials_container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+    padding: 5rem;
+    color: var(--color-black);
+}
+
+.testimonials h3 {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.testimonials p {
+    margin: 1rem 0;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background: var(--color-bg1);
+    margin: 2rem;
+    height: 16rem;
+    border-radius: 1rem;
+}
+
+.testi {
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-self: center;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.testimonials_info {
+    align-self: center;
+}
+
+.testi_icon {
+    color: var(--color-warning);
+}
+
+
+/* ================================ CALL TO ACTION ================================ */
+
+.call_to_action {
+    background: var(--color-white);
+    height: 34rem;
+    position: relative;
+}
+
+.cta_container {
+    background: var(--color-primary);
+    height: 22rem;
+    text-align: center;
+    color: var(--color-white);
+    padding: 5rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.call_to_action h2 {
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.call_to_action p {
+    line-height: 1.2rem;
+    margin: 1rem 0 2rem;
+}
+
+
+/* =============================== FAQ =============================== */
+
+.faq {
+    background: var(--color-white);
+}
+
+.faq_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq_left {
+    width: 23rem;
+    height: 22rem;
+    left: 6rem;
+    top: 0;
+    color: var(--color-black);
+}
+
+.faq h3 {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.faq p {
+    margin: 1rem 0 2rem;
+    line-height: 1.2rem;
+    display: none;
+}
+
+.faq_right {
+    margin: 1rem 0 1rem;
+    gap: 1rem;
+    color: var(--color-black);
+}
+
+.faq_icon i {
+    font-size: 1.5rem;
+}
+
+.faq h5 {
+    font-size: 1rem;
+    line-height: 2.2rem;
+}
+
+
+/* =========================== FOOTER =========================== */
+
+.footer {
+    background: var(--color-bg1);
+    padding: 5rem 0 3rem;
+    font-size: 1rem;
+}
+
+.link-footer img {
+    width: unset;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}

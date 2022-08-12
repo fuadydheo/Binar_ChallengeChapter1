@@ -15,10 +15,10 @@ faqs.forEach(faq => {
 
         //change icon
         const icon = faq.querySelector('.faq_icon i');
-        if (icon.className === 'uil uil-plus') {
-            icon.className = "uil uil-minus";
+        if (icon.className === 'uil uil-angle-down') {
+            icon.className = "uil uil-angle-up";
         } else {
-            icon.className = "uil uil-plus";
+            icon.className = "uil uil-angle-down";
         }
     })
 })
