@@ -94,3 +94,32 @@ nav{
 .fa-solid{
  color: #CFD4ED;
 }
+ 
+/* why us */
+.why_us{
+    margin-top: 7%;
+}
+.why_us h3{
+    font-family: 'Helvetica';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+.why_us p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+.why_us h4{
+    font-family: 'Helvetica';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+.icon_why_us{
+    width: 32px;
+}
