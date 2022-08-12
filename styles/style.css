@@ -339,8 +339,23 @@ header {
   color: var(--color-warning);
 }
 
-.owl-nav .owl-next {
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+  text-decoration: none;
+}
+
+.owl-nav button .icon {
   border: #c4c4c4 solid 1px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.owl-nav button .icon:hover {
+  border: #c4c4c4 solid 1px;
+  padding: 10px;
+  border-radius: 50%;
+  background: var(--color-success);
+  transition: var(--transition);
 }
 
 .owl-nav .owl-prev {

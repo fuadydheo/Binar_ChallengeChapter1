@@ -5,19 +5,19 @@ $(".owl-carousel").owlCarousel({
   nav: true,
   dots: false,
   stagePadding: 20,
-  navText: ["<i class='uil uil-angle-left-b'></i>", "<i class='uil uil-angle-right-b'></i>"],
+  navText: ["<i class='uil uil-angle-left-b icon'></i>", "<i class='uil uil-angle-right-b icon'></i>"],
   responsive: {
     0: {
       items: 1,
     },
     600: {
-      autoWidth: false,
       items: 1,
     },
     1024: {
       items: 2,
     },
     1440: {
+      nav: true,
       items: 3,
     },
   },
