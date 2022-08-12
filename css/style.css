@@ -89,6 +89,10 @@ nav {
     border-radius: 0 0 1rem 1rem;
 }
 
+.nav__button {
+    display: none;
+}
+
 .nav__container {
     height: 100%;
     display: flex;
@@ -407,6 +411,39 @@ header {
         width: 90%;
     }
 
+    /* NAV */
+
+    .nav__button {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    #open-btn {
+        display: block;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 4.5rem;
+        right: 1rem;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        background: var(--color-bg2);
+        border-radius: 0.8rem;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    .nav__menu li {
+        text-align: center;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .nav__menu li:hover {
+        background: var(--color-green);
+    }
+    /* END OF NAV */
 
     /* HEADER */
     header {
