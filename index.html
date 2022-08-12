@@ -8,198 +8,64 @@
     <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" 
     integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
 </head>
 <body>
 <!-------------------nav---------------------->
 <header>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">Khiro Car</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link " href="#layanan">Our Service</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#why_us">Why Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonial</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link faq" href="#">FAQ</a>
-                </li>
-                <li><a href="regist.html" class="tbl-biru">Register</a></li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-
+  <div class="container">
+    <div class="row fixed-top">
+      <nav class="navbar navbar-expand-lg col" style="background-color:#F1F3FF;">
+        <a class="navbar-brand logo" href="#">KHIRO CAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto navbar_list">
+            <li class="nav-item">
+              <a class="nav-link" href="#Our_Services">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Why_Us">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#FAQ">FAQ</a>
+            </li>
+            <li class="nav-item register">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <!--awal-->
-            <div class="row produk">
-            <div class="col-lg-6">
-                <h1>Sewa & Rental Mobil Terbaik di kawasan Way Jepara</h1>
-                <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="./img/img_car.png">
-            </div>
-            </div>
+    <div class="row title-prodak">
+      <div class="col-lg-6">
+        <h1>Sewa & Rental Mobil Terbaik di Kawasan Way Jepara.</h1>
+        <p>Selamat datang di KHIRO CAR Rental. Kami menyediakan mobil kualitas
+          terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk
+          sewa mobil selama 24 jam.
+        </p>
+        <button type="button" class="btn button-order">Mulai Sewa Mobil</button>
+      </div>
+      <div class="col-lg-6">
+        <img class="title-image" src="img/img_car.png" alt="car-mockup" />
+      </div>
     </div>
-  </header>
+  </div>
+</header>
+  
   <main>
     <!--Layanan-->
-    <div class="container layanan">
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="img/img_service.png" alt="">
-            </div>
-            <div class="col-lg-6">
-                <h2>Best Car Rental for any kind of trip in Way Jepara</h2>
-                <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
-                <ul class="list_layanan">
-                    <li>
-                        <p><img src="img/Group 53.png" alt="">Sewa Mobil Dengan Supir di Bali 12 Jam</p>
-                    </li>
-                    <li>
-                        <p><img src="img/Group 53.png" alt="">Sewa Mobil Lepas Kunci di Bali 24 Jam</p>
-                    </li>
-                    <li>
-                        <p><img src="img/Group 53.png" alt="">Sewa Mobil Jangka Panjang Bulanan</p>
-                    </li>
-                    <li>
-                        <p><img src="img/Group 53.png" alt="">Gratis Antar - Jemput Mobil di Bandara</p>
-                    </li>
-                    <li>
-                        <p><img src="img/Group 53.png" alt="">Layanan Airport Transfer / Drop In Out</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--------- Why Us ----------->
-    <div class="container why_us">
-        <div class="row">
-            <div class="col-lg-12">
-                <h3>Why Us?</h3>
-                <p>Mengapa harus pilih Binar Car Rental?</p>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="img/icon_complete.png" class="card-img-top icon_why" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mobil Lengkap</h5>
-                      <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="img/icon_price.png" class="card-img-top icon_why" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Harga Murah</h5>
-                      <p class="card-text">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="img/icon_24hrs.png" class="card-img-top icon_why" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Layanan 24 Jam</h5>
-                      <p class="card-text">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="img/icon_professional.png" class="card-img-top icon_why" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Sopir Profesional</h5>
-                      <p class="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
 
-    <!------------ Testimonial -------------------->
-    <div class="container testimonial text-center">
-        <h1>Testimonial</h1>
-        <p>Berbagai review positif dari para pelanggan kami</p>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card mb-3 testimoni" style="max-width: 540px; background-color: #f1f3ff;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="img/img_photo.png" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body testi">
-                          <img src="img/Rate.png" alt="">
-                          <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                          <p class="card-text"><small class="text-muted">John Dee 32, Bromo</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card mb-3 testimoni" style="max-width: 540px; background-color: #f1f3ff;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="img/poto.png" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body testi">
-                          <img src="img/Rate.png" alt="">
-                          <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                          <p class="card-text"><small class="text-muted">John Dee 32, Bromo</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card mb-3 testimoni" style="max-width: 540px; background-color: #f1f3ff;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="img/img_photo.png" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body testi">
-                          <img src="img/Rate.png" alt="">
-                          <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                          <p class="card-text"><small class="text-muted">John Dee 32, Bromo</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-            </button>
-            <div class="button_testimoni">
-                <a type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style class="testimonial-media"><img
-                    src="img/Left button.png" alt=""></a>
-                <a type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" class="testimonial-media"><img
-                    src="img/Right button.png" alt=""></a>
-              </div>
-          </div>
-    </div>
   </main>
+</body>
 
 
 

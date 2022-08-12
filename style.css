@@ -1,89 +1,69 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    padding-top: 0px;
+    background-color: #F1F3FF;
+}
 /* nav */
-nav {
-    margin-left: 60px;
+nav{
+    margin: 0 50px 0 80px;
 }
-nav ul{
-    margin-left: 500px;
+.navbar_list{
+    margin-right: 150px;
 }
-.tbl-biru {
-    margin-left: 40px;
+.container_content{
+    margin-top: 80px;
 }
-/* Awal */
-.produk {
-    margin-top: 20px;
+.logo{
+    background-color: #f1f3ff;
 }
-.produk img {
-    width: 558px;
+.register{
+    background-color: #5CB85F;
 }
-.produk h1 {
-    margin: 80px 0 0 60px;
-    width: 500px;
+#title {
+    background-color: #F1F3FF;
+}
+.title-prodak h1{
+    width: 482px;
     height: 100px;
+    margin: 80px 0 0 0;
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 150%;
+    /* margin-top: 100px; */
 }
-.produk p{
-width: 500px;
-height: 100px;
-margin: 20px 0 0 60px;
+.title-prodak p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    width: 468px;
+    height: 90px;
+    margin: 10px 0 0 0;
 }
-/* layanan */
-.layanan {
-    margin-top: 90px;
+.title-image{
+    width: 540px;
+    height: 407px;
 }
-.layanan h2{
-    margin: 80px 0 0 0px;
-    width: 500px;
-    height: 100px;
+
+.button-order{
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px; 
+    font-size: 14px;
+    line-height: 20px;
+    width: 170px;
+    height: 52px;
+    margin: 20px 0 0 0;
+    background-color: #5CB85F !important;
+    border-radius: 2px;
+    color: #FFFFFF !important;
+    
 }
 
-.list_layanan {
-    list-style: none;
-    padding: 0;
-}
-.list_layanan img{
-    margin-right: 13px;
-}
 
-/* why us */
-.why_us {
-    margin-top: 90px;
-}
-.why_us p{
-    margin-top: 20px;
-}
-.icon_why{
-    width: 50px !important;
-}
-
-/* testi */
-.testimonial {
-    margin-top: 90px;
-}
-.testimonial p{
-    padding-bottom: 20px;
-}
-.testimoni {
-    margin-left: 300px !important;
-}
- .testimoni img{
-    margin-top: 50px;
-
- }
- .testi {
-    text-align: left;
- }
- .testi p{
-    padding: 0;
- }
- .testi img{
-    padding-top: 0;
- }
+/* layanan */
