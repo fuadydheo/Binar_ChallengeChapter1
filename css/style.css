@@ -11,7 +11,7 @@ body {
 }
 
 .container-fluid{
-    width: 85vw;
+    width: 90vw;
     margin: 0 auto;
 }
 
@@ -340,3 +340,4 @@ p {
         max-width: 50%;
     }
 }
+
