@@ -580,15 +580,15 @@ header {
     gap: 30px;
     padding: 0 50px 0 50px;
   }
-  /* .service-left img {
-    width: 230px;
-    height: 214px;
-  } */
+  .service-left img {
+    width: 459px;
+    height: 428px;
+  }
 
   .serve {
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 6% 94%;
     gap: 15px;
     align-items: center;
   }
@@ -686,6 +686,10 @@ header {
     margin-top: -7rem;
   }
 
+  .header-left h1 {
+    width: 400px;
+  }
+
   .header-right img {
     width: 370px;
     height: 200px;
@@ -703,19 +707,32 @@ header {
     padding: 0 50px 0 50px;
   }
   .service-left img {
-    width: 100%;
-    height: 100%;
+    width: 270px;
+    height: 251px;
+  }
+
+  .list-service p {
+    margin: 18px 0 8px 0;
+    width: 270px;
+    padding-bottom: 9px;
+  }
+  .service-right h2 {
+    width: 350px;
+  }
+  .service-right p {
+    width: 350px;
+
   }
 
   .serve {
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: 10% 90%;
-    gap: 15px;
+    grid-template-columns: 7% 93%;
+    gap: 9px;
     align-items: center;
   }
   .icon i {
-    margin: 1px;
+    margin: 5px;
     color: var(--color-primary);
   }
 
