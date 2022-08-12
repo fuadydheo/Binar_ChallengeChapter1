@@ -276,7 +276,6 @@ img {
   box-shadow: var(--shadow-high);
 }
 
-
 .why_us-icon {
   background: var(--color-warning);
   padding: 0.3rem 0.45rem;
@@ -473,11 +472,19 @@ footer {
 @media screen and (max-width: 1024px) {
   /* Main Section -Navbar */
   .container_navbar {
-    width: var(--container-width-md);
+    width: var(--container-width-sm);
+  }
+
+  .container_navbar .menu-btn {
+    display: flex;
   }
 
   .nav_menu {
-    gap: 1.5rem;
+    display: none;
+  }
+
+  .side_nav {
+    display: block;
   }
 
   /* Main Section -Header */
@@ -502,7 +509,7 @@ footer {
   }
 
   .header-right {
-    margin-top: -6.5rem;
+    margin-top: -4rem;
   }
 
   .header-right .background_img {
