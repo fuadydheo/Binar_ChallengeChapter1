@@ -233,3 +233,36 @@ header {
 .header__right img {
     padding-top: 5rem;
 }
+
+/* Service Section */
+.service {    
+    height: 32rem;
+}
+
+.service h3 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.service__container {
+    display: grid;
+    grid-template-columns: 40% 60%; 
+}
+
+.service__left img {
+    margin-right: 3rem;
+}
+
+.service__right {
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+.service__right-info p {
+    margin-right: 4rem;
+}
+
+.service__list i {
+    color: var(--darkblue03);
+    line-height: 2;
+}
