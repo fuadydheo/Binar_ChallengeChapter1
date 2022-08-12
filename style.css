@@ -50,7 +50,7 @@ nav {
 .window-scroll {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-.nav_section {
+.nav-section {
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -396,6 +396,10 @@ footer ul li a {
 
 /* Media Queries (Phones) */
 @media screen and (max-width:600px){
+  *{
+    font-family: 'Helvetica';
+    font-style: normal;
+  }
   .container{
     width: var(--container-width-sm);
   }
@@ -406,7 +410,6 @@ footer ul li a {
   nav button{
     display: inline-block;
     background: transparent;
-    font-size: 1.8rem;
     color: var(--color-black);
     cursor: pointer;
   }
@@ -418,7 +421,7 @@ footer ul li a {
     top: 5rem;
     right: 3%;
     height: fit-content;
-    width: 18rem;
+    width: fit-content;
     flex-direction: column;
     gap: 0;
     display: none;
@@ -434,16 +437,16 @@ footer ul li a {
     height: 100%;
     display: grid;
     place-items: center;
-  }
+  } */
   /* .nav_menu li a:hover(){
     background: var(--color-bg1);
-  } */
+  }
   /* HEADER */
   .header-section{
-      grid-template-columns: 1fr;
-      text-align: left;
-      margin-top: 0;
-      height: 75vh;
+    grid-template-columns: 1fr;
+    text-align: left;
+    margin-top: 0;
+    min-height: 200vh;
   }
   .header_left h2{
     width: 328px;
@@ -452,7 +455,7 @@ footer ul li a {
     top: 90px;
   }
   .header_left p {
-    width: 328px;
+    width: 300px;
     height: 60px;
     left: 20px;
     top: 322px;
@@ -461,7 +464,7 @@ footer ul li a {
     width: 140px;
     height: 36px;
     left: 20px;
-    top: 420px;
+    top: 430px;
   }
   .header_button:hover {
     background: rgb(109, 233, 109);
@@ -469,21 +472,20 @@ footer ul li a {
   }
   .header_right img {
     position: relative;
-    width: 405px;
-    height: 220px;
-    left: 8px;
-    top: 250px;
+    width: 300px;
+    height: 180px;
+    left: 0;
+    top: 480px;
   }
   /* Service */
   .service-section{
     grid-template-columns: 1fr;
     text-align: left;
-    margin-top: 0;
     height: 100vh;
-    margin: 5rem 0 5rem;
+    margin: 13rem 0 5rem;
   }
   .service_left {
-    margin-left: 30px;
+    margin-left: 10px;
     width: 252px;
     height: 228px;
   }
@@ -491,33 +493,41 @@ footer ul li a {
     margin: 2rem 20px;
   }
   .service_right h1 {
-    width: 328px;
+    width: 280px;
     height: 72px;
   }
   .service_right p {
-  width: 400px;
-  height: 100px;
+    width: 280px;
+    height: 100px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .service_right-list li{
+    text-align: left;
+    margin-left: -2rem;
+    width: 450px;
+    max-height: 30px;
   }
   /* Why Us Section */
   .whyuse-section{
     padding:0;
     color: var(--color-black);
-    margin: -8rem 2rem 0 2rem;
+    margin-left: 0.5rem;
   }
   .whyuse-section h3{
-    text-align: center;
-    margin-left: -3rem;
+    text-align: left;
+    margin-left: 6rem;
   }
   .subtitle{
-    text-align: center;
-    margin-left: -3rem;
+    text-align: left;
+    margin-left: 1.5rem;
   }
   .cards{
     display: grid;
     grid-template-columns: 1fr;
   }
   .cards_detail{
-    width: 350px;
+    width: 300px;
     height: 196px;
   }
   .cards_detail p{
@@ -531,9 +541,15 @@ footer ul li a {
   }
   .faqs_left h1{
     text-align: center;
+    font-size: 18px;
   }
   .faqs_left p{
-  text-align: center;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+  }
+  .faqs_right{
+    max-width: 400px;
   }
   /* Testimonial Section */
   .testimonial-container{
@@ -543,16 +559,16 @@ footer ul li a {
     height: 36px;
     left: 32.36%;
     right: 35.14%;
-    margin-top: 3rem;
+    margin-top: 0;
   }
   .desc{
     position: relative;
-    width: 468px;
-    height: 20px;
-    left: 40px;
+    width: 400px;
+    height: 40px;
+    left: 10px;
   }
   .avatar{
-    margin: 0 0 0 7rem;
+    margin: 0 0 0 5rem;
     display: block;
     width: 150px;
     height: 150px;
@@ -567,18 +583,18 @@ footer ul li a {
     position: relative;
     width: 150px;
     display:flex;
-    margin-left: 6rem;
+    margin-left: 4rem;
   }
   .content{
     text-align: center;
-    margin-left: 3rem;
+    margin-left: 0;
     padding-top: 2rem;
     width: 264px;
     height: 120px;
   }
   .author{
     padding-top: 2rem;
-    margin-left: -2rem;
+    margin-left: -5rem;
     width: 415px;
     height: 20px;
     text-align: center;
@@ -586,12 +602,15 @@ footer ul li a {
   /* Getting Started Section */
   .gettingstarted-section{
     display: flex;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     padding: 2rem;
-    width: 385px;
+    width: 300px;
     height: 370px;
     border-radius: 13px;
     align-items: center;
+  }
+  .gettingstarted-section h5{
+    font-size: 24px;
   }
   /* FOOTER */
   footer {
