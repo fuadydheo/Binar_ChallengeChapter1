@@ -63,6 +63,10 @@ body {
     background: var(--neutral01);
 }
 
+section{
+    padding: 6rem 0;
+}
+
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -268,41 +272,11 @@ header {
 }
 
 /* Why Us Section */
-.why-us {
-    background: #F1F3FF;
-    position: relative;
-    top: 0;
-    overflow: hidden;
-    height: 80vh;    
-    padding-bottom: 3rem;
-    margin-bottom: 5rem;
-    justify-content: space-between;
-}
-
-
-.why-us__container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.2rem;
-}
-
-.why {
-    background: var(--neutral01);        
-    padding: 2rem;
-    border-radius: 2rem;
-    transition: var(--transition);
-}
-
-.why:hover {
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
-    z-index: 1;
-}
-
-.why__icon {
-    background: var(--alert-danger);
-    padding: 0.3rem;    
-    color: var(--neutral01);
-    border-radius: 0.9rem;
-}
-
+.list-reason {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+ 
 
