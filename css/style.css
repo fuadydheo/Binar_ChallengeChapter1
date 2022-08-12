@@ -200,35 +200,64 @@ header {
     margin-top: -11rem;
 }
 
-
-/* ============== Our Services =========== */
-
-.our__services {
-    background: var(--color-bg1);
-    position: relative;
-    overflow: hidden;
+/* OurFeature */
+.our__features {
+    margin-top: 5rem;
 }
 
-.our__services-container {
+.our-features__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 5rem;
-    height: 100%;
 }
 
-.our__services-left {
-    margin-top: 5rem;
-}
-.our__services-image {
-    width: 374px;
-    height: 366px;
-    left: 99px;
-    top: 0px;
+.features__left {
+    width: 85%;
 }
 
-/* ========= end our services ========== */
+.features__left img {
+    width: 50%;
+    height: auto;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    
+}
 
+.ellipse-green {
+    width: 20%;
+    height: auto;
+    background-color: var(--color-succes);
+    border-radius: 50%;
+}
+
+.features__right h2 {
+    margin-bottom: 2rem;
+}
+
+.features__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.features__list p {
+    margin: 0;
+}
+
+.feature {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feature-check {
+    background: var(--color-bg);
+    color: var(--color-primary);
+    padding: 0.2rem;
+    border-radius: 50%;
+}
 /* ==================== WHY-US ==================== */
 .why-us-section {
     margin-top: 4rem;
