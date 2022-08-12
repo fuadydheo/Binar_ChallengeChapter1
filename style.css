@@ -276,6 +276,7 @@ img {
   box-shadow: var(--shadow-high);
 }
 
+
 .why_us-icon {
   background: var(--color-warning);
   padding: 0.3rem 0.45rem;
@@ -477,6 +478,7 @@ footer {
 
   .container_navbar .menu-btn {
     display: flex;
+    z-index: 1;
   }
 
   .nav_menu {
@@ -485,6 +487,7 @@ footer {
 
   .side_nav {
     display: block;
+    z-index: 2;
   }
 
   /* Main Section -Header */
@@ -509,7 +512,7 @@ footer {
   }
 
   .header-right {
-    margin-top: -4rem;
+    margin-top: -6.5rem;
   }
 
   .header-right .background_img {
