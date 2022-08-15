@@ -451,6 +451,28 @@ header {
 
 /* ======================= Media Queries Tablets ===================== */
 
+@media screen and (max-width: 1440px) {
+  .container {
+    width: var(--container-width-lg);
+  }
+
+  header {
+    height: 64vh;
+  }
+  .main-section {
+    display: grid;
+    grid-template-columns: 47% 53%;
+    gap: 1rem;
+    height: 100%;
+  }
+
+  .header-right {
+    margin-left: 30px;
+  }
+}
+
+/* ======================= Media Queries Tablets ===================== */
+
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
@@ -558,27 +580,27 @@ header {
 
   header {
     height: 80vh;
-    margin-top: -6rem;
+    margin-top: -5rem;
   }
   .main-section {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 25% 75%;
     gap: 1rem;
     height: 100%;
   }
 
-  .header-right{
-    margin-left: 30px;
+  .header-right img{
+    margin-top: 95px;
   }
+  
 
   /* ======================= Service section ===================== */
 
   .service-section {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 30px;
-    padding: 0 50px 0 50px;
   }
   .service-left img {
     width: 459px;
@@ -605,7 +627,7 @@ header {
     border-radius: 6rem;
   }
 
-    /* ======================= Why Us ===================== */
+  /* ======================= Why Us ===================== */
 
   .list-reason {
     display: grid;
@@ -650,7 +672,7 @@ header {
     gap: 1rem;
   }
 
-  .gettingstarted-section{
+  .gettingstarted-section {
     height: 290px;
   }
 
@@ -669,19 +691,19 @@ header {
     width: var(--container-width-sm);
   }
 
-   /* ======================= Nav ===================== */
-  .nav-menu{
+  /* ======================= Nav ===================== */
+  .nav-menu {
     right: 3%;
   }
 
-   /* ======================= Header ===================== */
+  /* ======================= Header ===================== */
 
-  header{
+  header {
     height: 67vh;
     margin-top: 0rem;
   }
 
-  .main-section{
+  .main-section {
     grid-template-columns: 1fr;
     margin-top: -7rem;
   }
@@ -693,12 +715,11 @@ header {
   .header-right img {
     width: 370px;
     height: 200px;
-    
   }
 
-   /* ======================= Service section ===================== */
+  /* ======================= Service section ===================== */
 
-   .service-section {
+  .service-section {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -712,20 +733,16 @@ header {
   }
 
   .list-service p {
-    margin: 18px 0 8px 0;
     width: 270px;
-    padding-bottom: 9px;
   }
   .service-right h2 {
     width: 350px;
   }
   .service-right p {
     width: 350px;
-
   }
 
   .serve {
-    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 7% 93%;
     gap: 9px;
@@ -744,17 +761,16 @@ header {
     border-radius: 6rem;
   }
 
-   /* ======================= Why Us ===================== */
+  /* ======================= Why Us ===================== */
 
-   .list-reason {
+  .list-reason {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
   }
- 
 
-   /* ======================= Getting Started ===================== */
+  /* ======================= Getting Started ===================== */
 
   .gettingstarted-section {
     height: 350px;
@@ -764,7 +780,216 @@ header {
   .footer-section {
     display: grid;
     grid-template-columns: 1fr;
-    gap:1rem;
+    gap: 1rem;
     margin: -6rem 0 -6rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  header {
+    height: 90vh;
+  }
+  .main-section {
+    display: grid;
+    grid-template-columns: 0% 100%;
+    gap: 1rem;
+    height: 100%;
+  }
+
+  .header-right {
+    margin-top: 85px;
+  }
+
+
+  .service-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 30px;
+  }
+
+  .service-left img{
+    margin: 0 100px 0 100px;
+  }
+
+  .service-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .headline h2{
+    width: 350px;
+  }
+  .headline p{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  header {
+    height: 68vh;
+  }
+  .main-section {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 0;
+    height: 100%;
+  }
+
+
+  .service-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .header-right{
+    margin: 0;
+  }
+
+  .header-right img{
+    margin: 20px 0 0 40px;
+  }
+
+  .header-left p{
+    width: 370px;
+  }
+
+  .service-left img{
+    margin:0;
+  }
+
+  .service-right{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .headline h2{
+    width: 350px;
+  }
+  .headline p{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  header {
+    height: 68vh;
+  }
+  .main-section {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 0;
+    height: 100%;
+  }
+
+
+  .service-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .header-right{
+    margin: 0;
+  }
+
+  .header-right img{
+    margin: 20px 0 0 0px;
+  }
+
+  .service-left img{
+    margin:0;
+  }
+
+  .service-right{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .headline h2{
+    width: 300px;
+  }
+  .headline p{
+    width: 270px;
+  }
+
+  .gettingstarted-section {
+    height: 410px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  header {
+    height: 78vh;
+  }
+  .main-section {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 0;
+    height: 100%;
+  }
+
+
+  .service-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .header-right{
+    margin: 0;
+  }
+
+  .header-right img{
+    margin: 20px 0 0 0px;
+  }
+
+  .header-left h1{
+    width: 320px;
+  }
+
+  .header-left p{
+    width: 300px;
+  }
+
+  .service-left img{
+    margin:0;
+  }
+
+  .service-right{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .headline h2{
+    width: 300px;
+  }
+  .headline p{
+    width: 270px;
+  }
+
+  .gettingstarted-section {
+    height: 420px;
   }
 }
