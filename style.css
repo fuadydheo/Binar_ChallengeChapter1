@@ -46,21 +46,12 @@ body {
   margin: 0 auto;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h4 {
-  line-height: 1.2;
-}
-
 h1 {
   font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -68,7 +59,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 a {
@@ -95,6 +86,11 @@ img {
   background: transparent;
   color: var(--color-white);
   border-color: var(--color-white);
+}
+
+.btn-started:hover {
+  background: var(--color-white);
+  color: var(--color-black);
 }
 
 /* =========== NAVBAR ============= */
@@ -128,21 +124,12 @@ nav button {
 .nav__menu li a {
   font-size: 0.9rem;
   transition: var(--transition);
-  font-weight: 500;
-  box-shadow: -3rem 6rem 9rem rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.5);
 }
 
 .nav__menu li a:hover {
   color: var(--color-white);
-}
-
-.nav__menu a.active {
-  background-color: var(--color-lime2);
-  padding: 0.7rem 1rem;
-  color: var(--color-white);
-  border-radius: 5%;
-  font-weight: 600;
-  transition: all 400ms ease-in-out;
 }
 
 .nav__container button {
@@ -178,13 +165,13 @@ header {
   line-height: 1.5;
 }
 
-.header img {
-  width: 100%;
+.header__right-image {
+  position: absolute;
+  top: 2rem;
 }
 
-.header__right-img {
-  position: absolute;
-  top: 4rem;
+header img {
+  width: 100%;
 }
 
 /* =============== END HEADER =========== */
@@ -199,7 +186,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100%;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .service__right h3 {
@@ -220,11 +207,11 @@ header {
 }
 
 .services img {
-  padding-top: 1.25rem;
+  padding-top: 1.125rem;
 }
 
 .check__text {
-  padding-top: 1.25rem;
+  padding-top: 1.125rem;
   padding-left: 1rem;
 }
 
@@ -320,6 +307,7 @@ header {
   text-align: center;
   align-items: center;
   padding: 5rem 0;
+  background: var(--color-white);
 }
 
 .started__container {
@@ -450,3 +438,238 @@ footer ul li a:hover {
   gap: 1rem;
 }
 
+/* ==================== MEDIA QUERIES (TB) ======================= */
+@media screen and (max-width: 1024px) {
+  .container {
+      width: var(--container-width-md);
+  }
+
+  .btn-header {
+      color: var(--color-black);
+      border: none;
+  }
+
+  /* ======================== NAVBAR ====================== */
+  nav button {
+      display: inline-block;
+      background: transparent;
+      font-size: 1.8rem;
+      color: var(--color-white);
+      cursor: pointer;
+  }
+
+  nav button#close-menu-button {
+      display: none;
+  }
+
+  .nav__menu {
+      position: fixed;
+      top: 5rem;
+      right: 5%;
+      height: fit-content;
+      width: 18rem;
+      flex-direction: column;
+      gap: 0;
+      display: none;
+  }
+
+  .nav__menu li {
+      width: 100%;
+      height: 5rem;
+      animation: animateNavItems 400ms linear forwards;
+      transform-origin: top right;
+      opacity: 0;
+  }
+
+  .nav__menu li:nth-child(2) {
+      animation-delay: 200ms;
+  }
+
+  .nav__menu li:nth-child(3) {
+      animation-delay: 400ms;
+  }
+
+  .nav__menu li:nth-child(4) {
+      animation-delay: 600ms;
+  }
+
+  .nav__menu li:nth-child(5) {
+      color: var(--color-black);
+      animation-delay: 800ms;
+  }
+
+  @keyframes animateNavItems {
+      0% {
+          transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+      }
+
+      100% {
+          transform: rotateZ(0) rotateX(0) scale(1);
+          opacity: 1;
+      }
+  }
+
+  .nav__menu li a {
+      background: var(--color-white);
+      box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+  }
+
+  .nav__menu li a:hover {
+      background: var(--color-neutral02);
+      color: var(--color-black);
+  }
+
+  /* ================== END NAVBAR ==================== */
+
+  /* ================= HEADER ================ */
+  header {
+    height: auto;
+  }
+
+  .header__container {
+    gap: 0;
+    padding-bottom: 3rem;
+  }
+
+  /* ===================== END HEADER ======================= */
+
+  /* ====================== SERVICES ====================== */
+  .services__section {
+    height: auto;
+  }
+
+  .service__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 5rem 0;
+  }
+
+  /* ======================== END SERVICES ==================== */
+
+  /* ======================= WHY US ========================= */
+  .whyus__section {
+    height: auto;
+  }
+
+  .whyus__card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ======================= END WHY US =========================== */
+
+  /* ========================= STARTED ======================= */
+  .started__section {
+    height: auto;
+  }
+
+  .started__container {
+    padding: 3rem;
+  }
+
+  /* =============================== END STARTED ===================== */
+
+  /* ================================ FAQS ========================== */
+  .faqs {
+    height: auto;
+  }
+
+  .faqs__container {
+    grid-template-columns: 1fr;
+  }
+
+  /* =============================== END FAQS ====================== */
+
+  /* =============================== FOOTER ====================== */
+  .footer {
+    height: auto;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===================== MEDIA QUERIES (SM) ==================== */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .nav__menu {
+    right: 3%;
+  }
+
+  /* ================ HEADER ===================== */
+  header {
+    height: auto;
+  }
+
+  .header__container {
+    grid-template-columns: 1fr;
+  }
+
+  .header__left {
+    margin-bottom: 2rem;
+  }
+
+  .header__right-image {
+    position: static;
+  }
+
+  /* =================== END HEADER =================== */
+
+  /* ===================== SERVICES ===================== */
+  .services__section .services__left__img > img {
+    width: 100%;
+  }
+
+  /* =========================== END SERVICES ==================== */
+
+  /* ============================ WHY US ======================== */
+  .whyus__card {
+    grid-template-columns: 1fr;
+  }
+
+  /* ====================== END WHY US ======================= */
+
+  /* ========================= TESTIMONIAL ========================== */
+  .testimonial {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar {
+    padding-bottom: 2rem;
+  }
+
+  .testimonial__info > img {
+    margin: 0 auto;
+  }
+
+  /* ========================= END TESTIMONIAL ======================= */
+
+  /* ========================= FAQS ==================== */
+  .faqs__left {
+    text-align: center;
+  }
+  /* ======================== END FAQS ================= */
+
+  /* =============================== FOOTER =================== */
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__left {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__right {
+    display: block;
+    gap: 0;
+    padding: 0 0 5rem;
+  }
+}
