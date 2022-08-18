@@ -27,7 +27,7 @@
 
   --shadow-box: rgba(0, 0, 0, 0.15);
 
-  --container-width-lg: 100%;
+  --container-width-lg: 82%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
 
@@ -35,10 +35,10 @@
 }
 
 body {
-  font-family: Helvetica;
-  line-height: 1.7;
-  color: var(--color-primary4);
-  background-color: var(--color-primary5);
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2;
+  color: var(--color-black);
+  background: var(--color-primary5);
 }
 
 .container {
@@ -46,14 +46,6 @@ body {
   margin: 0 auto;
 }
 
-section {
-  padding: 6rem 0;
-}
-
-section h2 {
-  text-align: center;
-  margin-bottom: 4rem;
-}
 
 h1,
 h2,
@@ -64,19 +56,19 @@ h4 {
 }
 
 h1 {
-  font-size: 2.4rem;
-}
-
-h2 {
   font-size: 2rem;
 }
 
-h3 {
+h2 {
   font-size: 1.6rem;
 }
 
+h3 {
+  font-size: 1.4rem;
+}
+
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 a {
@@ -84,18 +76,18 @@ a {
 }
 
 img {
-  width: 100%;
   display: block;
   object-fit: cover;
 }
 
 .btn {
   display: inline-block;
-  background: var(--color-white);
-  color: var(--color-black);
-  padding: 1rem 2rem;
+  background: var(--color-lime2);
+  color: var(--color-white);
+  padding: 0.5rem 0.75rem;
   border: 1px solid transparent;
-  font-weight: 500;
+  box-shadow: 0 0 1rem var(--shadow-box);
+  border-radius: 2.2px;
   transition: var(--transition);
 }
 
@@ -105,12 +97,7 @@ img {
   border-color: var(--color-white);
 }
 
-.btn-primary {
-  background-color: var(--color-lime2);
-  color: var(--color-white);
-}
-
-/* =========== NavBar ============= */
+/* =========== NAVBAR ============= */
 nav {
   background: transparent;
   width: 100vw;
@@ -125,7 +112,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5rem 0 5rem;
 }
 
 nav button {
@@ -134,18 +120,19 @@ nav button {
 
 .nav__menu {
   display: flex;
+  position: relative;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
-.nav__menu a {
-  color: var(--color-black);
+.nav__menu li a {
   font-size: 0.9rem;
   transition: var(--transition);
-  font-weight: 600;
+  font-weight: 500;
+  box-shadow: -3rem 6rem 9rem rgba(0, 0, 0, 0.5);
 }
 
-.nav__menu a:hover {
+.nav__menu li a:hover {
   color: var(--color-white);
 }
 
@@ -158,17 +145,8 @@ nav button {
   transition: all 400ms ease-in-out;
 }
 
-.nav__menu a.active:hover {
-  background: var(--color-primary1);
-  border-color: var(--color-white);
-  color: var(--color-white);
-  border-radius: 5%;
-}
-
-.logo {
-  background-color: var(--color-primary2);
-  width: 6rem;
-  height: 2rem;
+.nav__container button {
+  color: var(--color-black);
 }
 
 /* ============ END NAVBAR ========== */
