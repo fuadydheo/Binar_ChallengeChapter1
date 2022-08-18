@@ -313,37 +313,30 @@ header {
 /* ================= END TESTIMONIAL ========= */
 
 /* ============== GET STARTED ============= */
-.getting-section {
-  background: var(--color-white);
-  position: relative;
-  height: 30rem;
-}
-
-.get__wrapper {
-  background-color: var(--color-primary2);
-  position: absolute;
-  width: 80vw;
-  height: 50vh;
-  border-radius: 0.6em;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+.started__section {
   display: flex;
-}
-
-.get-container {
+  width: 100vw;
+  height: 80vh;
   text-align: center;
-  padding-left: 12rem;
-  padding-top: 5.5rem;
+  align-items: center;
+  padding: 5rem 0;
 }
 
-.get-container h3 {
-  margin-bottom: 0.6rem;
+.started__container {
+  padding: 5rem 15rem;
+  border-radius: 13px;
+  box-shadow: 0 0 1rem var(--shadow-box);
+  background: var(--color-primary2);
 }
 
-.get-container p {
-  margin-bottom: 1rem;
+.started__container h3 {
+  color: var(--color-white);
+  padding-bottom: 1rem;
+}
+
+.started__container p {
+  color: var(--color-white);
+  padding-bottom: 3rem;
 }
 
 /* ============== END GET STARTED ============= */
