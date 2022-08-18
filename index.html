@@ -27,10 +27,7 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- SWIPER JS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- =========== NAVBAR =========== -->
@@ -171,46 +168,60 @@
     <!-- ========== END WHYUS SECTION =========== -->
     
     <!-- =========== TESTIMONIAL SECTION =========== -->
-    <section class="testi-section">
-      <h2>Testimonial</h2>
-      <div class="testi__container"></div>
-      <div class="wrapper">
-        <div class="testimonial-container" id="testimonial-container"></div>
-        <button id="prev">&lt;</button>
-        <button id="next">&gt;</button>
+    <section class="testimonial__section">
+      <div class="container testimonial__container mySwiper">
+        <h3>Testimonial</h3>
+        <p>Berbagai review positif dari para pelanggan kami</p>
+        <div class="swiper-wrapper">
+          <article class="testimonial swiper-slide">
+            <div class="avatar">
+              <img src="./image/testimonial_1.svg">
+            </div>
+            <div class="testimonial__info">
+              <img src="./image/rating.svg">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deleniti nobis, doloribus fugiat quia velit, dolores dignissimos debitis ad ratione earum commodi quaerat illum nemo excepturi ducimus numquam id maiores!</p>
+              <p><b>John Dee 32, Bromo</b></p>
+            </div>
+          </article>
+
+          <article class="testimonial swiper-slide">
+            <div class="avatar">
+              <img src="./image/testimonial_2.svg">
+            </div>
+            <div class="testimonial__info">
+              <img src="./image/rating.svg">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deleniti nobis, doloribus fugiat quia velit, dolores dignissimos debitis ad ratione earum commodi quaerat illum nemo excepturi ducimus numquam id maiores!</p>
+              <p><b>John Dee 32, Bromo</b></p>
+            </div>
+          </article>
+
+          <article class="testimonial swiper-slide">
+            <div class="avatar">
+              <img src="./image/testimonial_1.svg">
+            </div>
+            <div class="testimonial__info">
+              <img src="./image/rating.svg">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deleniti nobis, doloribus fugiat quia velit, dolores dignissimos debitis ad ratione earum commodi quaerat illum nemo excepturi ducimus numquam id maiores!</p>
+              <p><b>John Dee 32, Bromo</b></p>
+            </div>
+          </article>
+
+          <article class="testimonial swiper-slide">
+            <div class="avatar">
+              <img src="./image/testimonial_2.svg">
+            </div>
+            <div class="testimonial__info">
+              <img src="./image/rating.svg">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam deleniti nobis, doloribus fugiat quia velit, dolores dignissimos debitis ad ratione earum commodi quaerat illum nemo excepturi ducimus numquam id maiores!</p>
+              <p><b>John Dee 32, Bromo</b></p>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-pagination swiperIcon"></div>
       </div>
     </section>
 
-    <!-- <section class="container testimonial__container mySwiper">
-      <h2>Testimonial</h2>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <div class="swiper-wrapper">
-        <article class="testimonial swiper-slide">
-          <div class="testi__container">
-            <div class="testi__left">
-              <img src="" />
-            </div>
-            <div class="testi__right">
-              <div class="rating"><img src="" /></div>
-              <p></p>
-            </div>
-          </div>
-        </article>
-
-        <article class="testimonial swiper-slide">
-          <div class="testi__container">
-            <div class="testi__left">
-              <img src="" />
-            </div>
-            <div class="testi__right">
-              <div class="rating"><img src="" /></div>
-              <p></p>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="swiper-pagination"></div>
-    </section> -->
+    
 
     <!-- ======== END TESTIMONIAL SECTION ======== -->
 
@@ -330,19 +341,27 @@
       </div>
     </footer>
 
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        centeredSlides: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
+
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          },
+          // when window width is >= 600px
+          breakpoints: {
+              1024: {
+                  slidesPerView: 2,
+              },
+          }
+      });
+  </script>
+
+
   </body>
 </html>
