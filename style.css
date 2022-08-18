@@ -233,69 +233,40 @@ header {
 /* ============== WHY US SECTION ================ */
 .whyus__section {
   background: var(--color-white);
-}
-
-.whyus__section h3 {
-  padding-left: 5rem;
-  color: var(--color-black);
-  line-height: 1;
-  margin-bottom: 1rem;
-}
-
-.whyus__section p#whyus_desc {
-  padding-left: 5rem;
-  color: var(--color-black);
-  margin-bottom: 2rem;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
 }
 
 .whyus__container {
-  padding: 0 5rem 0 5rem;
+  padding: 3rem 0;
+}
+
+.whyus__container h3 {
+  padding-bottom: 2rem;
+}
+
+.whyus__card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  margin-top: 2rem;
 }
 
-.whyus {
-  border: 1px solid var(--shadow-box);
-  background: var(--color-white);
-  padding: 2rem;
-  border-radius: 0.8rem;
-  transition: var(--transition);
+.card {
+  padding: 1.5rem;
+  border: 1px solid var(--color-neutral3);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem var(--shadow-box);
 }
 
-.whyus:hover {
+.card h4 {
+  padding: 1rem 0;
+}
+
+.card:hover {
   box-shadow: 0 1rem 2rem var(--shadow-box);
-}
-
-.whyus__icon {
-  font-size: 2rem;
-  background: var(--color-alert);
-  color: var(--color-white);
-  border-radius: 50%;
-  padding: 5px 5px;
-}
-
-.whyus h5 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-black);
-  padding: 1rem 0 1rem 0;
-}
-
-.whyus p {
-  color: var(--color-black);
-}
-
-.whyus:nth-child(2) .whyus__icon {
-  background: var(--color-danger);
-}
-
-.whyus:nth-child(3) .whyus__icon {
-  background: var(--color-primary2);
-}
-
-.whyus:nth-child(4) .whyus__icon {
-  background: var(--color-lime2);
+  transition: var(--transition)
 }
 
 /* ============= END WHYUS ============= */
