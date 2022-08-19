@@ -218,13 +218,6 @@ nav button {
     height: 366px;
 }
 
-/* .service_lef_image2 {
-
-   display: inline-block;
-   
-  
-} */
-
 .service_right {
     margin: 0 5rem 2.4rem 0;
 }
@@ -246,10 +239,6 @@ nav button {
     margin: 1rem 5rem 1rem 0;
    
 }
-
-/* .service_right_list ol {
-    display: flex;
-} */
 
 .service_right_list li {
     font-family: "Helvetica";
@@ -306,10 +295,12 @@ nav button {
 
   /* ======================== TESTIMONIAL ======================== */
   .testimonial_container {
-    margin-top: 5rem;
+    margin-top: 3rem;
     overflow: hidden;
     position: relative;
     margin-bottom: 5rem;
+    width: 450px;
+    margin-left: 30rem;
   }
 
   .testimonial_container h2 {
@@ -323,40 +314,40 @@ nav button {
    .boxgrid {
     display: flex; /*icon sejajar*/
     justify-content: space-between;
-    
   } 
 
   .testimonial {
     padding-top: 1rem;
-    /* margin-left: 30rem;
-    margin-right: 30rem; */
     text-align: center;
   }
 
   .human {
     width: 4rem;
     height: 4rem;
-    border-radius: 20%;
+    margin-left: 1.5rem;
+    margin-top: 0.75rem;
     overflow: hidden;
-    margin: auto;
     float: left;
   }
 
   .testimonial_body {
-    background: var(--color-bg);
+    background: var(--color-white);
     padding: 2rem;
-    margin-top: 3rem;
-    width: 98%;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    
   }
   .testimonial_body p{
     text-align: left;
-    margin-left: 6rem;
+    margin-left: 7rem;
     font-size: small;
   }
 
   .testimonial_body h5{
     text-align: left;
-    margin-left: 6rem;
+    margin-left: 7rem;
     margin-top: 0.5rem;
   }
 
@@ -376,8 +367,8 @@ nav button {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 10px;
-    gap: 0.2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
 
   /* ====================== Gsection ================= */
@@ -403,8 +394,8 @@ nav button {
 
 .container {
     color: var(--color-bg);
-    font-family: "Helveticasa";
-    font-style: normal;
+    font-family: "sans-serif";
+    font-style:normal;
     font-weight: 700;
     line-height: 150%;
     text-align: center;
@@ -414,6 +405,7 @@ nav button {
 .btn-primary {
     background: var(--color-primary2);
     color: var(--color-white);
+    border-radius: 10px;
 }
 
   /* ======================== FAQs ======================== */
@@ -462,6 +454,8 @@ nav button {
     padding: 1rem;
     margin: 1rem;
     width: 100%;
+    border-radius: 3px;
+    border: 1px solid black;
 }
 .accordion span {
     margin-left: auto;
@@ -474,15 +468,16 @@ nav button {
 
 /* ======================== FOOTER ======================== */
 footer {
-    background: var(--color-white);
+    background: var(--color-bg);
     padding: 5rem;
     margin-top: 5rem;
+    box-sizing: 50%;
   }
   
   .footer_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
+    gap: 3rem;
     text-align: left;
     font-family: "Helvetica";
     font-style: normal;
