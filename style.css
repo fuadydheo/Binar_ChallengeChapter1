@@ -456,6 +456,7 @@ footer ul li a:hover {
       font-size: 1.8rem;
       color: var(--color-white);
       cursor: pointer;
+      border: none;
   }
 
   nav button#close-menu-button {
@@ -643,6 +644,7 @@ footer ul li a:hover {
   }
 
   .avatar {
+    justify-content: center;
     padding-bottom: 2rem;
   }
 
