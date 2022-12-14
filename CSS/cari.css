@@ -1,0 +1,155 @@
+.btn {
+  display: inline-block;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+
+}
+
+.btn-primary {
+  background: var(--color-danger);
+  color: var(--color-white);
+  font-size: 0.8rem;
+}
+
+
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #B85C38;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #5C3D2E;
+  --color-bg1: #2F2519;
+  --color-bg2: #2D2424;
+
+  --container-width-lg: 76%;
+  --container-width-md: 99%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+
+  --font1 :'Signika Negative', sans-serif;
+  --font2 : 'Dongle', sans-serif;
+}
+
+.header_find
+{
+  height: 40vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.find_card {
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+  z-index: 22;
+  align-items: center;
+  
+}
+.card {
+  background: var(--color-bg1);
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  gap: 1.5rem;
+}
+.card_image {
+  margin-bottom: 47px;
+}
+.card_car {
+  padding: 24px;
+  width: 333px;
+  background: var(--color-bg1);
+  /* Shadow/Low */
+
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.btn__mobil {
+  padding: 14px 12px;
+  width: 100%;
+  font-weight: bold;
+  color: #ffffff;
+  background: #5cb85f;
+  border-radius: 2px;
+  margin-top: 24px;
+}
+.select {
+  display: block;
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #5cb85f;
+  border-radius: 2px;
+}
+label {
+  display: block;
+}
+option {
+  width: 100%;
+}
+input {
+  width: 100%;
+}
+.tipe_driver {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.find_cardForm {
+  color: #3c3c3c;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 24px;
+  gap: 1rem;
+}
+.tanggal {
+  flex: 1;
+}
+.time {
+  flex: 1;
+}
+.number {
+  flex: 1;
+}
+
+.bor {
+  padding: 4px 12px;
+  border: 1px solid #5cb85f;
+  border-radius: 2px;
+}
+.btn__findCard {
+  padding: 11px;
+  background: #5cb85f;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.time_config {
+  display: flex;
+  padding: 9px 12px;
+  border: 1px solid #5cb85f;
+  border-radius: 2px;
+  height: 100%;
+  width: 100%;
+}
